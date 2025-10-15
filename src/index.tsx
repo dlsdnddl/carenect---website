@@ -2,7 +2,12 @@ import { Hono } from 'hono'
 import { cors } from 'hono/cors'
 import { serveStatic } from 'hono/cloudflare-workers'
 
-const app = new Hono()
+type Bindings = {
+  DB: D1Database;
+  GOOGLE_SHEETS_URL?: string;
+}
+
+const app = new Hono<{ Bindings: Bindings }>()
 
 // Enable CORS for API routes
 app.use('/api/*', cors())
@@ -272,20 +277,258 @@ app.post('/api/contact', async (c) => {
     const body = await c.req.json()
     const { name, phone, company, message } = body
 
-    // In a real application, you would save this to a database or send an email
-    console.log('Contact form submission:', { name, phone, company, message })
+    // 필수 필드 검증
+    if (!name || !phone) {
+      return c.json({ 
+        success: false, 
+        message: '이름과 전화번호는 필수 입력 항목입니다.' 
+      }, 400)
+    }
+
+    // D1 데이터베이스에 저장
+    const { env } = c;
+    if (env.DB) {
+      // contacts 테이블에 데이터 삽입
+      const result = await env.DB.prepare(`
+        INSERT INTO contacts (name, phone, company, message) 
+        VALUES (?, ?, ?, ?)
+      `).bind(name, phone, company || null, message || null).run();
+      
+      console.log('Contact saved to D1:', { id: result.meta.last_row_id, name, phone, company, message })
+    } else {
+      // 로컬 개발환경에서는 콘솔에만 출력
+      console.log('Contact form submission (local):', { name, phone, company, message })
+    }
+
+    // 구글 스프레드시트에도 저장 시도
+    try {
+      await saveToGoogleSheets({ name, phone, company, message }, env.GOOGLE_SHEETS_URL);
+    } catch (error) {
+      console.log('Google Sheets save failed:', error);
+      // 구글 스프레드시트 저장 실패해도 D1 저장은 성공으로 처리
+    }
     
     return c.json({ 
       success: true, 
       message: '상담 신청이 접수되었습니다. 곧 연락드리겠습니다.' 
     })
   } catch (error) {
+    console.error('Contact form error:', error);
     return c.json({ 
       success: false, 
       message: '오류가 발생했습니다. 다시 시도해주세요.' 
     }, 500)
   }
 })
+
+// 관리자 페이지 - 상담신청 데이터 조회
+app.get('/admin/contacts', async (c) => {
+  try {
+    const { env } = c;
+    let contacts = [];
+    
+    if (env.DB) {
+      // D1 데이터베이스에서 상담신청 데이터 조회
+      const result = await env.DB.prepare(`
+        SELECT id, name, phone, company, message, created_at 
+        FROM contacts 
+        ORDER BY created_at DESC 
+        LIMIT 100
+      `).all();
+      
+      contacts = result.results || [];
+    }
+
+    return c.html(`
+      <!DOCTYPE html>
+      <html lang="ko">
+      <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>관리자 페이지 - 상담신청 현황</title>
+          <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+          <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+          <style>
+            * { margin: 0; padding: 0; box-sizing: border-box; }
+            body { font-family: 'Pretendard', sans-serif; background: #f8fafc; }
+            .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+            .header { background: white; padding: 20px; border-radius: 12px; margin-bottom: 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+            .header h1 { color: #1a202c; font-size: 24px; margin-bottom: 8px; }
+            .header p { color: #6b7280; }
+            .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 20px; }
+            .stat-card { background: white; padding: 20px; border-radius: 12px; text-align: center; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+            .stat-number { font-size: 2em; font-weight: 700; color: #3182f6; }
+            .stat-label { color: #6b7280; margin-top: 8px; }
+            .table-container { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+            .table { width: 100%; border-collapse: collapse; }
+            .table th { background: #f8fafc; padding: 15px; text-align: left; font-weight: 600; color: #374151; border-bottom: 1px solid #e5e7eb; }
+            .table td { padding: 15px; border-bottom: 1px solid #e5e7eb; }
+            .table tr:hover { background: #f8fafc; }
+            .empty-state { text-align: center; padding: 60px 20px; color: #6b7280; }
+            .empty-state i { font-size: 48px; margin-bottom: 16px; }
+            .refresh-btn { background: #3182f6; color: white; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; margin-bottom: 20px; }
+            .refresh-btn:hover { background: #2563eb; }
+            @media (max-width: 768px) {
+              .table-container { overflow-x: auto; }
+              .table { min-width: 600px; }
+            }
+          </style>
+      </head>
+      <body>
+          <div class="container">
+              <div class="header">
+                  <h1><i class="fas fa-users-cog"></i> 상담신청 관리</h1>
+                  <p>실버케어 마케팅 웹사이트에서 접수된 상담신청을 관리할 수 있습니다.</p>
+              </div>
+
+              <div class="stats">
+                  <div class="stat-card">
+                      <div class="stat-number">${contacts.length}</div>
+                      <div class="stat-label">총 상담신청 수</div>
+                  </div>
+                  <div class="stat-card">
+                      <div class="stat-number">${contacts.filter(c => {
+                        const today = new Date();
+                        const contactDate = new Date(c.created_at);
+                        return contactDate.toDateString() === today.toDateString();
+                      }).length}</div>
+                      <div class="stat-label">오늘 신청 수</div>
+                  </div>
+                  <div class="stat-card">
+                      <div class="stat-number">${contacts.filter(c => c.company).length}</div>
+                      <div class="stat-label">기업 상담신청</div>
+                  </div>
+              </div>
+
+              <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                  <button class="refresh-btn" onclick="location.reload()">
+                      <i class="fas fa-sync-alt"></i> 새로고침
+                  </button>
+                  <button class="refresh-btn" onclick="addTestData()" style="background: #10b981;">
+                      <i class="fas fa-plus"></i> 테스트 데이터 추가
+                  </button>
+              </div>
+
+              <div class="table-container">
+                  ${contacts.length > 0 ? `
+                  <table class="table">
+                      <thead>
+                          <tr>
+                              <th>번호</th>
+                              <th>이름</th>
+                              <th>전화번호</th>
+                              <th>회사명</th>
+                              <th>메시지</th>
+                              <th>신청일시</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          ${contacts.map((contact, index) => `
+                          <tr>
+                              <td>${contact.id}</td>
+                              <td><strong>${contact.name}</strong></td>
+                              <td><a href="tel:${contact.phone}" style="color: #3182f6;">${contact.phone}</a></td>
+                              <td>${contact.company || '-'}</td>
+                              <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${contact.message || ''}">${contact.message || '-'}</td>
+                              <td>${new Date(contact.created_at).toLocaleString('ko-KR')}</td>
+                          </tr>
+                          `).join('')}
+                      </tbody>
+                  </table>
+                  ` : `
+                  <div class="empty-state">
+                      <i class="fas fa-inbox"></i>
+                      <h3>상담신청이 없습니다</h3>
+                      <p>아직 접수된 상담신청이 없습니다. 마케팅을 통해 고객을 유치해보세요!</p>
+                  </div>
+                  `}
+              </div>
+          </div>
+
+          <script>
+            // 5분마다 자동 새로고침
+            setInterval(() => {
+                location.reload();
+            }, 300000);
+
+            // 테스트 데이터 추가 함수
+            async function addTestData() {
+                const testData = {
+                    name: '김테스트',
+                    phone: '010-1234-5678',
+                    company: '테스트 회사',
+                    message: '관리자 페이지에서 테스트 데이터를 추가했습니다.'
+                };
+
+                try {
+                    const response = await fetch('/api/contact', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(testData)
+                    });
+
+                    const result = await response.json();
+                    if (result.success) {
+                        alert('테스트 데이터가 추가되었습니다!');
+                        setTimeout(() => location.reload(), 1000);
+                    } else {
+                        alert('오류: ' + result.message);
+                    }
+                } catch (error) {
+                    alert('테스트 데이터 추가 중 오류가 발생했습니다.');
+                }
+            }
+          </script>
+      </body>
+      </html>
+    `);
+  } catch (error) {
+    console.error('Admin page error:', error);
+    return c.html(`
+      <h1>오류 발생</h1>
+      <p>데이터를 불러오는 중 오류가 발생했습니다.</p>
+      <p>Cloudflare D1 데이터베이스가 설정되었는지 확인해주세요.</p>
+    `);
+  }
+})
+
+// 구글 스프레드시트 저장 함수
+async function saveToGoogleSheets(
+  data: { name: string, phone: string, company?: string, message?: string },
+  googleSheetsUrl?: string
+) {
+  try {
+    if (!googleSheetsUrl) {
+      console.log('Google Sheets URL not configured, skipping...');
+      return;
+    }
+
+    // 구글 앱스 스크립트 웹앱으로 데이터 전송
+    const response = await fetch(googleSheetsUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: data.name,
+        phone: data.phone,
+        company: data.company || '',
+        message: data.message || '',
+        timestamp: new Date().toISOString()
+      })
+    });
+
+    if (response.ok) {
+      console.log('Successfully saved to Google Sheets:', data);
+    } else {
+      console.error('Failed to save to Google Sheets:', response.status, response.statusText);
+    }
+  } catch (error) {
+    console.error('Error saving to Google Sheets:', error);
+  }
+}
 
 // Main page
 app.get('/', (c) => {
@@ -439,10 +682,30 @@ app.get('/', (c) => {
                         <p class="section-subtitle">하나의 목표, '신규 고객 창출'을 위해 모든 채널을 활용합니다</p>
                     </div>
                     <div class="services-content">
-                        <p class="services-intro">
-                            검색 시 가장 먼저 보이는 블로그 상위 노출, 신뢰를 쌓는 유튜브 채널 활성화, 
-                            그리고 높아진 브랜드 인지도는 자연스럽게 상담 문의 증가로 이어집니다.
-                        </p>
+                        <div class="services-intro">
+                            <div class="intro-highlight">
+                                <span class="highlight-number">01</span>
+                                <span class="highlight-text">검색 시 가장 먼저 보이는</span>
+                                <strong class="highlight-keyword">블로그 상위 노출</strong>
+                            </div>
+                            <div class="intro-arrow">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <div class="intro-highlight">
+                                <span class="highlight-number">02</span>
+                                <span class="highlight-text">신뢰를 쌓는</span>
+                                <strong class="highlight-keyword">유튜브 채널 활성화</strong>
+                            </div>
+                            <div class="intro-arrow">
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                            <div class="intro-highlight intro-result">
+                                <span class="highlight-number">03</span>
+                                <span class="highlight-text">높아진 브랜드 인지도는</span>
+                                <strong class="highlight-result">상담 문의 증가로 이어집니다</strong>
+                                <i class="fas fa-chart-line result-icon"></i>
+                            </div>
+                        </div>
                         <div class="services-grid">
                             <div class="service-card animate-on-scroll">
                                 <div class="service-icon">
