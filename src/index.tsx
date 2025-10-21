@@ -42,7 +42,7 @@ app.get('/column', (c) => {
                 <div class="logo-section">
                     <div class="logo" onclick="window.location.href='/'">
                         <i class="fas fa-heartbeat"></i>
-                        <span class="logo-text">실버케어 마케팅</span>
+                        <span class="logo-text">케어넥 마케팅</span>
                     </div>
                 </div>
                 <nav class="nav-section">
@@ -243,7 +243,7 @@ app.get('/column', (c) => {
                     <div class="footer-info">
                         <div class="footer-logo">
                             <i class="fas fa-heartbeat"></i>
-                            <span>실버케어 마케팅</span>
+                            <span>케어넥 마케팅</span>
                         </div>
                         <p>실버산업 전문 마케팅으로 더 많은 고객과 만나보세요.</p>
                     </div>
@@ -254,7 +254,7 @@ app.get('/column', (c) => {
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2024 실버케어 마케팅. All rights reserved.</p>
+                    <p>&copy; 2026 케어넥 마케팅. All rights reserved.</p>
                 </div>
             </div>
         </footer>
@@ -378,7 +378,7 @@ app.get('/admin/contacts', async (c) => {
           <div class="container">
               <div class="header">
                   <h1><i class="fas fa-users-cog"></i> 상담신청 관리</h1>
-                  <p>실버케어 마케팅 웹사이트에서 접수된 상담신청을 관리할 수 있습니다.</p>
+                  <p>케어넥 마케팅 웹사이트에서 접수된 상담신청을 관리할 수 있습니다.</p>
               </div>
 
               <div class="stats">
@@ -389,8 +389,10 @@ app.get('/admin/contacts', async (c) => {
                   <div class="stat-card">
                       <div class="stat-number">${contacts.filter(c => {
                         const today = new Date();
+                        const koreanToday = new Date(today.toLocaleString('en-US', { timeZone: 'Asia/Seoul' }));
                         const contactDate = new Date(c.created_at);
-                        return contactDate.toDateString() === today.toDateString();
+                        const koreanContactDate = new Date(contactDate.toLocaleString('en-US', { timeZone: 'Asia/Seoul' }));
+                        return koreanContactDate.toDateString() === koreanToday.toDateString();
                       }).length}</div>
                       <div class="stat-label">오늘 신청 수</div>
                   </div>
@@ -430,7 +432,7 @@ app.get('/admin/contacts', async (c) => {
                               <td><a href="tel:${contact.phone}" style="color: #3182f6;">${contact.phone}</a></td>
                               <td>${contact.company || '-'}</td>
                               <td style="max-width: 300px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;" title="${contact.message || ''}">${contact.message || '-'}</td>
-                              <td>${new Date(contact.created_at).toLocaleString('ko-KR')}</td>
+                              <td>${new Date(contact.created_at).toLocaleString('ko-KR', { timeZone: 'Asia/Seoul' })}</td>
                           </tr>
                           `).join('')}
                       </tbody>
@@ -557,7 +559,7 @@ app.get('/', (c) => {
                 <div class="logo-section">
                     <div class="logo" onclick="window.location.href='/'">
                         <i class="fas fa-heartbeat"></i>
-                        <span class="logo-text">실버케어 마케팅</span>
+                        <span class="logo-text">케어넥 마케팅</span>
                     </div>
                 </div>
                 <nav class="nav-section">
@@ -605,7 +607,7 @@ app.get('/', (c) => {
                 <div class="hero-content">
                     <div class="container">
                         <h1 class="hero-title">
-                            아무에게나 맡기지 마세요.<br>
+                            <span class="typewriter" id="typewriter-text"></span><br>
                             <span class="highlight">방문요양부터 요양원까지,</span><br>
                             실버산업은 마케팅 전문가가 필요합니다.
                         </h1>
@@ -754,6 +756,22 @@ app.get('/', (c) => {
                                     <p>상담 문의 <span class="counter" data-count="400">0</span>% 증가</p>
                                 </div>
                             </div>
+                            <div class="service-card animate-on-scroll">
+                                <div class="service-icon">
+                                    <i class="fas fa-laptop-code"></i>
+                                </div>
+                                <h3>홈페이지 제작</h3>
+                                <ul>
+                                    <li>신뢰감 있는 전문 홈페이지 디자인</li>
+                                    <li>모바일 최적화 반응형 웹사이트</li>
+                                    <li>상담 문의 시스템 구축</li>
+                                    <li>검색엔진 최적화(SEO) 기본 설정</li>
+                                </ul>
+                                <div class="service-result">
+                                    <span class="result-tag">결과</span>
+                                    <p>브랜드 신뢰도 <span class="counter" data-count="350">0</span>% 향상</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -772,16 +790,16 @@ app.get('/', (c) => {
                                 <h3>'OO지역 방문요양' 키워드</h3>
                                 <div class="achievement">
                                     <div class="achievement-item">
-                                        <span class="rank">1위</span>
+                                        <span class="rank rank-counter" data-target="1">10위</span>
                                         <span class="platform">블로그 1페이지</span>
                                     </div>
                                     <div class="achievement-item">
-                                        <span class="rank">1위</span>
+                                        <span class="rank rank-counter" data-target="1">10위</span>
                                         <span class="platform">플레이스</span>
                                     </div>
                                 </div>
-                                <p class="highlight-text">
-                                    <strong>대표님의 센터도 지역 최고의 키워드를 선점할 수 있습니다.</strong>
+                                <p style="text-align: center; font-size: 18px; color: #ffffff; font-weight: 600; margin-top: 24px; line-height: 1.6;">
+                                    <strong>대표님의 센터도 지역 최고의 키워드를<br>선점할 수 있습니다.</strong>
                                 </p>
                             </div>
                         </div>
@@ -812,7 +830,7 @@ app.get('/', (c) => {
                 <div class="container">
                     <div class="section-header">
                         <h2 class="section-title">자주 묻는 질문</h2>
-                        <p class="section-subtitle">모든 질문에 답해드립니다. 마케팅 효과부터 진행 과정까지, 모든 것을 투명하게 공개합니다.</p>
+                        <p class="section-subtitle"><strong>모든 질문에 답해드립니다.</strong><br><strong>마케팅 효과부터 진행 과정까지, 모든 것을 투명하게 공개합니다.</strong></p>
                     </div>
                     <div class="faq-content">
                         <div class="faq-item">
@@ -851,7 +869,7 @@ app.get('/', (c) => {
                 <div class="container">
                     <div class="section-header">
                         <h2 class="section-title">전문 칼럼</h2>
-                        <p class="section-subtitle">더 깊이 있는 정보가 필요하시다면 실전 경험으로 채운 저희의 전문 칼럼을 확인해 보세요.</p>
+                        <p class="section-subtitle"><strong>더 깊이 있는 정보가 필요하시다면 실전 경험으로 채운</strong><br><strong>저희의 전문 칼럼을 확인해 보세요.</strong></p>
                     </div>
                     <div class="column-preview-content">
                         <div class="column-cta">
@@ -933,7 +951,7 @@ app.get('/', (c) => {
                     <div class="footer-info">
                         <div class="footer-logo">
                             <i class="fas fa-heartbeat"></i>
-                            <span>실버케어 마케팅</span>
+                            <span>케어넥 마케팅</span>
                         </div>
                         <p>실버산업 전문 마케팅으로 더 많은 고객과 만나보세요.</p>
                     </div>
@@ -944,7 +962,7 @@ app.get('/', (c) => {
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2024 실버케어 마케팅. All rights reserved.</p>
+                    <p>&copy; 2026 케어넥 마케팅. All rights reserved.</p>
                 </div>
             </div>
         </footer>

@@ -8,7 +8,96 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeHeaderScroll();
     initializeScrollToTop();
     initializeColumnModals();
+    initializeTypewriter();
+    initializeRankCountdown();
 });
+
+// Typewriter Animation
+function initializeTypewriter() {
+    const text = "아무에게나 맡기지 마세요.";
+    const element = document.getElementById('typewriter-text');
+    
+    if (!element) return;
+    
+    let index = 0;
+    let isDeleting = false;
+    
+    function typeWriter() {
+        if (!isDeleting && index <= text.length) {
+            element.textContent = text.slice(0, index);
+            index++;
+            setTimeout(typeWriter, 100);
+        } else if (!isDeleting && index > text.length) {
+            setTimeout(() => {
+                isDeleting = true;
+                typeWriter();
+            }, 2000);
+        } else if (isDeleting && index >= 0) {
+            element.textContent = text.slice(0, index);
+            index--;
+            setTimeout(typeWriter, 50);
+        } else {
+            isDeleting = false;
+            index = 0;
+            setTimeout(typeWriter, 500);
+        }
+    }
+    
+    typeWriter();
+}
+
+// Rank Countdown Animation (10위 → 1위)
+function initializeRankCountdown() {
+    const rankOptions = {
+        threshold: 0.5
+    };
+
+    const rankObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const rankElement = entry.target;
+                const targetRank = parseInt(rankElement.getAttribute('data-target'));
+                let currentRank = 10;
+                
+                // Clear any existing animation
+                if (rankElement.rankAnimation) {
+                    clearInterval(rankElement.rankAnimation);
+                }
+
+                const updateRank = () => {
+                    if (currentRank > targetRank) {
+                        rankElement.textContent = currentRank + '위';
+                        currentRank--;
+                    } else {
+                        rankElement.textContent = targetRank + '위';
+                        clearInterval(rankElement.rankAnimation);
+                        rankElement.classList.add('rank-final');
+                        
+                        // 1위 달성 효과
+                        setTimeout(() => {
+                            rankElement.style.transform = 'scale(1.2)';
+                            rankElement.style.textShadow = '0 0 20px rgba(255, 215, 0, 0.8)';
+                            setTimeout(() => {
+                                rankElement.style.transform = 'scale(1)';
+                            }, 500);
+                        }, 100);
+                    }
+                };
+
+                // 애니메이션 시작 (0.3초마다 랭크 감소)
+                rankElement.rankAnimation = setInterval(updateRank, 300);
+                
+                // 옵저버에서 제거
+                rankObserver.unobserve(rankElement);
+            }
+        });
+    }, rankOptions);
+
+    // 모든 랭크 요소 관찰
+    document.querySelectorAll('.rank-counter').forEach(rank => {
+        rankObserver.observe(rank);
+    });
+}
 
 // Scroll Animations
 function initializeScrollAnimations() {
