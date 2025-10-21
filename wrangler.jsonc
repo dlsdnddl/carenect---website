@@ -7,7 +7,7 @@
     "nodejs_compat"
   ],
   "vars": {
-    "GOOGLE_SHEETS_URL": ""
+    "GOOGLE_SHEETS_URL": "https://script.google.com/macros/s/AKfycbzeoUOnojdzA3qe_Eq22vQj1af5LUnENF1rdznzHvROiBhAipnCBepj8Np8gQwanls/exec"
   },
   // "kv_namespaces": [
   //   {
