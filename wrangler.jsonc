@@ -7,8 +7,8 @@
     "nodejs_compat"
   ],
   "vars": {
-    "GOOGLE_SHEETS_URL": "https://script.google.com/macros/s/AKfycbzeoUOnojdzA3qe_Eq22vQj1af5LUnENF1rdznzHvROiBhAipnCBepj8Np8gQwanls/exec"
-  },
+    "GOOGLE_SHEETS_URL": "https://script.google.com/macros/s/AKfycbwh3SNDaE2JP3bghQhyPdbmGENjD4q0sy2nKCxVHGi_wnIs839l9OzBkoyPbnFK4qY/exec"
+  }
   // "kv_namespaces": [
   //   {
   //     "binding": "MY_KV_NAMESPACE",
@@ -27,7 +27,7 @@
   //     "database_name": "webapp-production", 
   //     "database_id": "placeholder-will-be-updated-when-created"
   //   }
-  // ]
+  // ],
   // "ai": {
   //   "binding": "AI"
   // }
