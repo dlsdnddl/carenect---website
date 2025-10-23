@@ -23,8 +23,9 @@ app.get('/column', (c) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>전문 칼럼 - 실버산업 마케팅 노하우</title>
-        <meta name="description" content="실버산업 마케팅 전문가의 실전 노하우와 인사이트를 담은 칼럼을 확인하세요.">
+        <title>케어넥 마케팅 전문 칼럼 - 방문요양, 요양원 마케팅 노하우</title>
+        <meta name="description" content="케어넥 마케팅의 방문요양 홍보, 요양원 마케팅 전문가가 공유하는 실전 노하우와 성공 사례를 확인하세요.">
+        <meta name="keywords" content="방문요양 마케팅 칼럼, 요양원 홍보 노하우, 실버산업 마케팅 전략, 케어넥 마케팅 칼럼, 방문요양 성공사례">
         <meta name="theme-color" content="#3182f6">
         
         <!-- Fonts -->
@@ -269,6 +270,61 @@ app.get('/column', (c) => {
     </body>
     </html>
   `)
+})
+
+// Sitemap.xml route
+app.get('/sitemap.xml', (c) => {
+  const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://carenect.kr/</loc>
+        <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://carenect.kr/column</loc>
+        <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>`
+
+  return c.text(sitemap, 200, {
+    'Content-Type': 'application/xml'
+  })
+})
+
+// Robots.txt route
+app.get('/robots.txt', (c) => {
+  const robots = `User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://carenect.kr/sitemap.xml
+
+# 주요 페이지 크롤링 허용
+Allow: /column
+Allow: /static/
+
+# 불필요한 페이지 크롤링 방지
+Disallow: /api/
+Disallow: /_worker.js
+Disallow: /_routes.json
+
+# 검색엔진별 특별 설정
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yeti
+Allow: /
+
+User-agent: NaverBot
+Allow: /`
+
+  return c.text(robots, 200, {
+    'Content-Type': 'text/plain'
+  })
 })
 
 // API route for contact form
@@ -540,9 +596,81 @@ app.get('/', (c) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>실버산업 마케팅 전문가 - 요양원부터 방문요양까지</title>
-        <meta name="description" content="실버산업 전문 마케팅 대행 서비스. 방문요양, 요양원 마케팅으로 신규 고객을 창출하세요.">
+        <title>케어넥 마케팅 - 방문요양 홍보, 요양원 마케팅 전문</title>
+        <meta name="description" content="케어넥 마케팅은 방문요양 홍보, 요양원 마케팅 전문업체입니다. 실버산업 마케팅 대행으로 신규 고객 창출과 매출 증대를 돕습니다.">
+        <meta name="keywords" content="케어넥 마케팅, 방문요양 마케팅, 방문요양 홍보, 요양원 홍보, 요양원 마케팅, 실버산업 마케팅, 방문요양 광고, 요양센터 홍보, 노인요양 마케팅, 방문간병 홍보">
+        <meta name="author" content="케어넥 마케팅">
         <meta name="theme-color" content="#3182f6">
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://carenect.kr">
+        <meta property="og:title" content="케어넥 마케팅 - 방문요양 홍보, 요양원 마케팅 전문">
+        <meta property="og:description" content="실버산업 마케팅 전문업체 케어넥. 방문요양, 요양원 마케팅으로 신규 고객 창출과 매출 증대를 경험하세요.">
+        <meta property="og:image" content="https://carenect.kr/static/og-image.jpg">
+        
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://carenect.kr">
+        <meta property="twitter:title" content="케어넥 마케팅 - 방문요양 홍보, 요양원 마케팅 전문">
+        <meta property="twitter:description" content="실버산업 마케팅 전문업체 케어넥. 방문요양, 요양원 마케팅으로 신규 고객 창출과 매출 증대를 경험하세요.">
+        <meta property="twitter:image" content="https://carenect.kr/static/og-image.jpg">
+        
+        <!-- Structured Data (JSON-LD) -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "케어넥 마케팅",
+          "url": "https://carenect.kr",
+          "logo": "https://carenect.kr/static/logo.png",
+          "description": "방문요양 홍보, 요양원 마케팅 전문업체 케어넥 마케팅입니다.",
+          "sameAs": [
+            "https://carenect.kr"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "고객 서비스",
+            "areaServed": "KR",
+            "availableLanguage": "Korean"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "KR",
+            "addressLocality": "대한민국"
+          },
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "방문요양 및 요양원 마케팅 서비스",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "방문요양 마케팅",
+                  "description": "방문요양센터 홍보 및 신규 고객 유치를 위한 전문 마케팅 서비스"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "요양원 마케팅",
+                  "description": "요양원 홍보 및 입소자 유치를 위한 전문 마케팅 서비스"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service", 
+                  "name": "실버산업 마케팅 컨설팅",
+                  "description": "실버산업 전반의 마케팅 전략 수립 및 컨설팅 서비스"
+                }
+              }
+            ]
+          }
+        }
+        </script>
         
         <!-- Fonts -->
         <link rel="preconnect" href="https://cdn.jsdelivr.net">
