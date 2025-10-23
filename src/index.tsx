@@ -15,6 +15,13 @@ app.use('/api/*', cors())
 // Serve static files
 app.use('/static/*', serveStatic({ root: './public' }))
 
+// Naver verification file route
+app.get('/navere7b699febaa941daec996d8cc2279576.html', (c) => {
+  return c.text('naver-site-verification: navere7b699febaa941daec996d8cc2279576.html', 200, {
+    'Content-Type': 'text/html'
+  })
+})
+
 // Column page route
 app.get('/column', (c) => {
   return c.html(`
@@ -599,6 +606,9 @@ app.get('/', (c) => {
         
         <!-- Google Search Console 사이트 소유권 확인 -->
         <meta name="google-site-verification" content="g7bAcvJ2LXQWjFrGaAYylorVcYD4u2rgHXZjCD6XoFY" />
+        
+        <!-- 네이버 웹마스터 도구 사이트 소유권 확인 -->
+        <meta name="naver-site-verification" content="38ac4c38bb0aa85bef3a07f82984a7f72cf1bb02" />
         
         <title>케어넥 마케팅 - 방문요양 홍보, 요양원 마케팅 전문</title>
         <meta name="description" content="케어넥 마케팅은 방문요양 홍보, 요양원 마케팅 전문업체입니다. 실버산업 마케팅 대행으로 신규 고객 창출과 매출 증대를 돕습니다.">
