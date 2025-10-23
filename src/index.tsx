@@ -596,6 +596,10 @@ app.get('/', (c) => {
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Google Search Console 사이트 소유권 확인 -->
+        <meta name="google-site-verification" content="g7bAcvJ2LXQWjFrGaAYylorVcYD4u2rgHXZjCD6XoFY" />
+        
         <title>케어넥 마케팅 - 방문요양 홍보, 요양원 마케팅 전문</title>
         <meta name="description" content="케어넥 마케팅은 방문요양 홍보, 요양원 마케팅 전문업체입니다. 실버산업 마케팅 대행으로 신규 고객 창출과 매출 증대를 돕습니다.">
         <meta name="keywords" content="케어넥 마케팅, 방문요양 마케팅, 방문요양 홍보, 요양원 홍보, 요양원 마케팅, 실버산업 마케팅, 방문요양 광고, 요양센터 홍보, 노인요양 마케팅, 방문간병 홍보">
