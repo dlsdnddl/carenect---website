@@ -262,7 +262,15 @@ app.get('/column', (c) => {
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2026 케어넥 마케팅. All rights reserved.</p>
+                    <div class="footer-company-info">
+                        <p class="copyright">&copy; 2026 케어넥 마케팅. All Rights Reserved.</p>
+                        <br>
+                        <p class="company-details">
+                            운영사: 블랙라운드 | 서비스 브랜드: 케어넥 마케팅<br>
+                            대표: 조인웅 | 사업자등록번호: 713-16-00878 | 통신판매업 신고: 제2019-용인기흥-0886호<br>
+                            주소: 경기도 용인시 기흥구 예현로 15
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -1104,7 +1112,15 @@ app.get('/', (c) => {
                     </div>
                 </div>
                 <div class="footer-bottom">
-                    <p>&copy; 2026 케어넥 마케팅. All rights reserved.</p>
+                    <div class="footer-company-info">
+                        <p class="copyright">&copy; 2026 케어넥 마케팅. All Rights Reserved.</p>
+                        <br>
+                        <p class="company-details">
+                            운영사: 블랙라운드 | 서비스 브랜드: 케어넥 마케팅<br>
+                            대표: 조인웅 | 사업자등록번호: 713-16-00878 | 통신판매업 신고: 제2019-용인기흥-0886호<br>
+                            주소: 경기도 용인시 기흥구 예현로 15
+                        </p>
+                    </div>
                 </div>
             </div>
         </footer>

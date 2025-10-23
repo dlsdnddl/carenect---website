@@ -1443,6 +1443,24 @@ body {
     font-size: 14px;
 }
 
+.footer-company-info {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-company-info .copyright {
+    font-size: 16px;
+    font-weight: 600;
+    color: #d1d5db;
+    margin-bottom: 10px;
+}
+
+.footer-company-info .company-details {
+    font-size: 13px;
+    color: #9ca3af;
+    line-height: 1.6;
+}
+
 /* Column Page Specific Styles */
 .column-hero-section {
     position: relative;
