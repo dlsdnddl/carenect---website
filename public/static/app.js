@@ -1,4 +1,5 @@
-// Wait for DOM to be fully loaded
+// Wait for DOM to be fully loaded - Updated 2025.10.28 - Mobile Cache Bust v2
+console.log('App.js loaded - version 20251028-2');
 document.addEventListener('DOMContentLoaded', function() {
     // Initialize all features
     initializeScrollAnimations();

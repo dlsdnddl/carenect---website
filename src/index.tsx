@@ -41,7 +41,7 @@ app.get('/column', (c) => {
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
         
         <!-- Styles -->
-        <link href="/static/style.css" rel="stylesheet">
+        <link href="/static/style.css?v=20251028-2" rel="stylesheet">
     </head>
     <body>
         <!-- Header -->
@@ -118,7 +118,7 @@ app.get('/column', (c) => {
                     </div>
                     
                     <div class="column-grid">
-                        <article class="column-card animate-on-scroll" onclick="openColumnModal(1)">
+                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/seo-marketing-strategy'">
                             <div class="column-meta">
                                 <span class="column-category">SEO 마케팅</span>
                                 <span class="column-date">2025.10.15</span>
@@ -134,7 +134,7 @@ app.get('/column', (c) => {
                             </div>
                         </article>
 
-                        <article class="column-card animate-on-scroll" onclick="openColumnModal(2)">
+                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/youtube-shorts-strategy'">
                             <div class="column-meta">
                                 <span class="column-category">유튜브 마케팅</span>
                                 <span class="column-date">2025.10.12</span>
@@ -150,7 +150,7 @@ app.get('/column', (c) => {
                             </div>
                         </article>
 
-                        <article class="column-card animate-on-scroll" onclick="openColumnModal(3)">
+                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/sns-branding-strategy'">
                             <div class="column-meta">
                                 <span class="column-category">SNS 마케팅</span>
                                 <span class="column-date">2025.10.08</span>
@@ -166,7 +166,7 @@ app.get('/column', (c) => {
                             </div>
                         </article>
 
-                        <article class="column-card animate-on-scroll" onclick="openColumnModal(4)">
+                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/2026-industry-trends'">
                             <div class="column-meta">
                                 <span class="column-category">업계 트렌드</span>
                                 <span class="column-date">2025.10.05</span>
@@ -182,7 +182,7 @@ app.get('/column', (c) => {
                             </div>
                         </article>
 
-                        <article class="column-card animate-on-scroll" onclick="openColumnModal(5)">
+                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/three-sectors-comparison'">
                             <div class="column-meta">
                                 <span class="column-category">마케팅 전략</span>
                                 <span class="column-date">2025.09.28</span>
@@ -198,7 +198,7 @@ app.get('/column', (c) => {
                             </div>
                         </article>
 
-                        <article class="column-card animate-on-scroll" onclick="openColumnModal(6)">
+                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/small-city-success-case'">
                             <div class="column-meta">
                                 <span class="column-category">케이스 스터디</span>
                                 <span class="column-date">2025.07.20</span>
@@ -215,17 +215,7 @@ app.get('/column', (c) => {
                         </article>
                     </div>
 
-                    <!-- Column Detail Modal -->
-                    <div class="column-modal" id="columnModal">
-                        <div class="column-modal-content">
-                            <div class="column-modal-header">
-                                <button class="column-modal-close" onclick="closeColumnModal()">&times;</button>
-                            </div>
-                            <div class="column-modal-body" id="columnModalBody">
-                                <!-- Content will be populated by JavaScript -->
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </section>
 
@@ -281,7 +271,7 @@ app.get('/column', (c) => {
         </button>
 
         <!-- Scripts -->
-        <script src="/static/app.js"></script>
+        <script src="/static/app.js?v=20251028-2"></script>
     </body>
     </html>
   `)
@@ -302,6 +292,42 @@ app.get('/sitemap.xml', (c) => {
         <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://carenect.kr/column/seo-marketing-strategy</loc>
+        <lastmod>2025-10-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://carenect.kr/column/youtube-shorts-strategy</loc>
+        <lastmod>2025-10-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://carenect.kr/column/sns-branding-strategy</loc>
+        <lastmod>2025-10-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://carenect.kr/column/2026-industry-trends</loc>
+        <lastmod>2025-10-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://carenect.kr/column/three-sectors-comparison</loc>
+        <lastmod>2025-09-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://carenect.kr/column/small-city-success-case</loc>
+        <lastmod>2025-07-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
 </urlset>`
 
@@ -603,6 +629,893 @@ async function saveToGoogleSheets(
   }
 }
 
+// Individual Column Pages with SEO optimization
+app.get('/column/seo-marketing-strategy', (c) => {
+  return c.html(getColumnPageHTML({
+    slug: 'seo-marketing-strategy',
+    id: 1,
+    title: '방문요양 키워드로 네이버 상위노출 달성하는 5단계 전략',
+    description: '방문요양 센터를 위한 네이버 검색 최적화 전략. 키워드 분석부터 백링크 구축까지, 실제 성과가 검증된 5단계 SEO 전략을 상세히 공개합니다.',
+    category: 'SEO 마케팅',
+    date: '2025.10.15',
+    keywords: ['방문요양 마케팅', '네이버 상위노출', '구글 검색 최적화', 'SEO 전략', '키워드 최적화', '백링크 구축', '방문요양 홍보', '재가요양 마케팅', '검색엔진최적화', '디지털마케팅', '온라인 마케팅'],
+    content: `
+      <div class="column-intro">
+        <p>"방문요양센터 블로그를 운영하고 있지만 조회수가 너무 낮아요."</p>
+        <p>"비슷한 내용인데 경쟁 센터는 상위에 노출되네요."</p>
+        <p>"광고비는 부담스럽고, 자연 검색으로 유입을 늘릴 방법이 있을까요?"</p>
+        <p>방문요양 관련 블로그를 운영하는 센터 대표나 마케터라면 이런 고민, 한 번쯤 하셨을 겁니다. 실제로 네이버는 단순히 '글을 많이 올리는 곳'을 좋아하지 않습니다. 정확한 키워드 전략과 검색 의도에 맞춘 콘텐츠 구조, 그리고 독자 신뢰를 확보하는 글쓰기 패턴이 있어야만 상위노출이 가능합니다.</p>
+        <p>오늘은 <strong>'방문요양' 키워드로 네이버 상위노출을 달성하기 위한 실질적인 5단계 전략</strong>을 공개합니다.</p>
+      </div>
+
+      <h3>1단계. 검색 의도 분석: '누가, 왜 방문요양을 찾는가'를 파악하라</h3>
+      <p>첫 단계는 단순한 키워드 검색이 아닙니다. '방문요양'을 검색하는 사람의 의도(intent)를 분석해야 합니다.</p>
+      
+      <h4>검색 의도별 키워드 분석</h4>
+      <ul>
+          <li><strong>"방문요양 비용"</strong>을 검색하는 사람은 비용 부담과 지원금 구조에 관심이 있습니다</li>
+          <li><strong>"방문요양센터 추천"</strong>을 검색하는 사람은 신뢰도 높은 기관을 찾는 중입니다</li>
+          <li><strong>"방문요양 신청방법"</strong>을 검색하는 사람은 구체적인 절차를 알고 싶어합니다</li>
+      </ul>
+      <p>즉, 같은 키워드라도 검색 목적이 다르기 때문에, 글의 구조와 톤이 달라져야 합니다. 이 분석을 소홀히 하면 '노출은 되어도 클릭이 안 되는 글'이 됩니다.</p>
+
+      <h3>2단계. 키워드 구조 설계: 메인 + 보조 키워드의 조합</h3>
+      <p>메인 키워드인 '방문요양'은 최소 6회 이상 자연스럽게 배치해야 합니다. 하지만 이 단어만 반복하면 스팸처럼 인식됩니다. 따라서 관련 보조 키워드를 함께 활용해야 합니다.</p>
+      
+      <h4>보조 키워드 예시</h4>
+      <ul>
+          <li>'장기요양등급' - 방문요양 대상자 조건</li>
+          <li>'재가복지센터' - 방문요양 제공 기관</li>
+          <li>'요양보호사' - 방문요양 서비스 제공자</li>
+          <li>'돌봄 서비스' - 방문요양의 포괄적 표현</li>
+      </ul>
+      
+      <blockquote>
+          <strong>예시:</strong> "성남 방문요양센터, 장기요양등급 신청부터 돌봄까지 한 번에"
+      </blockquote>
+      <p>이처럼 조합하면 검색 확장성과 관련성 점수를 동시에 얻을 수 있습니다.</p>
+
+      <h3>3단계. 전문가형 콘텐츠 구조화: 공감 → 정보 → 신뢰 → 해결</h3>
+      <p>네이버 알고리즘은 "누가 쓴 글인가?"를 매우 중요하게 봅니다. 따라서 단순 정보 나열이 아닌 전문가형 스토리텔링 구조가 필요합니다.</p>
+
+      <h4>효과적인 글 구조</h4>
+      <ul>
+          <li><strong>첫 문단:</strong> "부모님이 갑자기 거동이 불편해지면서…" 같은 공감 문장으로 시작</li>
+          <li><strong>중간 문단:</strong> 장기요양등급 신청 절차나 비용 기준 등 팩트 기반 정보 제공</li>
+          <li><strong>후반 문단:</strong> "10년 경력 사회복지사가 직접 상담하는 ○○방문요양센터"처럼 전문가 신뢰 요소 삽입</li>
+      </ul>
+      <p>이 구조를 따르면 독자 체류 시간이 늘어나고, 알고리즘이 '유익한 글'로 판단하게 됩니다.</p>
+
+      <h3>4단계. 콘텐츠 품질 점수 높이기: 이미지·체류·링크</h3>
+      <p>좋은 글이라도 체류시간이 짧으면 상위노출이 어렵습니다. 이를 해결하려면 다음 세 가지를 반드시 챙겨야 합니다.</p>
+
+      <ol>
+          <li><strong>직접 촬영한 이미지</strong> — 실제 현장 사진이나 요양보호사 인터뷰 이미지가 신뢰도를 높입니다</li>
+          <li><strong>내부 링크 구조</strong> — "장기요양등급 신청방법" 같은 관련 글로 연결하면 사이트 체류시간이 상승합니다</li>
+          <li><strong>목차·글머리 활용</strong> — H2, H3 태그로 구성을 명확히 하면 알고리즘이 주제를 인식하기 쉽습니다</li>
+      </ol>
+
+      <h3>5단계. CTA(행동 유도) 설계: 클릭 후 행동을 유도하라</h3>
+      <p>방문요양 키워드로 유입된 독자에게 명확한 다음 단계를 제시해야 합니다.</p>
+      
+      <blockquote>
+          "지금 바로 무료 상담을 신청하시면, 장기요양등급부터 서비스 매칭까지 도와드립니다."
+      </blockquote>
+      <p>이처럼 '행동 유도 문장(CTA)'을 배치하면 단순한 조회수 글이 아니라 상담 전환형 콘텐츠로 진화합니다.</p>
+
+      <h3>성공적인 5단계 전략 요약</h3>
+      <p>방문요양 키워드 상위노출은 단순히 '글을 많이 쓰는 것'이 아닙니다. 다음 다섯 단계를 체계적으로 적용해야 합니다:</p>
+      
+      <ul>
+          <li>✅ <strong>검색 의도 분석</strong> - 사용자가 진짜 원하는 것 파악</li>
+          <li>✅ <strong>키워드 구조 설계</strong> - 메인+보조 키워드 자연스러운 조합</li>
+          <li>✅ <strong>전문가형 콘텐츠 구성</strong> - 공감→정보→신뢰→해결 구조</li>
+          <li>✅ <strong>품질 점수 관리</strong> - 이미지, 링크, 체류시간 최적화</li>
+          <li>✅ <strong>CTA 설계</strong> - 명확한 행동 유도로 전환 달성</li>
+      </ul>
+
+      <p>이 다섯 단계를 체계적으로 적용하면, 네이버는 당신의 블로그를 "사용자에게 도움을 주는 정보원"으로 판단하게 됩니다. 지금 바로 기존 글 하나를 이 5단계에 맞게 리뉴얼해 보세요. 한 달 안에 '방문요양' 검색 결과에서 눈에 띄는 변화를 경험하실 겁니다.</p>
+
+      <blockquote>
+          <strong>실제 성공 사례:</strong> 이 5단계 전략을 적용한 A센터의 경우, 3개월 만에 '○○시 방문요양' 키워드에서 네이버 1페이지 진입을 달성했으며, 상담 문의가 월 평균 250% 증가했습니다.
+      </blockquote>
+    `
+  }))
+})
+
+app.get('/column/youtube-shorts-strategy', (c) => {
+  return c.html(getColumnPageHTML({
+    slug: 'youtube-shorts-strategy',
+    id: 2,
+    title: '요양원 유튜브 쇼츠로 월 상담 문의 300% 증가시킨 콘텐츠 전략',
+    description: '유튜브 쇼츠를 활용한 요양원 마케팅의 실제 성공 사례. 월 상담 문의 300% 증가를 달성한 콘텐츠 전략과 제작 노하우를 상세히 공개합니다.',
+    category: '유튜브 마케팅',
+    date: '2025.10.12',
+    keywords: ['요양원 마케팅', '유튜브 쇼츠', '콘텐츠 전략', '바이럴 마케팅', '실버케어 홍보'],
+    content: `
+      <h3>유튜브 쇼츠의 힘</h3>
+      <p>최근 요양원 마케팅에서 유튜브 쇼츠의 효과가 급격히 증가하고 있습니다. 특히 60초 이내의 짧은 영상을 통해 신뢰감을 전달하고 브랜드 인지도를 높이는 데 매우 효과적입니다.</p>
+
+      <h3>성공한 콘텐츠 유형 분석</h3>
+      
+      <h4>1. 시설 투어 영상</h4>
+      <ul>
+          <li>깨끗하고 밝은 시설 내부</li>
+          <li>어르신들의 편안한 일상</li>
+          <li>전문 케어 서비스 모습</li>
+      </ul>
+
+      <h4>2. 직원 인터뷰</h4>
+      <p>실제 간병사, 간호사의 진솔한 인터뷰를 통해 전문성과 친근함을 동시에 어필합니다.</p>
+
+      <h4>3. 건강 정보 제공</h4>
+      <p>어르신들에게 도움이 되는 건강 정보나 운동법을 짧고 임팩트 있게 전달합니다.</p>
+
+      <h3>콘텐츠 제작 핵심 포인트</h3>
+      
+      <h4>첫 3초가 승부</h4>
+      <p>유튜브 쇼츠에서 첫 3초 내에 시청자의 관심을 끌지 못하면 바로 넘어갑니다. 임팩트 있는 오프닝이 필수입니다.</p>
+
+      <h4>자막 활용</h4>
+      <p>소리 없이도 내용을 이해할 수 있도록 명확한 자막을 삽입합니다. 특히 핵심 메시지는 강조 처리합니다.</p>
+
+      <h4>감정적 연결</h4>
+      <p>단순한 정보 전달보다는 감정적 공감을 이끌어내는 스토리텔링이 중요합니다.</p>
+
+      <h3>실제 성공 사례</h3>
+      <blockquote>
+          "B요양원의 경우, 매일 1-2개의 쇼츠 영상을 꾸준히 업로드한 결과 3개월 만에 구독자 5,000명을 달성했고, 월 상담 문의가 기존 대비 300% 증가했습니다. 특히 '따뜻한 돌봄' 시리즈가 큰 호응을 얻으며 바이럴을 일으켰습니다."
+      </blockquote>
+
+      <h3>지속 가능한 운영 전략</h3>
+      <p>유튜브 쇼츠는 꾸준함이 핵심입니다. 주 3-5회 정기적인 업로드를 통해 알고리즘의 신뢰를 얻고, 구독자와의 소통을 지속해야 합니다.</p>
+    `
+  }))
+})
+
+app.get('/column/sns-branding-strategy', (c) => {
+  return c.html(getColumnPageHTML({
+    slug: 'sns-branding-strategy',
+    id: 3,
+    title: '인스타그램과 스레드로 실버케어 브랜딩 완성하기',
+    description: 'MZ세대 보호자를 타겟으로 한 인스타그램과 스레드 브랜딩 전략. 실버케어 업계에 최적화된 SNS 마케팅 노하우와 실제 적용 방법을 제시합니다.',
+    category: 'SNS 마케팅',
+    date: '2025.10.08',
+    keywords: ['실버케어 브랜딩', '인스타그램 마케팅', '스레드 전략', 'MZ세대 마케팅', '요양원 홍보'],
+    content: `
+      <h3>MZ세대 보호자, 새로운 의사결정층</h3>
+      <p>현재 부모님 요양을 결정하는 주요 층이 MZ세대로 변화하고 있습니다. 이들은 온라인에서 정보를 수집하고, SNS를 통해 브랜드를 평가합니다. 따라서 인스타그램과 스레드를 통한 브랜딩이 필수가 되었습니다.</p>
+
+      <h3>인스타그램 브랜딩 전략</h3>
+      
+      <h4>비주얼 아이덴티티 구축</h4>
+      <ul>
+          <li>일관된 색감과 톤앤매너</li>
+          <li>깔끔하고 전문적인 피드 구성</li>
+          <li>브랜드 로고와 컬러 활용</li>
+      </ul>
+
+      <h4>콘텐츠 기획</h4>
+      <p>단순한 홍보보다는 가치 있는 정보를 제공하여 팔로워들의 신뢰를 얻어야 합니다.</p>
+
+      <ul>
+          <li><strong>일상 콘텐츠:</strong> 어르신들의 편안한 일상</li>
+          <li><strong>정보 콘텐츠:</strong> 요양 관련 유용한 정보</li>
+          <li><strong>behind the scenes:</strong> 직원들의 진솔한 모습</li>
+          <li><strong>고객 후기:</strong> 실제 이용 가족들의 생생한 후기</li>
+      </ul>
+
+      <h3>스레드 활용 전략</h3>
+      
+      <h4>실시간 소통</h4>
+      <p>스레드는 인스타그램보다 더 캐주얼하고 실시간성이 강한 플랫폼입니다. 일상적인 소통을 통해 친근한 이미지를 구축할 수 있습니다.</p>
+
+      <h4>전문성 어필</h4>
+      <p>요양 관련 전문 지식이나 최신 트렌드를 스레드를 통해 공유하여 전문성을 인정받을 수 있습니다.</p>
+
+      <h3>크로스 플랫폼 전략</h3>
+      <p>인스타그램과 스레드를 연동하여 시너지 효과를 극대화합니다. 각 플랫폼의 특성을 살려 차별화된 콘텐츠를 제공하되, 전체적인 브랜드 메시지는 일관성을 유지합니다.</p>
+
+      <h3>성공 지표 및 KPI</h3>
+      
+      <h4>정량적 지표</h4>
+      <ul>
+          <li>팔로워 수 증가율</li>
+          <li>참여율(좋아요, 댓글, 공유)</li>
+          <li>프로필 방문수</li>
+          <li>웹사이트 유입률</li>
+      </ul>
+
+      <h4>정성적 지표</h4>
+      <ul>
+          <li>브랜드 인지도 개선</li>
+          <li>긍정적 브랜드 이미지 구축</li>
+          <li>고객 신뢰도 향상</li>
+      </ul>
+
+      <blockquote>
+          "C방문요양센터의 경우, 인스타그램과 스레드를 활용한 브랜딩 전략을 통해 6개월 만에 온라인 브랜드 인지도가 400% 향상되었고, MZ세대 보호자들로부터 높은 신뢰를 얻어 상담 문의가 크게 증가했습니다."
+      </blockquote>
+    `
+  }))
+})
+
+app.get('/column/2026-industry-trends', (c) => {
+  return c.html(getColumnPageHTML({
+    slug: '2026-industry-trends',
+    id: 4,
+    title: '2026년 실버산업 마케팅 트렌드',
+    description: '2026년 실버산업 마케팅의 미래를 전망합니다. 베이비붐 세대의 실버 진입과 MZ세대 보호자의 영향력 확대로 인한 새로운 마케팅 패러다임을 분석합니다.',
+    category: '업계 트렌드',
+    date: '2025.10.05',
+    keywords: ['실버산업 트렌드', '2026년 마케팅', '베이비붐 세대', '디지털 실버', '개인화 마케팅'],
+    content: `
+      <h3>2026년, 실버산업 마케팅의 대전환점</h3>
+      <p>2026년은 실버산업 마케팅에 있어 중대한 전환점이 될 것으로 예상됩니다. 베이비붐 세대의 본격적인 실버 진입과 MZ세대 보호자의 영향력 확대가 맞물려 완전히 새로운 마케팅 패러다임이 요구됩니다.</p>
+
+      <h3>주요 트렌드 전망</h3>
+
+      <h4>1. 디지털 네이티브 실버 세대</h4>
+      <p>2026년 실버층은 이전 세대와 달리 디지털에 익숙한 세대입니다. 스마트폰을 능숙하게 사용하며, 온라인으로 정보를 수집하고 의사결정을 내립니다.</p>
+      
+      <ul>
+          <li>모바일 최적화된 마케팅 필수</li>
+          <li>동영상 콘텐츠 선호도 증가</li>
+          <li>온라인 후기와 평점의 중요성 확대</li>
+      </ul>
+
+      <h4>2. 개인화(Personalization) 마케팅</h4>
+      <p>획일적인 마케팅에서 벗어나 개인의 상황과 필요에 맞춘 맞춤형 마케팅이 핵심이 될 것입니다.</p>
+
+      <ul>
+          <li>AI 기반 개인 맞춤 서비스 추천</li>
+          <li>라이프스타일별 차별화된 메시지</li>
+          <li>개인 건강 데이터 기반 서비스 제안</li>
+      </ul>
+
+      <h4>3. 투명성과 신뢰성 강화</h4>
+      <p>MZ세대 보호자들은 투명한 정보 공개와 진정성 있는 소통을 중시합니다.</p>
+
+      <ul>
+          <li>실시간 시설 현황 공개</li>
+          <li>직원 교육 현황 및 자격 공개</li>
+          <li>서비스 품질 데이터 투명 공개</li>
+      </ul>
+
+      <h3>새로운 마케팅 채널</h3>
+
+      <h4>메타버스 활용</h4>
+      <p>가상현실을 통한 시설 투어와 서비스 체험이 새로운 마케팅 도구로 부상할 것입니다.</p>
+
+      <h4>라이브 커머스</h4>
+      <p>실시간 방송을 통한 상담과 Q&A가 활성화될 전망입니다.</p>
+
+      <h4>팟캐스트와 오디오 콘텐츠</h4>
+      <p>전문성을 바탕으로 한 오디오 콘텐츠가 브랜드 신뢰도 구축에 중요한 역할을 할 것입니다.</p>
+
+      <h3>데이터 기반 마케팅</h3>
+      <p>2026년에는 더욱 정교한 데이터 분석을 통한 마케팅 최적화가 필수가 될 것입니다.</p>
+
+      <ul>
+          <li>고객 여정(Customer Journey) 분석</li>
+          <li>예측 분석을 통한 선제적 마케팅</li>
+          <li>ROI 측정 고도화</li>
+      </ul>
+
+      <h3>준비해야 할 것들</h3>
+
+      <h4>기술 인프라 구축</h4>
+      <p>새로운 트렌드에 대응하기 위한 기술적 기반을 미리 준비해야 합니다.</p>
+
+      <h4>인재 확보 및 교육</h4>
+      <p>디지털 마케팅 전문가와 데이터 분석 전문가의 확보가 경쟁력을 좌우할 것입니다.</p>
+
+      <h4>고객 중심 사고로의 전환</h4>
+      <p>공급자 중심에서 고객 중심으로의 근본적인 사고 전환이 필요합니다.</p>
+
+      <blockquote>
+          "2026년 실버산업 마케팅은 기술과 인간 중심 사고가 조화를 이루는 새로운 시대가 될 것입니다. 지금부터 준비하는 기업만이 미래 시장을 선도할 수 있을 것입니다."
+      </blockquote>
+    `
+  }))
+})
+
+app.get('/column/three-sectors-comparison', (c) => {
+  return c.html(getColumnPageHTML({
+    slug: 'three-sectors-comparison',
+    id: 5,
+    title: '요양보호사교육원 vs 방문요양 vs 요양원',
+    description: '실버산업 3개 주요 분야(요양보호사교육원, 방문요양, 요양원)의 차별화된 마케팅 전략 비교 분석. 각 분야별 특성에 맞는 효과적인 마케팅 접근법을 제시합니다.',
+    category: '마케팅 전략',
+    date: '2025.09.28',
+    keywords: ['실버산업 마케팅', '요양보호사교육원', '방문요양 마케팅', '요양원 홍보', '차별화 전략'],
+    content: `
+      <h3>실버산업 3개 분야의 마케팅 전략 비교</h3>
+      <p>같은 실버산업이라도 요양보호사교육원, 방문요양, 요양원은 각각 다른 고객층과 서비스 특성을 가지고 있어 차별화된 마케팅 접근이 필요합니다.</p>
+
+      <h3>요양보호사교육원 마케팅</h3>
+
+      <h4>주요 타겟층</h4>
+      <ul>
+          <li>경력 단절 여성 (40-50대)</li>
+          <li>은퇴 후 재취업 준비자</li>
+          <li>안정적 일자리를 원하는 구직자</li>
+      </ul>
+
+      <h4>핵심 메시지</h4>
+      <p><strong>"안정적인 미래, 보람있는 직업"</strong></p>
+      <ul>
+          <li>고령화 시대의 유망 직종</li>
+          <li>국가 자격증의 안정성</li>
+          <li>높은 취업률과 지속 가능성</li>
+      </ul>
+
+      <h4>효과적인 마케팅 채널</h4>
+      <ul>
+          <li>지역 맘카페, 커뮤니티</li>
+          <li>구인구직 사이트 연계</li>
+          <li>기존 수강생 추천 시스템</li>
+          <li>무료 설명회 및 체험 과정</li>
+      </ul>
+
+      <h3>방문요양 마케팅</h3>
+
+      <h4>주요 타겟층</h4>
+      <ul>
+          <li>집에서 돌봄받고 싶은 어르신</li>
+          <li>시설 입소를 원하지 않는 가족</li>
+          <li>경증~중등도 거동불편 어르신</li>
+      </ul>
+
+      <h4>핵심 메시지</h4>
+      <p><strong>"집이 최고의 요양원"</strong></p>
+      <ul>
+          <li>익숙한 환경에서의 안전한 돌봄</li>
+          <li>1:1 맞춤 서비스</li>
+          <li>가족과의 지속적인 유대감</li>
+      </ul>
+
+      <h4>효과적인 마케팅 채널</h4>
+      <ul>
+          <li>지역 병원, 보건소 연계</li>
+          <li>동사무소, 주민센터 홍보</li>
+          <li>지역 네이버 카페 활동</li>
+          <li>기존 이용자 소개 시스템</li>
+      </ul>
+
+      <h3>요양원 마케팅</h3>
+
+      <h4>주요 타겟층</h4>
+      <ul>
+          <li>중증도 이상의 거동불편 어르신</li>
+          <li>24시간 전문 케어가 필요한 경우</li>
+          <li>집에서의 돌봄이 어려운 가족</li>
+      </ul>
+
+      <h4>핵심 메시지</h4>
+      <p><strong>"전문적이고 안전한 24시간 케어"</strong></p>
+      <ul>
+          <li>전문 의료진과 간병 시스템</li>
+          <li>24시간 응급상황 대응</li>
+          <li>체계적인 건강 관리 프로그램</li>
+      </ul>
+
+      <h4>효과적인 마케팅 채널</h4>
+      <ul>
+          <li>병원 사회복지사 네트워크</li>
+          <li>온라인 후기 및 평점 관리</li>
+          <li>시설 투어 및 체험 프로그램</li>
+          <li>의료진 전문성 어필</li>
+      </ul>
+
+      <h3>공통 성공 요소</h3>
+
+      <h4>신뢰성 구축</h4>
+      <p>모든 분야에서 가장 중요한 것은 신뢰성입니다. 투명한 정보 공개와 진정성 있는 소통이 필수입니다.</p>
+
+      <h4>지역 밀착형 마케팅</h4>
+      <p>실버산업은 지역성이 강한 분야입니다. 지역 특성과 문화를 이해한 마케팅이 효과적입니다.</p>
+
+      <h4>구전 마케팅</h4>
+      <p>실버산업에서는 구전의 힘이 매우 강합니다. 기존 고객의 만족도가 곧 최고의 마케팅 도구입니다.</p>
+
+      <h3>차별화 포인트 요약</h3>
+      
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+          <thead>
+              <tr style="background: #f8fafc;">
+                  <th style="border: 1px solid #e2e8f0; padding: 12px;">구분</th>
+                  <th style="border: 1px solid #e2e8f0; padding: 12px;">요양보호사교육원</th>
+                  <th style="border: 1px solid #e2e8f0; padding: 12px;">방문요양</th>
+                  <th style="border: 1px solid #e2e8f0; padding: 12px;">요양원</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td style="border: 1px solid #e2e8f0; padding: 12px; font-weight: 600;">핵심 키워드</td>
+                  <td style="border: 1px solid #e2e8f0; padding: 12px;">자격증, 취업, 안정성</td>
+                  <td style="border: 1px solid #e2e8f0; padding: 12px;">집, 1:1 케어, 편안함</td>
+                  <td style="border: 1px solid #e2e8f0; padding: 12px;">전문성, 24시간, 안전</td>
+              </tr>
+              <tr>
+                  <td style="border: 1px solid #e2e8f0; padding: 12px; font-weight: 600;">주요 채널</td>
+                  <td style="border: 1px solid #e2e8f0; padding: 12px;">커뮤니티, 구인사이트</td>
+                  <td style="border: 1px solid #e2e8f0; padding: 12px;">지역 네트워크</td>
+                  <td style="border: 1px solid #e2e8f0; padding: 12px;">의료기관 연계</td>
+              </tr>
+              <tr>
+                  <td style="border: 1px solid #e2e8f0; padding: 12px; font-weight: 600;">결정 요인</td>
+                  <td style="border: 1px solid #e2e8f0; padding: 12px;">교육 품질, 취업률</td>
+                  <td style="border: 1px solid #e2e8f0; padding: 12px;">요양사 실력, 신뢰도</td>
+                  <td style="border: 1px solid #e2e8f0; padding: 12px;">시설, 의료진, 위치</td>
+              </tr>
+          </tbody>
+      </table>
+
+      <blockquote>
+          "각 분야의 특성을 정확히 이해하고 그에 맞는 차별화된 마케팅 전략을 구사하는 것이 성공의 열쇠입니다. 획일적인 접근보다는 세분화된 전략이 훨씬 효과적입니다."
+      </blockquote>
+    `
+  }))
+})
+
+app.get('/column/small-city-success-case', (c) => {
+  return c.html(getColumnPageHTML({
+    slug: 'small-city-success-case',
+    id: 6,
+    title: '지방 소도시 요양원이 6개월 만에 대기자 명단을 만든 비결',
+    description: '지방 소도시 요양원의 놀라운 성공 사례. 불과 6개월 만에 입소율 60%에서 100% 달성하고 대기자 명단까지 만든 실제 전략과 노하우를 상세히 공개합니다.',
+    category: '케이스 스터디',
+    date: '2025.07.20',
+    keywords: ['지방 소도시 마케팅', '요양원 성공사례', '대기자 명단', '지역 밀착 전략', '입소율 향상'],
+    content: `
+      <h3>기적 같은 성공 스토리의 시작</h3>
+      <p>인구 3만 명의 지방 소도시 ○○시에 위치한 한 요양원이 불과 6개월 만에 대기자 명단을 만들어낸 놀라운 사례를 소개합니다. 이 요양원은 개원 초기 60%에 머물던 입소율을 100% 달성하고, 현재는 20여 명의 대기자까지 생긴 상황입니다.</p>
+
+      <h3>초기 상황 분석</h3>
+
+      <h4>도전 과제</h4>
+      <ul>
+          <li>지방 소도시의 한정된 고객층</li>
+          <li>기존 경쟁 요양원 3곳의 견고한 시장 점유</li>
+          <li>신생 시설로서의 브랜드 인지도 부족</li>
+          <li>제한적인 마케팅 예산</li>
+      </ul>
+
+      <h4>시설 현황</h4>
+      <ul>
+          <li>정원 50명 규모의 중형 요양원</li>
+          <li>신축 건물로 시설은 우수</li>
+          <li>원장 및 직원들의 높은 전문성</li>
+          <li>하지만 인지도와 신뢰도 부족</li>
+      </ul>
+
+      <h3>6개월 성공 전략</h3>
+
+      <h4>1단계: 지역 밀착 신뢰 구축 (1-2개월)</h4>
+      
+      <p><strong>보건소 및 의료기관 네트워킹</strong></p>
+      <ul>
+          <li>지역 보건소와의 협력 관계 구축</li>
+          <li>인근 병원 사회복지사와의 지속적 소통</li>
+          <li>의료진 정기 방문 및 건강 강좌 진행</li>
+      </ul>
+
+      <p><strong>투명성 강화</strong></p>
+      <ul>
+          <li>시설 개방의 날 운영 (매주 토요일)</li>
+          <li>식단표와 프로그램 실시간 공개</li>
+          <li>직원 교육 현황 및 자격 투명 공개</li>
+      </ul>
+
+      <h4>2단계: 온라인 입소문 확산 (2-3개월)</h4>
+      
+      <p><strong>지역 맘카페 활동</strong></p>
+      <ul>
+          <li>유용한 요양 정보 정기 제공</li>
+          <li>궁금증 해결 및 상담 서비스</li>
+          <li>과도한 홍보 금지, 도움 중심 활동</li>
+      </ul>
+
+      <p><strong>네이버 블로그 최적화</strong></p>
+      <ul>
+          <li>"○○시 요양원" 키워드 1페이지 진입</li>
+          <li>실제 이용 후기 중심 콘텐츠</li>
+          <li>시설 일상과 어르신들 모습 공유</li>
+      </ul>
+
+      <h4>3단계: 차별화 서비스 강화 (3-4개월)</h4>
+      
+      <p><strong>개인 맞춤 케어 시스템</strong></p>
+      <ul>
+          <li>입소 전 1:1 상담 및 개인별 케어 플랜 수립</li>
+          <li>가족과의 소통 강화 (주 2회 안부 연락)</li>
+          <li>개인 취향을 고려한 식단 및 프로그램</li>
+      </ul>
+
+      <p><strong>특별 프로그램 운영</strong></p>
+      <ul>
+          <li>지역 초등학교와 연계한 세대 교감 프로그램</li>
+          <li>원예 치료 및 동물 치료 도입</li>
+          <li>가족 참여 행사 정기 개최</li>
+      </ul>
+
+      <h4>4단계: 입소문 확산 및 브랜드 확립 (5-6개월)</h4>
+      
+      <p><strong>이용 가족 만족도 극대화</strong></p>
+      <ul>
+          <li>정기 만족도 조사 및 즉시 개선</li>
+          <li>가족 소통 앱 도입으로 실시간 소통</li>
+          <li>특별한 날 이벤트 (생일, 기념일 등)</li>
+      </ul>
+
+      <p><strong>자연스러운 추천 시스템</strong></p>
+      <ul>
+          <li>만족한 가족의 자발적 추천 유도</li>
+          <li>지역 커뮤니티에서의 긍정적 입소문</li>
+          <li>의료진들 사이에서의 신뢰도 상승</li>
+      </ul>
+
+      <h3>핵심 성공 요인</h3>
+
+      <h4>진정성과 투명성</h4>
+      <p>과장된 광고보다는 진솔한 모습을 보여주며 신뢰를 쌓아갔습니다. 시설의 장점뿐만 아니라 개선점도 솔직하게 공유했습니다.</p>
+
+      <h4>지역 특성 이해</h4>
+      <p>소도시의 강한 인적 네트워크를 활용하여 한 명 한 명이 홍보대사가 되도록 만들었습니다.</p>
+
+      <h4>차별화된 서비스</h4>
+      <p>단순한 요양 서비스를 넘어서 감동을 주는 서비스로 차별화를 이루었습니다.</p>
+
+      <h4>지속적인 개선</h4>
+      <p>이용 가족의 피드백을 즉시 반영하여 서비스를 지속적으로 개선해 나갔습니다.</p>
+
+      <h3>구체적인 성과 지표</h3>
+      
+      <ul>
+          <li><strong>입소율:</strong> 60% → 100% (6개월)</li>
+          <li><strong>대기자:</strong> 0명 → 23명</li>
+          <li><strong>온라인 평점:</strong> 3.2점 → 4.8점</li>
+          <li><strong>추천율:</strong> 15% → 89%</li>
+          <li><strong>직원 만족도:</strong> 70% → 95%</li>
+      </ul>
+
+      <h3>지방 소도시 성공 전략의 핵심</h3>
+
+      <blockquote>
+          "지방 소도시에서는 '관계'가 마케팅의 전부입니다. 기술이나 광고보다는 사람과 사람 사이의 신뢰가 가장 강력한 마케팅 도구였습니다. 한 명의 만족한 가족이 열 명의 고객을 만들어내는 것이 지방의 힘입니다."
+      </blockquote>
+
+      <p>이 사례는 지방 소도시에서도 충분히 성공할 수 있다는 것을 보여줍니다. 핵심은 지역 특성을 이해하고, 진정성 있는 서비스로 신뢰를 쌓아가는 것입니다.</p>
+    `
+  }))
+})
+
+// Column Page HTML Generator Function
+function getColumnPageHTML({slug, id, title, description, category, date, keywords, content}) {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "description": description,
+    "author": {
+      "@type": "Organization",
+      "name": "케어넥 마케팅",
+      "url": "https://carenect.kr",
+      "sameAs": [
+        "https://blog.naver.com/carenect",
+        "https://carenect.kr"
+      ]
+    },
+    "publisher": {
+      "@type": "Organization", 
+      "name": "케어넥 마케팅",
+      "url": "https://carenect.kr",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://carenect.kr/static/logo.png",
+        "width": 200,
+        "height": 60
+      }
+    },
+    "datePublished": date.replace(/\./g, '-') + "T09:00:00+09:00",
+    "dateModified": "2025-10-28T14:00:00+09:00",
+    "articleSection": category,
+    "keywords": keywords.join(', '),
+    "wordCount": content.replace(/<[^>]*>/g, '').length,
+    "inLanguage": "ko-KR",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://carenect.kr/column/" + slug
+    },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://carenect.kr/static/column-" + id + ".jpg",
+      "width": 1200,
+      "height": 630
+    },
+    "about": {
+      "@type": "Thing",
+      "name": "방문요양 마케팅",
+      "description": "재가요양서비스 및 방문요양센터를 위한 디지털 마케팅 전략"
+    }
+  };
+
+  return `
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>${title} | 케어넥 마케팅</title>
+        
+        <!-- SEO Meta Tags -->
+        <meta name="description" content="${description}">
+        <meta name="keywords" content="${keywords.join(', ')}">
+        <meta name="author" content="케어넥 마케팅">
+        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+        <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+        <meta name="google-site-verification" content="your-google-verification-code-here">
+        <link rel="canonical" href="https://carenect.kr/column/${slug}">
+        
+        <!-- Open Graph Meta Tags -->
+        <meta property="og:title" content="${title}">
+        <meta property="og:description" content="${description}">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="https://carenect.kr/column/${slug}">
+        <meta property="og:image" content="https://carenect.kr/static/column-${id}.jpg">
+        <meta property="og:site_name" content="케어넥 마케팅">
+        <meta property="article:author" content="케어넥 마케팅">
+        <meta property="article:published_time" content="${date.replace(/\./g, '-')}">
+        <meta property="article:section" content="${category}">
+        <meta property="article:tag" content="${keywords.join(', ')}">
+        
+        <!-- Twitter Card Meta Tags -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="${title}">
+        <meta name="twitter:description" content="${description}">
+        <meta name="twitter:image" content="https://carenect.kr/static/column-${id}.jpg">
+        
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://carenect.kr/column/${slug}">
+        
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+        ${JSON.stringify(structuredData, null, 2)}
+        </script>
+        
+        <!-- Fonts and Icons -->
+        <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
+        
+        <!-- Styles -->
+        <link href="/static/style.css?v=20251028-2" rel="stylesheet">
+        
+        <!-- Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-XXXXXXXXXX');
+        </script>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header" id="header">
+            <div class="header-container">
+                <div class="logo-section">
+                    <div class="logo" onclick="window.location.href='/'">
+                        <i class="fas fa-heartbeat"></i>
+                        <span class="logo-text">케어넥 마케팅</span>
+                    </div>
+                </div>
+                <nav class="nav-section">
+                    <ul class="nav-menu">
+                        <li><a href="/">홈</a></li>
+                        <li><a href="/#about">소개</a></li>
+                        <li><a href="/#services">서비스</a></li>
+                        <li><a href="/#proof">실적</a></li>
+                        <li><a href="/#faq">FAQ</a></li>
+                        <li><a href="/column">칼럼</a></li>
+                        <li><a href="/#contact">상담신청</a></li>
+                    </ul>
+                </nav>
+                <div class="cta-section">
+                    <button class="cta-button" onclick="window.location.href='/#contact'">
+                        <i class="fas fa-phone-alt"></i>
+                        무료상담
+                    </button>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mobile-menu-content">
+                <ul class="mobile-nav-menu">
+                    <li><a href="/" onclick="closeMobileMenu()">홈</a></li>
+                    <li><a href="/#about" onclick="closeMobileMenu()">소개</a></li>
+                    <li><a href="/#services" onclick="closeMobileMenu()">서비스</a></li>
+                    <li><a href="/#proof" onclick="closeMobileMenu()">실적</a></li>
+                    <li><a href="/#faq" onclick="closeMobileMenu()">FAQ</a></li>
+                    <li><a href="/column" onclick="closeMobileMenu()">칼럼</a></li>
+                    <li><a href="/#contact" onclick="closeMobileMenu()">상담신청</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Breadcrumb -->
+            <nav class="breadcrumb-nav">
+                <div class="container">
+                    <div class="breadcrumb">
+                        <a href="/" class="breadcrumb-link">홈</a>
+                        <span class="breadcrumb-separator">/</span>
+                        <a href="/column" class="breadcrumb-link">칼럼</a>
+                        <span class="breadcrumb-separator">/</span>
+                        <span class="breadcrumb-current">${title}</span>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Article Header -->
+            <section class="article-header">
+                <div class="container">
+                    <div class="article-meta">
+                        <span class="article-category">${category}</span>
+                        <span class="article-date">
+                            <i class="fas fa-calendar"></i>
+                            ${date}
+                        </span>
+                    </div>
+                    <h1 class="article-title">${title}</h1>
+                    <p class="article-description">${description}</p>
+                    
+                    <!-- Share Buttons -->
+                    <div class="share-buttons">
+                        <button class="share-button" onclick="shareKakao()">
+                            <i class="fas fa-comment"></i>
+                            카카오톡
+                        </button>
+                        <button class="share-button" onclick="copyURL()">
+                            <i class="fas fa-link"></i>
+                            URL 복사
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Article Content -->
+            <article class="article-content">
+                <div class="container">
+                    <div class="content-wrapper">
+                        ${content}
+                    </div>
+                </div>
+            </article>
+
+            <!-- CTA Section -->
+            <section class="column-cta-section">
+                <div class="container">
+                    <div class="cta-content">
+                        <h2>더 자세한 마케팅 전략이 궁금하신가요?</h2>
+                        <p>1:1 맞춤 컨설팅으로 귀하의 센터에 최적화된 마케팅 전략을 제안해 드립니다.</p>
+                        <button class="primary-button" onclick="window.location.href='/#contact'">
+                            <i class="fas fa-calendar-alt"></i>
+                            무료 상담 신청하기
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Articles -->
+            <section class="related-articles">
+                <div class="container">
+                    <h2>관련 칼럼</h2>
+                    <div class="related-grid">
+                        <!-- Related articles will be populated by JavaScript -->
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <div class="footer-logo">
+                            <i class="fas fa-heartbeat"></i>
+                            <span>케어넥 마케팅</span>
+                        </div>
+                        <p>실버산업 전문 마케팅으로 더 많은 고객과 만나보세요.</p>
+                    </div>
+                    <div class="footer-contact">
+                        <h4>연락처</h4>
+                        <p><i class="fas fa-phone"></i> 1588-0000</p>
+                        <p><i class="fas fa-envelope"></i> info@silvercare-marketing.com</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-company-info">
+                        <p class="copyright">&copy; 2026 케어넥 마케팅. All Rights Reserved.</p>
+                        <br>
+                        <p class="company-details">
+                            운영사: 블랙라운드 | 서비스 브랜드: 케어넥 마케팅<br>
+                            대표: 조인웅 | 사업자등록번호: 713-16-00878 | 통신판매업 신고: 제2019-용인기흥-0886호<br>
+                            주소: 경기도 용인시 기흥구 예현로 15
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button -->
+        <button class="scroll-to-top" id="scrollToTop" onclick="scrollToTop()">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+
+        <!-- JavaScript -->
+        <script src="/static/app.js?v=20251028-2"></script>
+        
+        <script>
+        // Article-specific JavaScript
+        function shareKakao() {
+            if (navigator.share) {
+                navigator.share({
+                    title: '${title}',
+                    text: '${description}',
+                    url: window.location.href
+                });
+            } else {
+                copyURL();
+            }
+        }
+        
+        function copyURL() {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+                alert('URL이 복사되었습니다.');
+            });
+        }
+        
+        // Load related articles
+        document.addEventListener('DOMContentLoaded', function() {
+            loadRelatedArticles(${id});
+        });
+        
+        function loadRelatedArticles(currentId) {
+            const articles = [
+                { id: 1, title: '방문요양 키워드로 네이버 상위노출 달성하는 5단계 전략', category: 'SEO 마케팅', slug: 'seo-marketing-strategy' },
+                { id: 2, title: '요양원 유튜브 쇼츠로 월 상담 문의 300% 증가시킨 콘텐츠 전략', category: '유튜브 마케팅', slug: 'youtube-shorts-strategy' },
+                { id: 3, title: '인스타그램과 스레드로 실버케어 브랜딩 완성하기', category: 'SNS 마케팅', slug: 'sns-branding-strategy' },
+                { id: 4, title: '2026년 실버산업 마케팅 트렌드', category: '업계 트렌드', slug: '2026-industry-trends' },
+                { id: 5, title: '요양보호사교육원 vs 방문요양 vs 요양원', category: '마케팅 전략', slug: 'three-sectors-comparison' },
+                { id: 6, title: '지방 소도시 요양원이 6개월 만에 대기자 명단을 만든 비결', category: '케이스 스터디', slug: 'small-city-success-case' }
+            ];
+            
+            const relatedArticles = articles.filter(article => article.id !== currentId).slice(0, 3);
+            const relatedGrid = document.querySelector('.related-grid');
+            
+            if (relatedGrid) {
+                relatedGrid.innerHTML = relatedArticles.map(article => \`
+                    <div class="related-article">
+                        <div class="related-article-category">\${article.category}</div>
+                        <h3><a href="/column/\${article.slug}">\${article.title}</a></h3>
+                    </div>
+                \`).join('');
+            }
+        }
+        </script>
+    </body>
+    </html>
+  `
+}
+
 // Main page
 app.get('/', (c) => {
   return c.html(`
@@ -700,7 +1613,7 @@ app.get('/', (c) => {
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
         
         <!-- Styles -->
-        <link href="/static/style.css" rel="stylesheet">
+        <link href="/static/style.css?v=20251028-2" rel="stylesheet">
     </head>
     <body>
         <!-- Header -->
@@ -1131,7 +2044,7 @@ app.get('/', (c) => {
         </button>
 
         <!-- Scripts -->
-        <script src="/static/app.js"></script>
+        <script src="/static/app.js?v=20251028-2"></script>
     </body>
     </html>
   `)

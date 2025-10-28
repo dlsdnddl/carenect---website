@@ -1,8 +1,14 @@
-/* Reset and Base Styles */
+/* Reset and Base Styles - Updated 2025.10.28 - Mobile Cache Bust v2 */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* Mobile Force Update Marker */
+body::before {
+    content: "";
+    display: none;
 }
 
 html {
@@ -2168,4 +2174,317 @@ body {
     25% { transform: translateX(-2px) rotate(-1deg); }
     50% { transform: translateX(2px) rotate(1deg); }
     75% { transform: translateX(-1px) rotate(-0.5deg); }
+}
+
+/* Individual Column Page Styles */
+.breadcrumb-nav {
+    background: #f8fafc;
+    padding: 15px 0;
+    margin-top: 80px;
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.breadcrumb-link {
+    color: #6b7280;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.breadcrumb-link:hover {
+    color: #3182f6;
+}
+
+.breadcrumb-separator {
+    color: #9ca3af;
+}
+
+.breadcrumb-current {
+    color: #374151;
+    font-weight: 500;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.article-header {
+    padding: 40px 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.article-meta {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.article-category {
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.article-date {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.article-title {
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    word-break: keep-all;
+}
+
+.article-description {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.share-button {
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.share-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.article-content {
+    padding: 80px 0;
+}
+
+.content-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+}
+
+.column-intro {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border-left: 4px solid #3182f6;
+    padding: 25px 30px;
+    margin: 30px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.column-intro p {
+    margin-bottom: 15px;
+    font-style: italic;
+    color: #4a5568;
+}
+
+.column-intro p:first-child {
+    font-size: 1.1em;
+    color: #2d3748;
+    font-weight: 500;
+}
+
+.column-intro p:last-child {
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #1a202c;
+}
+
+.content-wrapper h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #1a202c;
+    margin: 40px 0 20px 0;
+    border-left: 4px solid #3182f6;
+    padding-left: 20px;
+}
+
+.content-wrapper h4 {
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #2d3748;
+    margin: 30px 0 15px 0;
+}
+
+.content-wrapper p {
+    margin-bottom: 20px;
+    color: #4a5568;
+}
+
+.content-wrapper ul, .content-wrapper ol {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.content-wrapper li {
+    margin-bottom: 8px;
+    color: #4a5568;
+}
+
+.content-wrapper blockquote {
+    background: linear-gradient(135deg, #f7fafc 0%, #edf2f7 100%);
+    border-left: 4px solid #3182f6;
+    padding: 25px 30px;
+    margin: 30px 0;
+    font-style: italic;
+    border-radius: 0 8px 8px 0;
+    position: relative;
+}
+
+.content-wrapper blockquote::before {
+    content: '"';
+    font-size: 4em;
+    color: #3182f6;
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    opacity: 0.3;
+}
+
+.content-wrapper table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content-wrapper th,
+.content-wrapper td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.content-wrapper th {
+    background: #f7fafc;
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.content-wrapper tr:hover {
+    background: #f9fafb;
+}
+
+.related-articles {
+    background: #f8fafc;
+    padding: 80px 0;
+}
+
+.related-articles h2 {
+    text-align: center;
+    font-size: 2.2em;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 50px;
+}
+
+.related-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.related-article {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.related-article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.related-article-category {
+    background: #e6f3ff;
+    color: #3182f6;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 500;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.related-article h3 {
+    font-size: 1.2em;
+    line-height: 1.4;
+}
+
+.related-article h3 a {
+    color: #1a202c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.related-article h3 a:hover {
+    color: #3182f6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .article-title {
+        font-size: 1.8em;
+    }
+    
+    .article-description {
+        font-size: 1em;
+    }
+    
+    .share-buttons {
+        flex-wrap: wrap;
+    }
+    
+    .content-wrapper {
+        padding: 0 15px;
+    }
+    
+    .content-wrapper h3 {
+        font-size: 1.5em;
+    }
+    
+    .content-wrapper h4 {
+        font-size: 1.2em;
+    }
+    
+    .breadcrumb-current {
+        max-width: 150px;
+    }
+    
+    .related-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
 }

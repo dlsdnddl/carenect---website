@@ -1,15 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+    <!-- 메인 페이지 -->
     <url>
         <loc>https://carenect.kr/</loc>
-        <lastmod>2026-01-15</lastmod>
+        <lastmod>2025-10-28</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
+    
+    <!-- 칼럼 목록 페이지 -->
     <url>
         <loc>https://carenect.kr/column</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>monthly</changefreq>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
+    
+    <!-- 방문요양 SEO 전략 칼럼 -->
+    <url>
+        <loc>https://carenect.kr/column/seo-marketing-strategy</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- SNS 마케팅 칼럼 -->
+    <url>
+        <loc>https://carenect.kr/column/sns-marketing-guide</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    
+    <!-- 구글 광고 칼럼 -->
+    <url>
+        <loc>https://carenect.kr/column/google-ads-optimization</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
 </urlset>
