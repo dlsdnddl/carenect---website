@@ -906,12 +906,12 @@ app.get('/column/home-care-promotion-strategy', (c) => {
       <p>케어넥 마케팅은 단순한 마케팅, 광고 대행이 아니라, <strong>'요양산업 구조와 고객 심리'를 모두 이해하는 전문 파트너</strong>로서 센터의 실질적 성장에 초점을 맞춥니다.</p>
 
       <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 12px; text-align: center; margin: 40px 0;">
-        <h3 style="margin-top: 0; font-size: 1.8em;">지금 바로 시작하세요!</h3>
-        <p style="font-size: 1.1em; margin: 20px 0;">온라인 홍보, 더 이상 미룰 수 없습니다.<br>케어넥 마케팅과 함께 경쟁 센터보다 앞서가세요.</p>
-        <a href="https://nursmarket-a2dzpd9o.manus.space/" target="_blank" style="display: inline-block; background: white; color: #667eea; padding: 15px 40px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 1.1em; margin-top: 10px; transition: transform 0.2s;">
+        <h3 style="margin-top: 0; font-size: 1.8em; color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-weight: 700;">지금 바로 시작하세요!</h3>
+        <p style="font-size: 1.1em; margin: 20px 0; color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">온라인 홍보, 더 이상 미룰 수 없습니다.<br>케어넥 마케팅과 함께 경쟁 센터보다 앞서가세요.</p>
+        <a href="https://nursmarket-a2dzpd9o.manus.space/" target="_blank" style="display: inline-block; background: white; color: #5a67d8; padding: 15px 40px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 1.1em; margin-top: 10px; transition: transform 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
           <i class="fas fa-gift"></i> 마케팅 무료진단 받아보기
         </a>
-        <p style="font-size: 0.9em; margin-top: 15px; opacity: 0.9;">* 상담은 무료이며, 센터 현황을 분석하여 맞춤 전략을 제시해드립니다</p>
+        <p style="font-size: 0.9em; margin-top: 15px; color: #ffffff; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">* 상담은 무료이며, 센터 현황을 분석하여 맞춤 전략을 제시해드립니다</p>
       </div>
 
       <blockquote style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 20px; margin: 30px 0;">
