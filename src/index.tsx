@@ -118,6 +118,22 @@ app.get('/column', (c) => {
                     </div>
                     
                     <div class="column-grid">
+                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/day-care-online-strategy'">
+                            <div class="column-meta">
+                                <span class="column-category">온라인 홍보</span>
+                                <span class="column-date">2025.11.04</span>
+                            </div>
+                            <h3>주간보호센터 홍보, 2주 만에 문의 3배 늘린 진짜 온라인 전략</h3>
+                            <p class="column-excerpt">
+                                "전단지도 돌리고, 블로그도 만들어봤는데 왜 문의가 안 올까요?" 많은 주간보호센터가 겪는 고민을 해결하는 실전 온라인 전략 3가지를 공개합니다. 2주 만에 문의 3배 증가를 만든 검증된 방법입니다.
+                            </p>
+                            <div class="column-stats">
+                                <span><i class="fas fa-eye"></i> 234</span>
+                                <span><i class="fas fa-heart"></i> 18</span>
+                                <span><i class="fas fa-comment"></i> 7</span>
+                            </div>
+                        </article>
+
                         <article class="column-card animate-on-scroll" onclick="window.location.href='/column/home-care-promotion-strategy'">
                             <div class="column-meta">
                                 <span class="column-category">온라인 홍보</span>
@@ -916,6 +932,224 @@ app.get('/column/home-care-promotion-strategy', (c) => {
 
       <blockquote style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 20px; margin: 30px 0;">
         <strong style="color: #92400e;">💡 마지막 팁:</strong> 홍보는 '한 번 하면 끝'이 아닙니다. 지속적인 관리와 최적화가 필요합니다. 케어넥 마케팅은 월별 리포트와 함께 꾸준한 성과 개선을 약속드립니다.
+      </blockquote>
+    `
+  }))
+})
+
+// 새로운 칼럼: 주간보호센터 온라인 전략
+app.get('/column/day-care-online-strategy', (c) => {
+  return c.html(getColumnPageHTML({
+    slug: 'day-care-online-strategy',
+    id: 5,
+    title: '주간보호센터 홍보, 2주 만에 문의 3배 늘린 진짜 온라인 전략',
+    description: '전단지도 돌리고 블로그도 만들었는데 왜 문의가 안 올까요? 주간보호센터가 2주 만에 문의 3배 증가를 달성한 검증된 온라인 홍보 전략 3가지를 실전 사례와 함께 공개합니다.',
+    category: '온라인 홍보',
+    date: '2025.11.04',
+    keywords: ['주간보호센터 홍보', '주간보호 마케팅', '데이케어센터 홍보', '온라인 마케팅', '블로그 마케팅', '검색 최적화', 'SEO 전략', '문의 증가', '실버산업 마케팅', '찾히는 글쓰기'],
+    content: `
+      <div class="column-intro" style="background: linear-gradient(135deg, #f6f8fb 0%, #e9f0f7 100%); padding: 30px; border-radius: 12px; border-left: 5px solid #3182f6; margin-bottom: 40px;">
+        <p style="font-size: 1.2em; font-weight: 600; color: #2d3748; margin-bottom: 15px;">"전단지도 돌리고, 블로그도 만들어봤는데… 왜 문의가 안 올까요?"</p>
+        <p style="font-size: 1.1em; color: #4a5568; margin-bottom: 10px;">"홍보비는 쓰는데 효과가 눈에 안 보입니다."</p>
+        <p style="font-size: 1.1em; color: #4a5568; margin-bottom: 10px;">"다른 센터는 상담이 많다는데, 우리는 뭐가 문제일까요?"</p>
+        <p style="font-size: 1.05em; color: #2d3748; margin-top: 20px; line-height: 1.8;">많은 <strong>주간보호센터</strong> 원장님과 대표님들이 이렇게 고민하십니다. 요즘은 <strong>'주간보호센터 홍보를 안 해서'</strong>가 아니라, <strong>'홍보를 해도 효과가 없는 이유'</strong>가 분명히 존재하기 때문입니다.</p>
+      </div>
+
+      <p style="font-size: 1.1em; line-height: 1.8; color: #2d3748;">오늘은 <strong>실제 2주 만에 문의 3배 증가</strong>를 이끌어낸 온라인 전략을 공개합니다. 복잡한 기술이 아니라, 누구나 할 수 있지만 <strong>'대부분이 놓치는 포인트'</strong>로 구성된 진짜 실전 전략 3가지입니다.</p>
+
+      <div style="background: #fff7ed; padding: 25px; border-radius: 10px; margin: 30px 0; border: 2px solid #fb923c;">
+        <h4 style="margin-top: 0; color: #c2410c; font-size: 1.3em;"><i class="fas fa-rocket"></i> 진짜 효과 나는 3단계 공식</h4>
+        <ol style="line-height: 2; color: #78350f; font-weight: 500;">
+          <li><strong>찾히는 글</strong>로 구조를 바꾸기 (보이는 글 → 검색되는 글)</li>
+          <li><strong>스토리</strong>로 신뢰를 쌓기 (단순 후기 대신 스토리형 콘텐츠)</li>
+          <li><strong>고객의 검색 의도</strong>에 맞춰 답을 제시하기 (센터 소개보다 검색 의도 중심)</li>
+        </ol>
+        <p style="margin-bottom: 0; color: #78350f; font-style: italic; margin-top: 15px;">💡 한 센터는 이 3단계 적용 후 2주 만에 블로그 조회수 3배, 상담 문의 2.8배 증가를 달성했습니다.</p>
+      </div>
+
+      <h3 style="color: #1e40af; border-bottom: 3px solid #3b82f6; padding-bottom: 10px; margin-top: 50px;">전략 ① "보이는 글"이 아니라 "찾히는 글"을 써라</h3>
+      
+      <p style="font-size: 1.05em; line-height: 1.8;">가장 먼저 바꿔야 할 것은 <strong>'보여주는 홍보'에서 '검색되는 홍보'</strong>로의 전환입니다.</p>
+
+      <h4 style="color: #4338ca; margin-top: 30px;"><i class="fas fa-exclamation-triangle"></i> 많은 주간보호센터가 놓치는 포인트</h4>
+      <p>많은 주간보호센터가 홍보를 위해 블로그에 글을 올리지만, <strong>정작 그 글이 네이버나 구글 검색 결과에 안 뜨는 경우</strong>가 대부분입니다.</p>
+
+      <div style="background: #fef2f2; padding: 20px; border-radius: 8px; border-left: 4px solid #dc2626; margin: 20px 0;">
+        <h4 style="margin-top: 0; color: #991b1b;">❌ 왜 검색에 안 뜰까요?</h4>
+        <ul style="color: #7f1d1d; line-height: 1.8;">
+          <li>제목에 <strong>핵심 키워드</strong>가 없거나</li>
+          <li>본문에 <strong>지역명·서비스명 조합</strong>이 부족하거나</li>
+          <li>상담 문의로 이어질 명확한 <strong>CTA(Call To Action)</strong>가 없기 때문입니다</li>
+        </ul>
+      </div>
+
+      <h4 style="color: #059669; margin-top: 30px;"><i class="fas fa-check-circle"></i> 제목 변경만으로 검색 노출 3배 증가</h4>
+      
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <thead>
+          <tr style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); color: white;">
+            <th style="padding: 15px; text-align: left; border: 1px solid #ddd;">❌ 검색 안 되는 제목</th>
+            <th style="padding: 15px; text-align: left; border: 1px solid #ddd;">✅ 검색 잘 되는 제목</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background: #ffffff;">
+            <td style="padding: 15px; border: 1px solid #ddd; color: #991b1b;">우리 센터 일상</td>
+            <td style="padding: 15px; border: 1px solid #ddd; color: #065f46; font-weight: 600;">연제구 주간보호센터, 인근 어르신들의 두 번째 집</td>
+          </tr>
+          <tr style="background: #f9fafb;">
+            <td style="padding: 15px; border: 1px solid #ddd; color: #991b1b;">센터 프로그램 소개</td>
+            <td style="padding: 15px; border: 1px solid #ddd; color: #065f46; font-weight: 600;">부산 주간보호센터, 어르신 프로그램 후기 공개</td>
+          </tr>
+          <tr style="background: #ffffff;">
+            <td style="padding: 15px; border: 1px solid #ddd; color: #991b1b;">오늘의 활동</td>
+            <td style="padding: 15px; border: 1px solid #ddd; color: #065f46; font-weight: 600;">서울 강남구 데이케어센터, 치매 예방 프로그램 효과</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <blockquote style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 20px; margin: 25px 0;">
+        <p style="margin: 0; color: #065f46; font-size: 1.05em;"><strong>📊 실제 데이터:</strong> <strong>'지역 + 서비스명'</strong>을 포함하면 '우리 센터 일상'보다 검색 노출 확률이 <strong>3배 이상 높아집니다.</strong></p>
+      </blockquote>
+
+      <div style="background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%); padding: 25px; border-radius: 12px; margin: 30px 0;">
+        <h4 style="margin-top: 0; color: #6b21a8;"><i class="fas fa-lightbulb"></i> 케어넥 팁: 검색 최적화 체크리스트</h4>
+        <ul style="color: #581c87; line-height: 2; font-size: 1.05em;">
+          <li>✅ 글 제목에 <strong>지역명 + 주간보호센터 + 핵심 키워드</strong>(홍보, 프로그램, 후기, 클릭을 유발할 후킹 멘트 등) 포함</li>
+          <li>✅ 본문 <strong>첫 문단에 키워드를 한 번</strong>, 중간에 한 번, 결론 부분에 한 번 자연스럽게 넣기</li>
+          <li>✅ <strong>"지금 상담 예약하기"</strong> 같은 문구를 명확히 넣기(명확한 CTA)</li>
+        </ul>
+      </div>
+
+      <p style="font-size: 1.05em; line-height: 1.8; color: #2d3748;">이 간단한 변경만으로 <strong>'보이는 글'에서 '찾히는 글'</strong>로 바뀌며, 문의 증가가 시작됩니다.</p>
+
+      <h3 style="color: #1e40af; border-bottom: 3px solid #3b82f6; padding-bottom: 10px; margin-top: 50px;">전략 ② '리뷰'가 아니라 '스토리'를 쌓아라</h3>
+
+      <p style="font-size: 1.05em; line-height: 1.8;">단순 후기(리뷰)만 올리면 검색엔진이 <strong>'단순 게시글'</strong>로 인식합니다. 검색 상위노출과 신뢰 확보에 한계가 있습니다.</p>
+
+      <h4 style="color: #4338ca; margin-top: 30px;"><i class="fas fa-book-open"></i> 스토리형 콘텐츠가 답이다</h4>
+      <p><strong>스토리형 콘텐츠</strong>(체험·감정·과정 서술)는 체류시간을 늘리고, 알고리즘이 <strong>'좋은 글'</strong>로 판단하게 만듭니다.</p>
+
+      <div style="background: #f0f9ff; padding: 25px; border-radius: 10px; margin: 25px 0; border: 2px solid #0ea5e9;">
+        <h4 style="margin-top: 0; color: #0c4a6e;"><i class="fas fa-heart"></i> 스토리 예시 문장</h4>
+        <p style="color: #075985; font-size: 1.05em; line-height: 1.8; font-style: italic; margin-bottom: 15px;">"어르신께서 처음 오셨을 때는 낯설어하셨지만, <strong>한 달 뒤엔 누구보다 활기차셨습니다.</strong>"</p>
+        <p style="color: #075985; font-size: 1.05em; line-height: 1.8; font-style: italic; margin-bottom: 0;">"가족분들이 <strong>'요즘 웃는 얼굴이 다시 돌아왔다'</strong>고 하셨을 때 정말 뿌듯했습니다."</p>
+      </div>
+
+      <h4 style="color: #059669; margin-top: 30px;"><i class="fas fa-chart-line"></i> 스토리형 콘텐츠의 놀라운 효과</h4>
+      
+      <div style="background: #ecfccb; padding: 20px; border-radius: 8px; border-left: 4px solid #84cc16; margin: 20px 0;">
+        <p style="margin: 0; color: #3f6212; font-size: 1.05em;"><strong>📈 실제 성과:</strong> 이 단순한 변화만으로 블로그 <strong>체류시간이 평균 40% 이상 증가</strong>했고, 체류시간 증가는 <strong>상위노출로 직접 연결</strong>됩니다.</p>
+      </div>
+
+      <div style="background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%); padding: 25px; border-radius: 12px; margin: 30px 0;">
+        <h4 style="margin-top: 0; color: #6b21a8;"><i class="fas fa-lightbulb"></i> 케어넥 팁: 스토리텔링 가이드</h4>
+        <ul style="color: #581c87; line-height: 2; font-size: 1.05em;">
+          <li>✅ 사진은 <strong>3장 이하</strong>로 정리 (너무 많으면 로딩 느림)</li>
+          <li>✅ 한 문단에 <strong>어르신 사례나 가족 반응 1개씩</strong>만 포함</li>
+          <li>✅ 글 끝에 <strong>"오늘의 이야기처럼 따뜻한 돌봄을 원하신다면 문의 주세요."</strong>로 마무리(CTA)</li>
+        </ul>
+      </div>
+
+      <h3 style="color: #1e40af; border-bottom: 3px solid #3b82f6; padding-bottom: 10px; margin-top: 50px;">전략 ③ '센터 소개'보다 '검색 의도'에 집중하라</h3>
+
+      <p style="font-size: 1.05em; line-height: 1.8;">많은 홍보 글이 <strong>"우리 센터는 ~합니다"</strong>로 시작합니다(센터 중심 서술). 하지만 검색자는 센터 소개가 아니라, <strong>자신의 문제 해결책</strong>을 찾고 있습니다.</p>
+
+      <h4 style="color: #4338ca; margin-top: 30px;"><i class="fas fa-question-circle"></i> 검색자의 실제 의도(질문들)</h4>
+      
+      <div style="background: #fff7ed; padding: 20px; border-radius: 8px; margin: 20px 0;">
+        <ul style="color: #9a3412; line-height: 2; font-size: 1.05em;">
+          <li><strong>"부모님을 맡겨도 안전할까?"</strong></li>
+          <li><strong>"어떤 프로그램이 좋을까?"</strong></li>
+          <li><strong>"비용은 어떻게 될까?"</strong></li>
+          <li><strong>"우리 부모님에게 맞는 곳일까?"</strong></li>
+        </ul>
+      </div>
+
+      <h4 style="color: #059669; margin-top: 30px;"><i class="fas fa-sync-alt"></i> 글의 시작을 고객의 질문으로 바꾸기</h4>
+      
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <thead>
+          <tr style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); color: white;">
+            <th style="padding: 15px; text-align: left; border: 1px solid #ddd;">❌ 센터 중심 제목</th>
+            <th style="padding: 15px; text-align: left; border: 1px solid #ddd;">✅ 고객 의도 중심 제목</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background: #ffffff;">
+            <td style="padding: 15px; border: 1px solid #ddd; color: #991b1b;">OO주간보호센터는 친절한 돌봄을 제공합니다.</td>
+            <td style="padding: 15px; border: 1px solid #ddd; color: #065f46; font-weight: 600;">우리 부모님을 믿고 맡길 수 있는 주간보호센터, 어떻게 찾을까요?</td>
+          </tr>
+          <tr style="background: #f9fafb;">
+            <td style="padding: 15px; border: 1px solid #ddd; color: #991b1b;">우리 센터의 프로그램을 소개합니다.</td>
+            <td style="padding: 15px; border: 1px solid #ddd; color: #065f46; font-weight: 600;">주간보호센터 프로그램, 치매 예방에 정말 효과 있을까?</td>
+          </tr>
+          <tr style="background: #ffffff;">
+            <td style="padding: 15px; border: 1px solid #ddd; color: #991b1b;">저희는 경험이 풍부합니다.</td>
+            <td style="padding: 15px; border: 1px solid #ddd; color: #065f46; font-weight: 600;">부산 주간보호센터 비용, 합리적인 곳은 어디일까?</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div style="background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%); padding: 25px; border-radius: 12px; margin: 30px 0;">
+        <h4 style="margin-top: 0; color: #6b21a8;"><i class="fas fa-lightbulb"></i> 케어넥 팁: 검색 의도 중심 글쓰기</h4>
+        <ul style="color: #581c87; line-height: 2; font-size: 1.05em;">
+          <li>✅ 제목에 <strong>'어떻게', '왜', '비결'</strong> 등의 질문형 단어 포함</li>
+          <li>✅ 본문 구성: <strong>'문제 → 공감 → 해결 → CTA'</strong> 순서로 작성</li>
+          <li>✅ 글 마지막 문단에 <strong>"무료 상담 예약"</strong> 등 행동 유도 문구 반드시 삽입</li>
+        </ul>
+      </div>
+
+      <blockquote style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 20px; margin: 25px 0;">
+        <p style="margin: 0; color: #065f46; font-size: 1.05em;"><strong>💡 핵심 포인트:</strong> 이런 문장 하나만으로도 <strong>클릭률과 상담 전환율</strong>이 동시에 상승합니다.</p>
+      </blockquote>
+
+      <h3 style="color: #7c3aed; border-bottom: 3px solid #a78bfa; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-trophy"></i> 실제 성공 사례: 2주 만에 달성한 놀라운 성과</h3>
+
+      <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 30px; border-radius: 12px; margin: 30px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <h4 style="margin-top: 0; color: #78350f; font-size: 1.3em;"><i class="fas fa-star"></i> B주간보호센터 사례</h4>
+        <p style="color: #92400e; font-size: 1.05em; line-height: 1.8; margin-bottom: 20px;">이 3단계 전략을 정확히 적용한 한 주간보호센터는 <strong>2주 만에</strong> 다음과 같은 성과를 달성했습니다:</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+          <div style="background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <div style="font-size: 2.5em; color: #dc2626; font-weight: 700; margin-bottom: 5px;">3배</div>
+            <div style="color: #78350f; font-weight: 600;">블로그 조회수 증가</div>
+          </div>
+          <div style="background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <div style="font-size: 2.5em; color: #dc2626; font-weight: 700; margin-bottom: 5px;">2.8배</div>
+            <div style="color: #78350f; font-weight: 600;">상담 문의 증가</div>
+          </div>
+          <div style="background: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+            <div style="font-size: 2.5em; color: #dc2626; font-weight: 700; margin-bottom: 5px;">40%</div>
+            <div style="color: #78350f; font-weight: 600;">체류시간 증가</div>
+          </div>
+        </div>
+      </div>
+
+      <h3 style="color: #1e40af; border-bottom: 3px solid #3b82f6; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-list-check"></i> 결론: 지금 바로 적용할 수 있는 체크리스트</h3>
+
+      <div style="background: #f8fafc; padding: 30px; border-radius: 12px; margin: 30px 0; border: 2px solid #cbd5e1;">
+        <h4 style="margin-top: 0; color: #1e293b; font-size: 1.3em;">✅ 오늘부터 실천하세요</h4>
+        <ol style="color: #334155; line-height: 2.2; font-size: 1.05em; margin-bottom: 0;">
+          <li><strong>찾히는 글로 구조 바꾸기</strong> - 지역명 + 서비스명 + 키워드 조합</li>
+          <li><strong>스토리형 콘텐츠로 신뢰 쌓기</strong> - 단순 후기가 아닌 감동 스토리</li>
+          <li><strong>검색 의도에 맞춰 답 제시하기</strong> - 센터 소개가 아닌 고객 질문 해결</li>
+        </ol>
+      </div>
+
+      <p style="font-size: 1.1em; line-height: 1.8; color: #2d3748; margin-top: 30px;">이 세 가지를 지키면 <strong>'노출'</strong>이 아니라 <strong>'문의로 이어지는 실전 결과'</strong>가 됩니다. 케어넥 마케팅은 센터의 강점 분석을 기반으로 단기간에 눈에 띄는 결과를 만들어드립니다.</p>
+
+      <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 12px; text-align: center; margin: 40px 0;">
+        <h3 style="margin-top: 0; font-size: 1.8em; color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-weight: 700;">지금 바로 시작하세요!</h3>
+        <p style="font-size: 1.1em; margin: 20px 0; color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">우리 센터의 홍보 방향이 올바른지,<br>'진짜 성과로 이어지는 전략'을 직접 확인해보세요.</p>
+        <a href="https://nursmarket-a2dzpd9o.manus.space/" target="_blank" style="display: inline-block; background: white; color: #5a67d8; padding: 15px 40px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 1.1em; margin-top: 10px; transition: transform 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
+          <i class="fas fa-gift"></i> 마케팅 무료진단 받아보기
+        </a>
+        <p style="font-size: 0.9em; margin-top: 15px; color: #ffffff; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">* 상담은 무료이며, 센터 현황을 분석하여 맞춤 전략을 제시해드립니다</p>
+      </div>
+
+      <blockquote style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 20px; margin: 30px 0;">
+        <strong style="color: #92400e;">💡 마지막 조언:</strong> 홍보는 '한 번 하면 끝'이 아닙니다. <strong>지속적인 관리와 최적화</strong>가 필요합니다. 케어넥 마케팅은 월별 리포트와 함께 꾸준한 성과 개선을 약속드립니다.
       </blockquote>
     `
   }))
