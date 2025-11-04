@@ -20,6 +20,14 @@
         <priority>0.8</priority>
     </url>
     
+    <!-- 방문요양 홍보 전략 칼럼 (최신) -->
+    <url>
+        <loc>https://carenect.kr/column/home-care-promotion-strategy</loc>
+        <lastmod>2025-10-28</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
     <!-- 방문요양 SEO 전략 칼럼 -->
     <url>
         <loc>https://carenect.kr/column/seo-marketing-strategy</loc>

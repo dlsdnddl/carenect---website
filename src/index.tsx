@@ -118,6 +118,22 @@ app.get('/column', (c) => {
                     </div>
                     
                     <div class="column-grid">
+                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/home-care-promotion-strategy'">
+                            <div class="column-meta">
+                                <span class="column-category">온라인 홍보</span>
+                                <span class="column-date">2025.10.28</span>
+                            </div>
+                            <h3>방문요양홍보, 경쟁 센터보다 상담 2배 늘리는 비결 공개</h3>
+                            <p class="column-excerpt">
+                                "홍보를 해야 한다는 건 아는데, 어디서부터 시작해야 할지 모르겠어요." 이런 고민을 하는 방문요양센터 대표님들을 위해 실전에서 바로 적용 가능한 온라인 홍보 전략을 공개합니다.
+                            </p>
+                            <div class="column-stats">
+                                <span><i class="fas fa-eye"></i> 856</span>
+                                <span><i class="fas fa-heart"></i> 67</span>
+                                <span><i class="fas fa-comment"></i> 18</span>
+                            </div>
+                        </article>
+
                         <article class="column-card animate-on-scroll" onclick="window.location.href='/column/seo-marketing-strategy'">
                             <div class="column-meta">
                                 <span class="column-category">SEO 마케팅</span>
@@ -717,6 +733,189 @@ app.get('/column/seo-marketing-strategy', (c) => {
 
       <blockquote>
           <strong>실제 성공 사례:</strong> 이 5단계 전략을 적용한 A센터의 경우, 3개월 만에 '○○시 방문요양' 키워드에서 네이버 1페이지 진입을 달성했으며, 상담 문의가 월 평균 250% 증가했습니다.
+      </blockquote>
+    `
+  }))
+})
+
+// 새로운 칼럼: 방문요양홍보 전략
+app.get('/column/home-care-promotion-strategy', (c) => {
+  return c.html(getColumnPageHTML({
+    slug: 'home-care-promotion-strategy',
+    id: 4,
+    title: '방문요양홍보, 경쟁 센터보다 상담 2배 늘리는 비결 공개',
+    description: '방문요양센터의 온라인 홍보 전략을 어디서부터 시작해야 할지 막막하신가요? 요양산업 전문 마케팅 전문가가 실전에서 검증된 홍보 전략과 상담 2배 증가 노하우를 공개합니다.',
+    category: '온라인 홍보',
+    date: '2025.10.28',
+    keywords: ['방문요양 홍보', '방문요양 마케팅', '요양센터 홍보', '온라인 마케팅', '블로그 마케팅', '검색 최적화', '상담 증가 전략', '실버산업 마케팅'],
+    content: `
+      <div class="column-intro">
+        <p>"홍보를 해야 한다는 건 아는데, 어디서부터 시작해야 할지 모르겠어요."</p>
+        <p>"요즘은 다들 블로그 한다는데, 우리 센터도 해야 할까요?"</p>
+        <p>"광고비는 쓰고 있는데, 문의는 왜 안 늘까요?"</p>
+        <p>많은 방문요양센터 원장님과 대표님들이 이렇게 고민을 털어놓습니다. 특히 <strong>'방문요양홍보'</strong>를 어떻게 해야 실제 문의로 이어질 수 있을지 막막해하는 분들이 많습니다.</p>
+        <p>하지만 걱정하지 마세요. 오늘 이 글을 통해 경쟁 센터보다 한발 앞서가는 방문요양홍보 전략과 <strong>"온라인에서 진짜 눈에 띄는 법"</strong>을 명확하게 배우게 되실 겁니다.</p>
+      </div>
+
+      <p>저는 요양산업 전문 온라인 마케팅 전문가로서 실제 요양보호사 교육원 운영 경험과 방문요양센터 마케팅 대행 노하우를 기반으로, 현장에서 바로 적용 가능한 실전 전략을 알려드리겠습니다.</p>
+
+      <blockquote style="background: #f8f9fa; border-left: 4px solid #3182f6; padding: 20px; margin: 30px 0;">
+        <h4 style="margin-top: 0; color: #2d3748;">케어넥 마케팅이 특별한 이유</h4>
+        <ul style="margin: 0; padding-left: 20px;">
+          <li>요양보호사 교육원 운영 경험으로 현장 흐름과 고객 심리 완벽 이해</li>
+          <li>방문요양센터 마케팅 대행 경험으로 실질적 문의 창출</li>
+          <li>교육원·센터 통합 마케팅 경험으로 브랜드 시너지 극대화</li>
+        </ul>
+      </blockquote>
+
+      <h3>1. 이제 온라인은 선택이 아닌 필수입니다</h3>
+      
+      <p>가장 중요한 것은 <strong>'온라인 홍보는 선택이 아니라 생존'</strong>이라는 사실입니다. 왜냐하면 지금의 시장에서는 '좋은 서비스'만으로는 더 이상 선택받기 어렵기 때문입니다.</p>
+
+      <h4>4060 자녀 세대의 검색 행동 패턴</h4>
+      <p>이제 4060 자녀 세대는 부모님 돌봄 서비스를 찾을 때 무조건 스마트폰으로 검색합니다. 네이버에서 '○○ 방문요양센터', '○○ 요양보호사'처럼 검색하고, 후기와 블로그 글, 사진을 꼼꼼히 비교한 뒤에 전화를 겁니다.</p>
+
+      <div style="background: #e6f3ff; padding: 20px; border-radius: 8px; margin: 20px 0;">
+        <h4 style="margin-top: 0; color: #0066cc;"><i class="fas fa-search"></i> 실제 검색 사례</h4>
+        <p style="margin-bottom: 10px; font-weight: 600;">"수원 방문요양" 검색 시:</p>
+        <ul style="margin: 0;">
+          <li>1단계: 네이버 블로그 검색으로 센터 정보 확인</li>
+          <li>2단계: 후기와 사진으로 신뢰도 평가</li>
+          <li>3단계: 여러 센터 비교 후 상담 전화</li>
+        </ul>
+      </div>
+
+      <p>길을 지나가다가 우연히 보게 된 방문요양센터 또한, 바로 들어가서 상담을 하기보단 온라인으로 그 방문요양센터를 검색해 보고, 후기나 블로그 글, 사진 등을 살펴보고, <strong>'우리 부모님을 맡겨도 될지'</strong>에 대해 판단을 먼저 합니다.</p>
+
+      <p>심지어 최근에는 60대 어르신들조차 네이버 블로그나 유튜브로 센터를 찾는 시대입니다. 즉, 오프라인 입소문만으로는 한계가 명확해진 것이죠.</p>
+
+      <blockquote>
+        <strong>핵심:</strong> 따라서 방문요양홍보를 제대로 하고 싶다면, <strong>"온라인에서 눈에 띄는 구조"</strong>를 반드시 만들어야 합니다.
+      </blockquote>
+
+      <p>이 부분에서 케어넥 마케팅은 '요양산업 이해도'를 바탕으로 검색 키워드 설계부터 블로그 운영, 광고 세팅까지 센터에 맞는 맞춤형 홍보를 진행합니다.</p>
+
+      <h3>2. 블로그는 방문요양센터의 '신뢰의 얼굴'입니다</h3>
+
+      <p>가장 중요한 것은 <strong>'블로그가 곧 센터의 첫인상'</strong>이라는 점입니다. 왜냐하면 자녀 세대는 상담 전화보다 먼저 블로그, 온라인에 있는 각종 정보 등을 통해 센터를 평가하기 때문입니다.</p>
+
+      <h4>많은 센터가 실패하는 이유</h4>
+      <p>하지만 현실은 어떨까요? 많은 센터들이 블로그를 만들어놓고도:</p>
+      <ul>
+        <li>몇 개의 글만 올리고 멈추거나</li>
+        <li>단순히 광고 문구만 올려놓는 경우가 많습니다</li>
+        <li>고객이 원하는 정보보다 센터가 알리고 싶은 정보만 게시합니다</li>
+      </ul>
+
+      <div style="background: #fff3cd; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ffc107;">
+        <h4 style="margin-top: 0; color: #856404;"><i class="fas fa-exclamation-triangle"></i> 왜 이것이 문제일까요?</h4>
+        <p style="margin: 0;">네이버와 구글의 알고리즘은 <strong>'활발하고 유용한 블로그'</strong>를 우선 노출하기 때문입니다. 즉, 꾸준히 키워드 중심의 콘텐츠를 올리지 않으면 센터가 검색 결과에 거의 노출되지 않습니다.</p>
+      </div>
+
+      <h4>케어넥 마케팅의 데이터 기반 블로그 운영 전략</h4>
+      <p>케어넥 마케팅은 이 점에 착안하여 <strong>'방문요양센터 블로그' 운영을 데이터 기반으로 관리</strong>합니다.</p>
+      
+      <ul>
+        <li><strong>키워드 분석:</strong> 어떤 키워드를 타겟팅할지 데이터로 분석</li>
+        <li><strong>콘텐츠 일정:</strong> 언제 어떤 제목으로 올려야 하는지 최적화</li>
+        <li><strong>검색 의도 반영:</strong> 고객이 실제로 찾는 정보 중심 콘텐츠</li>
+        <li><strong>시각적 요소:</strong> 사진과 영상으로 신뢰감 전달</li>
+      </ul>
+
+      <blockquote>
+        이렇게 꾸준히 관리된 블로그는 단순한 홍보 채널이 아니라, <strong>센터의 신뢰를 쌓고 문의 전환을 높이는 가장 강력한 영업 도구</strong>로 변합니다.
+      </blockquote>
+
+      <h3>3. 경쟁업체보다 한 발짝 앞서가기 위한 전략</h3>
+
+      <p>이제 방문요양홍보는 단순한 '노출 경쟁'이 아닙니다. <strong>"누가 더 정확히 고객의 마음을 이해하고, 한발 먼저 준비하느냐"</strong>가 관건입니다.</p>
+
+      <h4>일반 키워드 vs. 실제 검색어 중심 키워드 전략</h4>
+      
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #f1f5f9;">
+            <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">대부분의 센터가 사용하는 키워드</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">케어넥이 사용하는 실제 검색어</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">'방문요양'</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px; font-weight: 600; color: #3182f6;">'방문요양 믿을만한 곳'</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">'요양보호사'</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px; font-weight: 600; color: #3182f6;">'○○동 어르신 돌봄'</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">'방문요양센터'</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px; font-weight: 600; color: #3182f6;">'부모님 방문요양 추천'</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">'재가요양'</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px; font-weight: 600; color: #3182f6;">'○○구 재가요양 후기'</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>예를 들어, 대부분의 센터가 '방문요양', '요양보호사', '방문요양센터' 같은 일반 키워드만 쓰는 동안, 케어넥 마케팅은 실제 검색 데이터를 분석해 고객의 진짜 검색 의도를 반영한 키워드 전략을 세웁니다.</p>
+
+      <h4>시각적 신뢰 구축 전략</h4>
+      <p>또한, 사진·영상·리뷰를 활용해 센터의 따뜻함과 신뢰를 시각적으로 전달하도록 설계합니다.</p>
+
+      <ul>
+        <li><strong>센터 내부 사진:</strong> 깨끗하고 밝은 분위기 강조</li>
+        <li><strong>요양보호사 소개:</strong> 친근하고 전문적인 이미지</li>
+        <li><strong>서비스 과정:</strong> 실제 케어 장면 (개인정보 보호)</li>
+        <li><strong>고객 후기:</strong> 진정성 있는 만족 사례</li>
+      </ul>
+
+      <blockquote>
+        이러한 전략은 단순히 노출을 높이는 것을 넘어 <strong>"센터를 찾는 사람의 마음에 남는 홍보"</strong>를 만들어냅니다. 결국, 온라인에서 '진짜 신뢰'를 쌓은 센터만이 꾸준한 상담 문의와 장기 계약으로 이어질 수 있습니다.
+      </blockquote>
+
+      <h3>4. 검증된 성과: 실제 사례로 본 상담 2배 증가 전략</h3>
+
+      <p>이론만으로는 부족합니다. 실제로 케어넥 마케팅의 전략을 적용한 센터들의 성과를 보면:</p>
+
+      <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #22c55e;">
+        <h4 style="margin-top: 0; color: #15803d;"><i class="fas fa-chart-line"></i> 3개월 평균 성과</h4>
+        <ul style="margin: 0;">
+          <li><strong>블로그 조회수:</strong> 월 평균 150% 증가</li>
+          <li><strong>상담 문의:</strong> 기존 대비 평균 2배 증가</li>
+          <li><strong>검색 노출:</strong> 지역명 + 방문요양 키워드 1페이지 진입</li>
+          <li><strong>전환율:</strong> 방문자 대비 상담 전환 35% 향상</li>
+        </ul>
+      </div>
+
+      <p>이러한 성과는 단순히 광고비를 많이 쓴 결과가 아닙니다. <strong>요양산업 구조와 고객 심리를 정확히 이해하고, 데이터 기반으로 최적화된 전략을 꾸준히 실행한 결과</strong>입니다.</p>
+
+      <h3>결론: 지금이 바로 변화를 시작할 때입니다</h3>
+
+      <p>오늘은 방문요양홍보에서 경쟁업체보다 한발 앞서가는 방법으로 상담을 2배 더 만드는 법에 대해 알아보았습니다.</p>
+
+      <p>핵심 포인트를 다시 정리하면:</p>
+      <ol>
+        <li><strong>온라인 홍보는 선택이 아닌 생존 전략</strong>입니다</li>
+        <li><strong>블로그는 센터의 첫인상</strong>이자 가장 강력한 영업 도구입니다</li>
+        <li><strong>일반 키워드가 아닌 실제 검색어 중심</strong>의 전략이 필요합니다</li>
+        <li><strong>시각적 요소와 데이터 기반 운영</strong>이 신뢰와 전환을 만듭니다</li>
+      </ol>
+
+      <p>케어넥 마케팅은 단순한 마케팅, 광고 대행이 아니라, <strong>'요양산업 구조와 고객 심리'를 모두 이해하는 전문 파트너</strong>로서 센터의 실질적 성장에 초점을 맞춥니다.</p>
+
+      <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 12px; text-align: center; margin: 40px 0;">
+        <h3 style="margin-top: 0; font-size: 1.8em;">지금 바로 시작하세요!</h3>
+        <p style="font-size: 1.1em; margin: 20px 0;">온라인 홍보, 더 이상 미룰 수 없습니다.<br>케어넥 마케팅과 함께 경쟁 센터보다 앞서가세요.</p>
+        <a href="https://nursmarket-a2dzpd9o.manus.space/" target="_blank" style="display: inline-block; background: white; color: #667eea; padding: 15px 40px; border-radius: 30px; text-decoration: none; font-weight: 600; font-size: 1.1em; margin-top: 10px; transition: transform 0.2s;">
+          <i class="fas fa-gift"></i> 마케팅 무료진단 받아보기
+        </a>
+        <p style="font-size: 0.9em; margin-top: 15px; opacity: 0.9;">* 상담은 무료이며, 센터 현황을 분석하여 맞춤 전략을 제시해드립니다</p>
+      </div>
+
+      <blockquote style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 20px; margin: 30px 0;">
+        <strong style="color: #92400e;">💡 마지막 팁:</strong> 홍보는 '한 번 하면 끝'이 아닙니다. 지속적인 관리와 최적화가 필요합니다. 케어넥 마케팅은 월별 리포트와 함께 꾸준한 성과 개선을 약속드립니다.
       </blockquote>
     `
   }))
