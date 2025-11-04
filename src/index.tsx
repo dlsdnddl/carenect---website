@@ -247,8 +247,7 @@ app.get('/column', (c) => {
                     </div>
                     <div class="footer-contact">
                         <h4>연락처</h4>
-                        <p><i class="fas fa-phone"></i> 1588-0000</p>
-                        <p><i class="fas fa-envelope"></i> info@silvercare-marketing.com</p>
+                        <p><i class="fas fa-envelope"></i> join@carenect.kr</p>
                     </div>
                 </div>
                 <div class="footer-bottom">
@@ -1437,8 +1436,7 @@ function getColumnPageHTML({slug, id, title, description, category, date, keywor
                     </div>
                     <div class="footer-contact">
                         <h4>연락처</h4>
-                        <p><i class="fas fa-phone"></i> 1588-0000</p>
-                        <p><i class="fas fa-envelope"></i> info@silvercare-marketing.com</p>
+                        <p><i class="fas fa-envelope"></i> join@carenect.kr</p>
                     </div>
                 </div>
                 <div class="footer-bottom">
@@ -1531,24 +1529,24 @@ app.get('/', (c) => {
         <!-- 네이버 웹마스터 도구 사이트 소유권 확인 -->
         <meta name="naver-site-verification" content="38ac4c38bb0aa85bef3a07f82984a7f72cf1bb02" />
         
-        <title>케어넥 마케팅 - 방문요양 홍보, 요양원 마케팅 전문</title>
-        <meta name="description" content="케어넥 마케팅은 방문요양 홍보, 요양원 마케팅 전문업체입니다. 실버산업 마케팅 대행으로 신규 고객 창출과 매출 증대를 돕습니다.">
-        <meta name="keywords" content="케어넥 마케팅, 방문요양 마케팅, 방문요양 홍보, 요양원 홍보, 요양원 마케팅, 실버산업 마케팅, 방문요양 광고, 요양센터 홍보, 노인요양 마케팅, 방문간병 홍보">
+        <title>케어넥 마케팅 - 방문요양, 주간보호, 요양원 등 실버산업 홍보, 마케팅 전문</title>
+        <meta name="description" content="케어넥 마케팅은 방문요양, 주간보호, 요양원, 재가요양 등 실버산업 전문 마케팅 대행업체입니다. SEO 최적화, SNS 마케팅, 구글/네이버 광고로 신규 고객 창출과 매출 증대를 돕습니다.">
+        <meta name="keywords" content="케어넥 마케팅, 방문요양 마케팅, 방문요양 홍보, 주간보호 마케팅, 주간보호 홍보, 요양원 홍보, 요양원 마케팅, 재가요양 마케팅, 실버산업 마케팅, 방문요양 광고, 주간보호 광고, 요양센터 홍보, 노인요양 마케팅, 방문간병 홍보, 실버산업 홍보">
         <meta name="author" content="케어넥 마케팅">
         <meta name="theme-color" content="#3182f6">
         
         <!-- Open Graph / Facebook -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://carenect.kr">
-        <meta property="og:title" content="케어넥 마케팅 - 방문요양 홍보, 요양원 마케팅 전문">
-        <meta property="og:description" content="실버산업 마케팅 전문업체 케어넥. 방문요양, 요양원 마케팅으로 신규 고객 창출과 매출 증대를 경험하세요.">
+        <meta property="og:title" content="케어넥 마케팅 - 방문요양, 주간보호, 요양원 등 실버산업 홍보, 마케팅 전문">
+        <meta property="og:description" content="방문요양, 주간보호, 요양원, 재가요양 등 실버산업 전문 마케팅 대행업체. SEO, SNS, 검색광고로 신규 고객 창출과 매출 증대를 경험하세요.">
         <meta property="og:image" content="https://carenect.kr/static/og-image.jpg">
         
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image">
         <meta property="twitter:url" content="https://carenect.kr">
-        <meta property="twitter:title" content="케어넥 마케팅 - 방문요양 홍보, 요양원 마케팅 전문">
-        <meta property="twitter:description" content="실버산업 마케팅 전문업체 케어넥. 방문요양, 요양원 마케팅으로 신규 고객 창출과 매출 증대를 경험하세요.">
+        <meta property="twitter:title" content="케어넥 마케팅 - 방문요양, 주간보호, 요양원 등 실버산업 홍보, 마케팅 전문">
+        <meta property="twitter:description" content="방문요양, 주간보호, 요양원, 재가요양 등 실버산업 전문 마케팅 대행업체. SEO, SNS, 검색광고로 신규 고객 창출과 매출 증대를 경험하세요.">
         <meta property="twitter:image" content="https://carenect.kr/static/og-image.jpg">
         
         <!-- Structured Data (JSON-LD) -->
@@ -1559,7 +1557,7 @@ app.get('/', (c) => {
           "name": "케어넥 마케팅",
           "url": "https://carenect.kr",
           "logo": "https://carenect.kr/static/logo.png",
-          "description": "방문요양 홍보, 요양원 마케팅 전문업체 케어넥 마케팅입니다.",
+          "description": "방문요양, 주간보호, 요양원, 재가요양 등 실버산업 전문 마케팅 대행업체 케어넥 마케팅입니다. SEO 최적화, SNS 마케팅, 검색광고로 신규 고객 창출을 돕습니다.",
           "sameAs": [
             "https://carenect.kr"
           ],
@@ -1576,7 +1574,7 @@ app.get('/', (c) => {
           },
           "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "방문요양 및 요양원 마케팅 서비스",
+            "name": "실버산업 전문 마케팅 서비스 (방문요양, 주간보호, 요양원, 재가요양)",
             "itemListElement": [
               {
                 "@type": "Offer",
@@ -1590,8 +1588,24 @@ app.get('/', (c) => {
                 "@type": "Offer",
                 "itemOffered": {
                   "@type": "Service",
+                  "name": "주간보호센터 마케팅",
+                  "description": "주간보호센터 홍보 및 이용자 유치를 위한 전문 마케팅 서비스"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
                   "name": "요양원 마케팅",
                   "description": "요양원 홍보 및 입소자 유치를 위한 전문 마케팅 서비스"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "재가요양 마케팅",
+                  "description": "재가요양서비스 홍보 및 고객 유치를 위한 전문 마케팅 서비스"
                 }
               },
               {
@@ -2020,8 +2034,7 @@ app.get('/', (c) => {
                     </div>
                     <div class="footer-contact">
                         <h4>연락처</h4>
-                        <p><i class="fas fa-phone"></i> 1588-0000</p>
-                        <p><i class="fas fa-envelope"></i> info@silvercare-marketing.com</p>
+                        <p><i class="fas fa-envelope"></i> join@carenect.kr</p>
                     </div>
                 </div>
                 <div class="footer-bottom">
