@@ -118,6 +118,22 @@ app.get('/column', (c) => {
                     </div>
                     
                     <div class="column-grid">
+                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/day-care-branding-strategy'">
+                            <div class="column-meta">
+                                <span class="column-category">브랜딩 전략</span>
+                                <span class="column-date">2025.11.08</span>
+                            </div>
+                            <h3>주간보호센터 홍보 이렇게 하세요, 3개월 만에 인지도 2배 오른 비결</h3>
+                            <p class="column-excerpt">
+                                "시설과 프로그램은 자신 있는데 어떻게 알려야 할지 막막합니다." 보호자의 불안을 해소하고 신뢰를 구축하는 브랜딩 전략으로 3개월 만에 인지도 2배 증가를 달성한 실전 노하우를 공개합니다.
+                            </p>
+                            <div class="column-stats">
+                                <span><i class="fas fa-eye"></i> 127</span>
+                                <span><i class="fas fa-heart"></i> 9</span>
+                                <span><i class="fas fa-comment"></i> 4</span>
+                            </div>
+                        </article>
+
                         <article class="column-card animate-on-scroll" onclick="window.location.href='/column/day-care-online-strategy'">
                             <div class="column-meta">
                                 <span class="column-category">온라인 홍보</span>
@@ -1150,6 +1166,283 @@ app.get('/column/day-care-online-strategy', (c) => {
 
       <blockquote style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 20px; margin: 30px 0;">
         <strong style="color: #92400e;">💡 마지막 조언:</strong> 홍보는 '한 번 하면 끝'이 아닙니다. <strong>지속적인 관리와 최적화</strong>가 필요합니다. 케어넥 마케팅은 월별 리포트와 함께 꾸준한 성과 개선을 약속드립니다.
+      </blockquote>
+    `
+  }))
+})
+
+// 새로운 칼럼: 주간보호센터 브랜딩 전략
+app.get('/column/day-care-branding-strategy', (c) => {
+  return c.html(getColumnPageHTML({
+    slug: 'day-care-branding-strategy',
+    id: 6,
+    title: '주간보호센터 홍보 이렇게 하세요, 3개월 만에 인지도 2배 오른 비결',
+    description: '시설과 프로그램은 훌륭한데 알리는 방법을 모르겠다고요? 보호자의 불안을 해소하고 신뢰를 구축하는 브랜딩 전략으로 3개월 만에 인지도를 2배 높인 주간보호센터의 성공 비결을 공개합니다.',
+    category: '브랜딩 전략',
+    date: '2025.11.08',
+    keywords: ['주간보호센터 홍보', '데이케어센터 브랜딩', '주간보호 마케팅', '센터 인지도', '보호자 신뢰', '온라인 브랜딩', '콘텐츠 마케팅', '실버케어 홍보', '센터 홍보 전략', '신뢰 구축'],
+    content: `
+      <div class="column-intro" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 30px; border-radius: 12px; border-left: 5px solid #f59e0b; margin-bottom: 40px;">
+        <p style="font-size: 1.2em; font-weight: 600; color: #78350f; margin-bottom: 15px;">"어르신들을 위한 프로그램과 시설은 정말 자신 있는데, 이걸 어떻게 알려야 할지 막막합니다."</p>
+        <p style="font-size: 1.1em; color: #92400e; margin-bottom: 10px;">"블로그나 SNS를 해야 한다는데, 막상 무슨 글을 써야 보호자들이 볼지 감이 안 잡혀요."</p>
+        <p style="font-size: 1.1em; color: #92400e; margin-bottom: 10px;">"분명 열심히 한다고 하는데... 왜 옆 동네 센터만 상담 문의가 꽉 차는 걸까요?"</p>
+        <p style="font-size: 1.05em; color: #78350f; margin-top: 20px; line-height: 1.8;">신규 수급자 모집에 어려움을 겪는 원장님, 혹은 실무자님이시라면 위와 같은 고민을 매일 하고 계실 겁니다. 어렵게 센터를 오픈했지만, 정작 어르신들을 모시지 못해 속을 태우고 계시진 않으신가요?</p>
+      </div>
+
+      <p style="font-size: 1.1em; line-height: 1.8; color: #2d3748;">오늘 이 글을 <strong>5분만 집중해서 읽어보세요.</strong> 전단지나 현수막 같은 2010년대 방식이 아닌, <strong>2025년 현재 보호자들의 마음을 움직여 3개월 만에 인지도를 2배로 끌어올린</strong> 주간보호센터 홍보의 핵심 비결과 구체적인 전략을 명확히 알게 되실 겁니다.</p>
+
+      <div style="background: #e0f2fe; padding: 25px; border-radius: 10px; margin: 30px 0; border: 2px solid #0ea5e9;">
+        <h4 style="margin-top: 0; color: #0c4a6e; font-size: 1.3em;"><i class="fas fa-user-shield"></i> 저희 케어넥 마케팅의 차별화된 강점</h4>
+        <ul style="color: #075985; line-height: 2; font-size: 1.05em; margin-bottom: 0;">
+          <li>✅ 단순 노출이 아닌, <strong>'신뢰'를 주는 센터 고유의 브랜딩</strong> 구축</li>
+          <li>✅ <strong>보호자 심리를 꿰뚫는</strong> 전문 콘텐츠 기획(블로그, 영상) 및 제작</li>
+          <li>✅ <strong>상담 문의 전환까지 이어지는</strong> 3개월 집중 온라인 세팅 A to Z</li>
+          <li>✅ 요양보호사 교육원 운영 경험으로 <strong>현장 흐름과 고객 심리 완벽 이해</strong></li>
+        </ul>
+      </div>
+
+      <h3 style="color: #1e40af; border-bottom: 3px solid #3b82f6; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-heartbeat"></i> 2025년 주간보호센터 홍보의 핵심: '불안 해소'가 답입니다</h3>
+      
+      <p style="font-size: 1.05em; line-height: 1.8;">2025년 <strong>주간보호센터 홍보</strong>의 성패는 '얼마나 많이 노출되느냐'가 아니라, <strong>'보호자의 불안을 얼마나 해소해 주느냐'</strong>에 달려있습니다.</p>
+
+      <h4 style="color: #dc2626; margin-top: 30px;"><i class="fas fa-exclamation-circle"></i> 대부분의 센터가 놓치는 결정적 실수</h4>
+      
+      <div style="background: #fef2f2; padding: 20px; border-radius: 8px; border-left: 4px solid #dc2626; margin: 20px 0;">
+        <h4 style="margin-top: 0; color: #991b1b;">❌ 우리가 주고 싶은 말만 반복합니다</h4>
+        <ul style="color: #7f1d1d; line-height: 1.8;">
+          <li>"최신 시설 완비!"</li>
+          <li>"다양한 인지 프로그램!"</li>
+          <li>"맛있는 식사 제공!"</li>
+        </ul>
+        <p style="color: #991b1b; margin-top: 15px; font-weight: 600;">→ 이것은 모든 센터가 하는 당연한 말입니다. 차별화가 없습니다.</p>
+      </div>
+
+      <h4 style="color: #059669; margin-top: 30px;"><i class="fas fa-comments"></i> 보호자의 진짜 속마음</h4>
+      
+      <p style="font-size: 1.05em; line-height: 1.8;">정작 소중한 부모님을 맡길 곳을 찾는 자녀(보호자)의 진짜 속마음은 무엇일까요?</p>
+
+      <div style="background: #f0fdf4; padding: 25px; border-radius: 10px; margin: 25px 0; border: 2px solid #10b981;">
+        <h4 style="margin-top: 0; color: #065f46;"><i class="fas fa-quote-left"></i> 보호자의 진짜 고민</h4>
+        <ul style="color: #047857; line-height: 2; font-size: 1.05em; margin-bottom: 0;">
+          <li><strong>"낯선 곳에 우리 부모님을 맡겨도 정말 괜찮을까?"</strong></li>
+          <li><strong>"혹시 다른 어르신들과 어울리지 못하고 힘들어하시면 어떡하지?"</strong></li>
+          <li><strong>"선생님들은 정말 진심으로 케어해 주실까?"</strong></li>
+          <li><strong>"센터 적응을 못하시면 어떻게 하지?"</strong></li>
+        </ul>
+      </div>
+
+      <p style="font-size: 1.1em; line-height: 1.8; color: #2d3748; background: #fff7ed; padding: 20px; border-radius: 8px; border-left: 4px solid #f59e0b;">바로 <strong>'불안감'</strong>입니다. 이 근본적인 불안을 해소해 주지 못한다면, 아무리 화려한 시설과 프로그램을 내세워도 보호자의 최종 선택을 받기 어렵습니다.</p>
+
+      <h4 style="color: #7c3aed; margin-top: 30px;"><i class="fas fa-chart-line"></i> 실제 성공 사례: 경기도 A 센터</h4>
+
+      <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 30px; border-radius: 12px; margin: 30px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <h4 style="margin-top: 0; color: #78350f; font-size: 1.2em;"><i class="fas fa-building"></i> A 센터의 변화 과정</h4>
+        
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <p style="color: #991b1b; font-weight: 600; margin-bottom: 15px;"><strong>❌ 변화 전:</strong></p>
+          <ul style="color: #7f1d1d; line-height: 1.8;">
+            <li>시설은 훌륭했지만 문의 전환율이 낮음</li>
+            <li>프로그램 나열식 홍보에 집중</li>
+            <li>보호자의 불안을 해소하지 못함</li>
+          </ul>
+        </div>
+
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <p style="color: #065f46; font-weight: 600; margin-bottom: 15px;"><strong>✅ 변화 후 콘텐츠 전략:</strong></p>
+          <ol style="color: #047857; line-height: 2;">
+            <li><strong>'어르신 첫 등원 1일 차 상세 스케치'</strong> (사진 포함)</li>
+            <li><strong>'사회복지사가 직접 답하는 보호자 단골 질문 Q&A 10가지'</strong></li>
+            <li><strong>'센터 적응기: 홍길동 어르신의 웃음 되찾기'</strong> (스토리텔링)</li>
+            <li><strong>'일과표 공개: 오전 9시부터 오후 5시까지'</strong> (투명성 확보)</li>
+          </ol>
+        </div>
+
+        <div style="background: #dc2626; color: white; padding: 20px; border-radius: 8px; text-align: center; margin-top: 20px;">
+          <p style="font-size: 1.3em; font-weight: 700; margin: 0;">📈 결과: 콘텐츠 발행 2개월 만에<br>상담 문의 <span style="font-size: 1.8em;">3배 이상 증가</span></p>
+        </div>
+      </div>
+
+      <blockquote style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 20px; margin: 25px 0;">
+        <p style="margin: 0; color: #065f46; font-size: 1.05em;"><strong>💡 핵심 인사이트:</strong> 케어넥 마케팅은 보호자의 심리를 꿰뚫는 전문 콘텐츠를 기획하고 제작하여, 센터에 대한 <strong>'무조건적인 신뢰'</strong>를 구축합니다. 이것이 바로 보호자 소통의 첫걸음입니다.</p>
+      </blockquote>
+
+      <h3 style="color: #1e40af; border-bottom: 3px solid #3b82f6; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-award"></i> '왜 우리 센터여야 하는지' 명확한 데이케어센터 브랜딩이 필요합니다</h3>
+
+      <p style="font-size: 1.05em; line-height: 1.8;">두 번째 핵심은 <strong>'대체 불가능한 센터'</strong>로 인식시키는 <strong>데이케어센터 브랜딩</strong>입니다.</p>
+
+      <h4 style="color: #4338ca; margin-top: 30px;"><i class="fas fa-search"></i> 보호자의 센터 선택 과정</h4>
+
+      <div style="background: #f5f3ff; padding: 25px; border-radius: 10px; margin: 25px 0;">
+        <ol style="color: #5b21b6; line-height: 2; font-size: 1.05em;">
+          <li><strong>네이버 검색:</strong> '성남 주간보호센터', '용인 데이케어센터' 등</li>
+          <li><strong>비교 분석:</strong> 최소 3~4곳의 블로그나 홈페이지 방문</li>
+          <li><strong>고민 시작:</strong> 프로그램, 시설, 비용이 대부분 비슷함</li>
+          <li><strong>최종 결정:</strong> <span style="background: #fef08a; padding: 2px 8px; border-radius: 4px; font-weight: 700;">'이미지'와 '철학'으로 선택</span></li>
+        </ol>
+      </div>
+
+      <h4 style="color: #059669; margin-top: 30px;"><i class="fas fa-balance-scale"></i> 브랜딩 메시지 비교</h4>
+
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <thead>
+          <tr style="background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%); color: white;">
+            <th style="padding: 15px; text-align: left; border: 1px solid #ddd;">❌ 차별점 없는 메시지</th>
+            <th style="padding: 15px; text-align: left; border: 1px solid #ddd;">✅ 명확한 브랜딩 메시지</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="background: #ffffff;">
+            <td style="padding: 15px; border: 1px solid #ddd; color: #991b1b;">"우리 센터는 깨끗하고 친절합니다."</td>
+            <td style="padding: 15px; border: 1px solid #ddd; color: #065f46; font-weight: 600;">"어르신의 잔존기능 활성화에 진심인 재활 특화 센터입니다."</td>
+          </tr>
+          <tr style="background: #f9fafb;">
+            <td style="padding: 15px; border: 1px solid #ddd; color: #991b1b;">"다양한 프로그램을 운영합니다."</td>
+            <td style="padding: 15px; border: 1px solid #ddd; color: #065f46; font-weight: 600;">"음악으로 매일 웃음꽃 피는 치매 예방 특화 센터입니다."</td>
+          </tr>
+          <tr style="background: #ffffff;">
+            <td style="padding: 15px; border: 1px solid #ddd; color: #991b1b;">"어르신을 사랑으로 돌봅니다."</td>
+            <td style="padding: 15px; border: 1px solid #ddd; color: #065f46; font-weight: 600;">"가족같은 소규모 정원제, 한 분 한 분 맞춤 케어 전문 센터입니다."</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h4 style="color: #7c3aed; margin-top: 30px;"><i class="fas fa-star"></i> 실제 성공 사례: 서울 B 센터</h4>
+
+      <div style="background: linear-gradient(135deg, #ddd6fe 0%, #c4b5fd 100%); padding: 30px; border-radius: 12px; margin: 30px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <h4 style="margin-top: 0; color: #5b21b6; font-size: 1.2em;"><i class="fas fa-music"></i> B 센터의 음악치료 특화 브랜딩</h4>
+        
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <p style="color: #6b21a8; font-weight: 600; margin-bottom: 15px;"><strong>🎯 브랜딩 전략:</strong></p>
+          <ul style="color: #7c3aed; line-height: 2;">
+            <li><strong>'음악치료 특화'</strong>라는 명확한 포지셔닝</li>
+            <li>모든 블로그 콘텐츠에 <strong>'음악으로 매일 웃음꽃 피는 센터'</strong> 이미지 일관 노출</li>
+            <li>오프라인 홍보물에도 동일한 메시지 통일</li>
+            <li>매주 음악치료 프로그램 현장 사진과 어르신 반응 공유</li>
+          </ul>
+        </div>
+
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <p style="color: #065f46; font-weight: 600; margin-bottom: 15px;"><strong>💬 보호자 반응:</strong></p>
+          <p style="color: #047857; font-size: 1.05em; line-height: 1.8; font-style: italic;">"다른 곳은 몰라도 여기는 꼭 상담받아보고 싶다"며 찾아오는 보호자들이 급증</p>
+        </div>
+
+        <div style="background: #10b981; color: white; padding: 20px; border-radius: 8px; text-align: center; margin-top: 20px;">
+          <p style="font-size: 1.3em; font-weight: 700; margin: 0;">🎉 결과: <span style="font-size: 1.8em;">3개월 만에 정원 마감</span></p>
+        </div>
+      </div>
+
+      <div style="background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%); padding: 25px; border-radius: 12px; margin: 30px 0;">
+        <h4 style="margin-top: 0; color: #6b21a8;"><i class="fas fa-lightbulb"></i> 케어넥 마케팅의 브랜딩 프로세스</h4>
+        <ol style="color: #581c87; line-height: 2; font-size: 1.05em;">
+          <li>✅ 원장님의 운영 철학과 센터 강점 깊이 있게 분석</li>
+          <li>✅ 타 센터와 구별되는 <strong>센터 고유의 '신뢰 브랜딩'</strong> 구축</li>
+          <li>✅ 모든 온라인·오프라인 채널에 <strong>일관된 메시지</strong> 통일</li>
+          <li>✅ 3개월 집중 온라인 세팅으로 <strong>브랜드 정착</strong></li>
+        </ol>
+      </div>
+
+      <h3 style="color: #1e40af; border-bottom: 3px solid #3b82f6; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-sync-alt"></i> 주간보호센터 마케팅, '한 번'이 아니라 '지속적인 소통'입니다</h3>
+
+      <p style="font-size: 1.05em; line-height: 1.8;"><strong>주간보호센터 마케팅</strong>은 오픈 '반짝' 이벤트가 아닌, <strong>꾸준한 '신뢰 구축' 과정</strong>임을 명심해야 합니다.</p>
+
+      <h4 style="color: #dc2626; margin-top: 30px;"><i class="fas fa-times-circle"></i> 많은 센터가 반복하는 실수</h4>
+
+      <div style="background: #fef2f2; padding: 20px; border-radius: 8px; border-left: 4px solid #dc2626; margin: 20px 0;">
+        <ul style="color: #991b1b; line-height: 1.8;">
+          <li>오픈 초기에만 홍보에 집중</li>
+          <li>이후에는 운영에 치여 온라인 소통 중단</li>
+          <li>블로그나 SNS가 몇 개월째 업데이트 없음</li>
+          <li>검색 노출 순위가 점점 하락</li>
+        </ul>
+      </div>
+
+      <h4 style="color: #059669; margin-top: 30px;"><i class="fas fa-check-circle"></i> 보호자가 확인하는 것들</h4>
+
+      <div style="background: #f0fdf4; padding: 25px; border-radius: 10px; margin: 25px 0;">
+        <p style="color: #065f46; font-size: 1.05em; line-height: 1.8; margin-bottom: 15px;">보호자들은 센터를 결정하기 전, 그 센터의 블로그나 SNS에서 다음을 확인합니다:</p>
+        <ul style="color: #047857; line-height: 2; font-size: 1.05em;">
+          <li>✅ 얼마나 꾸준히 <strong>'진심이 담긴'</strong> 소식이 올라오는지</li>
+          <li>✅ 최근에도 활발하게 운영되고 있는지</li>
+          <li>✅ 어르신들이 정말 즐겁게 지내는지 (사진, 영상)</li>
+          <li>✅ 센터의 진정성과 투명성</li>
+        </ul>
+      </div>
+
+      <h4 style="color: #7c3aed; margin-top: 30px;"><i class="fas fa-trophy"></i> 실제 성공 사례: C 센터의 SEO 전략</h4>
+
+      <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 30px; border-radius: 12px; margin: 30px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <h4 style="margin-top: 0; color: #78350f; font-size: 1.2em;"><i class="fas fa-chart-area"></i> C 센터의 콘텐츠 전략</h4>
+        
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <p style="color: #6b21a8; font-weight: 600; margin-bottom: 15px;"><strong>📅 꾸준한 발행 전략:</strong></p>
+          <ul style="color: #7c3aed; line-height: 2;">
+            <li><strong>주 2회</strong> 보호자 소통 콘텐츠 정기 발행</li>
+            <li>월요일: 지난주 프로그램 후기 (사진 포함)</li>
+            <li>목요일: 보호자 질문 Q&A 또는 건강 정보</li>
+            <li>매월 마지막 주: 이달의 센터 소식 종합 리포트</li>
+          </ul>
+        </div>
+
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <p style="color: #065f46; font-weight: 600; margin-bottom: 15px;"><strong>🎯 SEO 효과:</strong></p>
+          <ul style="color: #047857; line-height: 2;">
+            <li>네이버 검색 알고리즘이 <strong>양질의 정보를 꾸준히 발행하는 채널을 상위 노출</strong></li>
+            <li>'OO동 주간보호센터' 키워드 <strong>1페이지 지속 노출</strong></li>
+            <li><strong>별도의 광고비 없이</strong> 자연 검색 유입 증가</li>
+          </ul>
+        </div>
+
+        <div style="background: #10b981; color: white; padding: 20px; border-radius: 8px; text-align: center; margin-top: 20px;">
+          <p style="font-size: 1.3em; font-weight: 700; margin: 0;">🔥 결과: <span style="font-size: 1.8em;">대기자 발생 선순환 구조</span></p>
+        </div>
+      </div>
+
+      <blockquote style="background: #f0fdf4; border-left: 4px solid #10b981; padding: 20px; margin: 25px 0;">
+        <p style="margin: 0; color: #065f46; font-size: 1.05em;"><strong>💡 중요한 포인트:</strong> 케어넥 마케팅의 <strong>3개월 집중 세팅은 끝이 아니라 '시작'</strong>입니다. 센터가 스스로 지속적인 소통을 이어갈 수 있도록 탄탄한 온라인 기반(블로그, 플레이스, 지도)을 다져 드립니다.</p>
+      </blockquote>
+
+      <h3 style="color: #7c3aed; border-bottom: 3px solid #a78bfa; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-gem"></i> 3개월 만에 인지도를 2배 높인 비결, 바로 '신뢰'입니다</h3>
+
+      <div style="background: #f8fafc; padding: 30px; border-radius: 12px; margin: 30px 0; border: 2px solid #cbd5e1;">
+        <h4 style="margin-top: 0; color: #1e293b; font-size: 1.3em;">✅ 성공적인 주간보호센터 홍보를 위한 3가지 핵심</h4>
+        <ol style="color: #334155; line-height: 2.2; font-size: 1.05em; margin-bottom: 0;">
+          <li><strong>보호자의 불안을 해소하는 진심 어린 콘텐츠</strong>
+            <ul style="margin-top: 10px; color: #64748b;">
+              <li>첫 등원 1일 차 스케치, 적응기 스토리</li>
+              <li>사회복지사 직접 답변 Q&A</li>
+              <li>투명한 일과표 및 프로그램 공개</li>
+            </ul>
+          </li>
+          <li><strong>'왜 우리 센터여야 하는지'에 답하는 명확한 브랜딩</strong>
+            <ul style="margin-top: 10px; color: #64748b;">
+              <li>센터만의 특화 포지셔닝 (재활, 음악치료, 치매 예방 등)</li>
+              <li>모든 채널에 일관된 메시지 전달</li>
+              <li>차별화된 철학과 이미지 구축</li>
+            </ul>
+          </li>
+          <li><strong>꾸준히 알리는 지속적인 소통</strong>
+            <ul style="margin-top: 10px; color: #64748b;">
+              <li>주 2회 정기적인 콘텐츠 발행</li>
+              <li>네이버 SEO 최적화로 상위노출 유지</li>
+              <li>3개월 온라인 기반 세팅으로 선순환 구조 구축</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+
+      <p style="font-size: 1.1em; line-height: 1.8; color: #2d3748; margin-top: 30px;">어르신을 향한 원장님의 그 훌륭한 돌봄 철학과 진심이, <strong>홍보 방법을 몰라 보호자에게 닿지 못하는 것</strong>은 너무나 안타까운 일입니다. 저희 케어넥 마케팅은 단순한 마케팅 대행사 그 이상의 의미, 즉 <strong>어르신과 보호자, 그리고 센터를 잇는 '신뢰의 다리'</strong>가 되고자 합니다.</p>
+
+      <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 12px; text-align: center; margin: 40px 0;">
+        <h3 style="margin-top: 0; font-size: 1.8em; color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-weight: 700;">더 이상 막막한 홍보 때문에 혼자 고민하지 마세요!</h3>
+        <p style="font-size: 1.1em; margin: 20px 0; color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">3개월 만에 인지도를 2배 높인 비결이 구체적으로 궁금하신가요?<br>원장님의 진심이 보호자에게 온전히 닿을 수 있도록,<br><strong>A부터 Z까지 확실하게 세팅</strong>해 드립니다.</p>
+        <a href="https://nursmarket-a2dzpd9o.manus.space/" target="_blank" style="display: inline-block; background: white; color: #5a67d8; padding: 15px 40px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 1.1em; margin-top: 10px; transition: transform 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
+          <i class="fas fa-gift"></i> 1:1 무료 진단 컨설팅 신청하기
+        </a>
+        <p style="font-size: 0.9em; margin-top: 15px; color: #ffffff; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">* 상담은 무료이며, 센터별 맞춤 브랜딩 전략을 제시해드립니다</p>
+      </div>
+
+      <blockquote style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 20px; margin: 30px 0;">
+        <strong style="color: #92400e;">💡 마지막 조언:</strong> 주간보호센터 홍보는 '한 번 하면 끝'이 아닙니다. <strong>신뢰는 꾸준함에서 나옵니다.</strong> 케어넥 마케팅과 함께 보호자가 진정으로 믿고 선택하는 센터를 만들어가세요.
       </blockquote>
     `
   }))
