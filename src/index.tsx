@@ -123,9 +123,9 @@ app.get('/column', (c) => {
                                 <span class="column-category">전환율 최적화</span>
                                 <span class="column-date">2025.11.12</span>
                             </div>
-                            <h3>방문요양 전환율이 안 오르는 진짜 이유 7가지 (필독)</h3>
+                            <h3>방문요양 전환율이 안 오르는 진짜 이유 5가지 (필독)</h3>
                             <p class="column-excerpt">
-                                "상담은 많은데 계약은 왜 안 될까요?" 방문요양은 신뢰 산업입니다. 검색부터 계약까지 5단계 고객 여정에서 놓치는 핵심 포인트와 전환율을 3배 높이는 실전 설계 전략을 공개합니다.
+                                "상담은 많은데 계약은 왜 안 될까요?" 방문요양은 신뢰 산업입니다. 검색부터 계약까지 5단계 고객 여정에서 놓치는 5가지 핵심 이탈 지점과 전환율을 3배 높이는 실전 설계 전략을 공개합니다.
                             </p>
                             <div class="column-stats">
                                 <span><i class="fas fa-eye"></i> 89</span>
@@ -1469,8 +1469,8 @@ app.get('/column/home-care-conversion-strategy', (c) => {
   return c.html(getColumnPageHTML({
     slug: 'home-care-conversion-strategy',
     id: 7,
-    title: '방문요양 전환율이 안 오르는 진짜 이유 7가지 (필독)',
-    description: '상담은 많은데 계약은 왜 안 될까요? 방문요양은 고관여·고신뢰 산업입니다. 검색부터 계약까지 5단계 고객 여정 분석과 이탈 지점 7가지, 전환율을 3배 높이는 신뢰 기반 설계 전략을 공개합니다.',
+    title: '방문요양 전환율이 안 오르는 진짜 이유 5가지 (필독)',
+    description: '상담은 많은데 계약은 왜 안 될까요? 방문요양은 고관여·고신뢰 산업입니다. 검색부터 계약까지 5단계 고객 여정 분석과 5가지 핵심 이탈 지점, 전환율을 3배 높이는 신뢰 기반 설계 전략을 공개합니다.',
     category: '전환율 최적화',
     date: '2025.11.12',
     keywords: ['방문요양 전환율', '상담 계약률', '고객 여정 설계', '신뢰 마케팅', '장기요양 상담', '보호자 심리', '전환율 최적화', '방문요양 마케팅', '상담 스크립트', '서비스 경험 설계'],
@@ -1483,24 +1483,30 @@ app.get('/column/home-care-conversion-strategy', (c) => {
         <p style="font-size: 1.05em; color: #7f1d1d; line-height: 1.8;">많은 방문요양센터 원장님들이 <strong>'전환율'</strong> 때문에 고민하십니다. 광고비는 계속 나가는데, 정작 계약으로 이어지는 비율이 너무 낮기 때문입니다.</p>
       </div>
 
-      <p style="font-size: 1.1em; line-height: 1.8; color: #2d3748;">오늘 이 글에서는 <strong>방문요양 전환율이 안 오르는 진짜 이유 7가지</strong>와 함께, 검색부터 계약까지 <strong>5단계 고객 여정</strong>을 완벽하게 설계하는 실전 전략을 공개합니다. 이 글을 끝까지 읽으시면, 전환율을 <strong>3배 이상 높일 수 있는 구체적인 방법</strong>을 알게 되실 것입니다.</p>
+      <p style="font-size: 1.1em; line-height: 1.8; color: #2d3748; margin-bottom: 15px;">오늘 이 글에서는 <strong>방문요양 전환율이 안 오르는 진짜 이유 5가지</strong>와 함께, 검색부터 계약까지 <strong>5단계 고객 여정</strong>을 완벽하게 설계하는 실전 전략을 공개합니다.</p>
+      
+      <p style="font-size: 1.05em; line-height: 1.8; color: #374151;">많은 센터들이 광고와 홍보에 집중하지만, 정작 <strong>어느 지점에서 고객이 이탈하는지</strong>는 파악하지 못하고 있습니다. 하지만 이 글을 끝까지 읽으시면, 각 단계별로 보호자들이 어떤 생각을 하고 있는지, 그리고 그들의 불안을 어떻게 해소해야 하는지 명확하게 이해하실 수 있습니다. 결과적으로 전환율을 <strong>3배 이상 높일 수 있는 구체적인 방법</strong>을 알게 되실 것입니다.</p>
+      
+      <p style="font-size: 1.05em; line-height: 1.8; color: #4b5563; background: #f9fafb; padding: 20px; border-radius: 8px; margin-top: 20px;">💡 <strong>왜 이 글을 읽어야 할까요?</strong> 방문요양은 일반 제품이나 서비스와 달리, 보호자가 '신뢰 계약'을 체결하는 특수한 산업입니다. 단순히 광고비를 늘리거나 상담 전화를 많이 받는다고 해서 계약이 늘어나지 않습니다. <strong>고객이 이탈하는 정확한 지점</strong>을 알고, 각 단계마다 <strong>신뢰를 쌓는 구조</strong>가 있어야만 전환율이 올라갑니다.</p>
 
       <h3 style="color: #dc2626; border-bottom: 3px solid #ef4444; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-exclamation-triangle"></i> 방문요양, 왜 다른 업종과 '완전히 다른가'?</h3>
 
-      <p style="font-size: 1.05em; line-height: 1.8;">방문요양은 단순한 서비스업이 아닙니다. 가족의 건강과 안전이 연결된 <strong>'고관여·고위험·고신뢰 산업'</strong>입니다.</p>
+      <p style="font-size: 1.05em; line-height: 1.8; margin-bottom: 15px;">방문요양은 단순한 서비스업이 아닙니다. 가족의 건강과 안전이 연결된 <strong>'고관여·고위험·고신뢰 산업'</strong>입니다.</p>
+      
+      <p style="font-size: 1.05em; line-height: 1.8; color: #374151;">생각해보세요. 음식 배달이나 택시는 한 번 잘못 이용해도 다시 다른 업체를 선택하면 됩니다. 하지만 방문요양은 다릅니다. <strong>한 번의 잘못된 선택이 가족의 건강과 안전에 직접적인 영향</strong>을 미치기 때문에, 보호자들은 극도로 신중해질 수밖에 없습니다. 이것이 바로 방문요양 전환율이 일반 서비스업보다 훨씬 낮은 이유입니다.</p>
 
       <div style="background: #fef2f2; padding: 25px; border-radius: 10px; margin: 30px 0; border: 2px solid #dc2626;">
         <h4 style="margin-top: 0; color: #991b1b; font-size: 1.3em;"><i class="fas fa-heart-broken"></i> 방문요양의 특수성</h4>
         <ul style="color: #7f1d1d; line-height: 2; font-size: 1.05em;">
           <li><strong>선택 기준이 100% 감정 + 논리 혼합</strong>
             <ul style="margin-top: 10px; color: #991b1b;">
-              <li>감정: "우리 부모님을 맡겨도 안전할까?"</li>
-              <li>논리: "경력은? 등급신청은? 관리체계는?"</li>
+              <li><strong>감정:</strong> "우리 부모님을 맡겨도 안전할까?" - 이것은 단순한 걱정이 아니라 <em>죄책감, 불안감, 가족애</em>가 복잡하게 얽힌 심리 상태입니다.</li>
+              <li><strong>논리:</strong> "경력은? 등급신청은? 관리체계는?" - 보호자는 센터의 전문성을 객관적으로 판단할 수 있는 <em>명확한 근거</em>를 찾습니다.</li>
             </ul>
           </li>
-          <li><strong>정보 비대칭 산업</strong> - 보호자는 직접 경험해보기 전까지 정확히 알 수 없음</li>
-          <li><strong>'문제 발생 시 비용'이 매우 큼</strong> - 요양보호사 교체, 사고, 의사소통 문제 → 가족 스트레스 폭발</li>
-          <li><strong>실패하면 '전환이 영구적으로 사라짐'</strong> - 한 번 실망하면 재계약 불가, 부정적 입소문은 지역 전체로 확산</li>
+          <li><strong>정보 비대칭 산업</strong> - 보호자는 직접 경험해보기 전까지 정확히 알 수 없습니다. 병원과 달리 면허나 자격증만으로는 <em>서비스 품질을 보장할 수 없기</em> 때문에 <strong>신뢰 구축이 필수</strong>입니다.</li>
+          <li><strong>'문제 발생 시 비용'이 매우 큼</strong> - 단순히 요양보호사를 교체하는 것이 아닙니다. 사고, 의사소통 문제, 케어 불만족은 <em>가족 전체의 스트레스 폭발로 이어지며</em>, 이는 어르신의 건강 악화로까지 연결될 수 있습니다.</li>
+          <li><strong>실패하면 '전환이 영구적으로 사라짐'</strong> - 한 번 실망하면 재계약이 불가능할 뿐만 아니라, 부정적 입소문은 <em>맘카페, 지역 카카오톡방을 통해 빠르게 확산</em>되어 지역 내 평판에 치명적인 타격을 입힙니다.</li>
         </ul>
       </div>
 
@@ -1607,9 +1613,11 @@ app.get('/column/home-care-conversion-strategy', (c) => {
         </div>
       </div>
 
-      <h3 style="color: #dc2626; border-bottom: 3px solid #ef4444; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-times-circle"></i> 전환율이 안 오르는 7가지 이탈 지점</h3>
+      <h3 style="color: #dc2626; border-bottom: 3px solid #ef4444; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-times-circle"></i> 전환율이 안 오르는 5가지 이탈 지점</h3>
 
-      <p style="font-size: 1.05em; line-height: 1.8;">방문요양은 이탈 지점이 매우 명확하고, <strong>한 번 이탈하면 회복 불가능</strong>합니다.</p>
+      <p style="font-size: 1.05em; line-height: 1.8; margin-bottom: 15px;">방문요양은 이탈 지점이 매우 명확하고, <strong>한 번 이탈하면 회복 불가능</strong>합니다.</p>
+      
+      <p style="font-size: 1.05em; line-height: 1.8; color: #374151;">대부분의 센터들은 "광고가 문제"라고 생각하지만, 실제로는 <strong>검색, 비교, 상담, 첫 방문, 후기</strong>의 각 단계마다 보호자들이 이탈하고 있습니다. 아래에서 각 단계별 이탈 원인과 보호자 심리를 정확하게 파악해보세요.</p>
 
       <div style="background: #fef2f2; padding: 25px; border-radius: 10px; margin: 30px 0; border-left: 5px solid #dc2626;">
         <h4 style="margin-top: 0; color: #991b1b;"><i class="fas fa-ban"></i> 이탈 지점 ①: 검색 이탈</h4>
