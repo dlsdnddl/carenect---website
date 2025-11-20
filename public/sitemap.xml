@@ -15,12 +15,20 @@
     <!-- 칼럼 목록 페이지 -->
     <url>
         <loc>https://carenect.kr/column</loc>
-        <lastmod>2025-11-08</lastmod>
+        <lastmod>2025-11-12</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
     
-    <!-- 주간보호센터 브랜딩 전략 칼럼 (최신) -->
+    <!-- 방문요양 전환율 최적화 칼럼 (최신) -->
+    <url>
+        <loc>https://carenect.kr/column/home-care-conversion-strategy</loc>
+        <lastmod>2025-11-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- 주간보호센터 브랜딩 전략 칼럼 -->
     <url>
         <loc>https://carenect.kr/column/day-care-branding-strategy</loc>
         <lastmod>2025-11-08</lastmod>

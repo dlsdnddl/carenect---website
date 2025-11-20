@@ -118,6 +118,22 @@ app.get('/column', (c) => {
                     </div>
                     
                     <div class="column-grid">
+                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/home-care-conversion-strategy'">
+                            <div class="column-meta">
+                                <span class="column-category">전환율 최적화</span>
+                                <span class="column-date">2025.11.12</span>
+                            </div>
+                            <h3>방문요양 전환율이 안 오르는 진짜 이유 7가지 (필독)</h3>
+                            <p class="column-excerpt">
+                                "상담은 많은데 계약은 왜 안 될까요?" 방문요양은 신뢰 산업입니다. 검색부터 계약까지 5단계 고객 여정에서 놓치는 핵심 포인트와 전환율을 3배 높이는 실전 설계 전략을 공개합니다.
+                            </p>
+                            <div class="column-stats">
+                                <span><i class="fas fa-eye"></i> 89</span>
+                                <span><i class="fas fa-heart"></i> 6</span>
+                                <span><i class="fas fa-comment"></i> 3</span>
+                            </div>
+                        </article>
+
                         <article class="column-card animate-on-scroll" onclick="window.location.href='/column/day-care-branding-strategy'">
                             <div class="column-meta">
                                 <span class="column-category">브랜딩 전략</span>
@@ -1443,6 +1459,455 @@ app.get('/column/day-care-branding-strategy', (c) => {
 
       <blockquote style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 20px; margin: 30px 0;">
         <strong style="color: #92400e;">💡 마지막 조언:</strong> 주간보호센터 홍보는 '한 번 하면 끝'이 아닙니다. <strong>신뢰는 꾸준함에서 나옵니다.</strong> 케어넥 마케팅과 함께 보호자가 진정으로 믿고 선택하는 센터를 만들어가세요.
+      </blockquote>
+    `
+  }))
+})
+
+// 새로운 칼럼: 방문요양 전환율 최적화 전략
+app.get('/column/home-care-conversion-strategy', (c) => {
+  return c.html(getColumnPageHTML({
+    slug: 'home-care-conversion-strategy',
+    id: 7,
+    title: '방문요양 전환율이 안 오르는 진짜 이유 7가지 (필독)',
+    description: '상담은 많은데 계약은 왜 안 될까요? 방문요양은 고관여·고신뢰 산업입니다. 검색부터 계약까지 5단계 고객 여정 분석과 이탈 지점 7가지, 전환율을 3배 높이는 신뢰 기반 설계 전략을 공개합니다.',
+    category: '전환율 최적화',
+    date: '2025.11.12',
+    keywords: ['방문요양 전환율', '상담 계약률', '고객 여정 설계', '신뢰 마케팅', '장기요양 상담', '보호자 심리', '전환율 최적화', '방문요양 마케팅', '상담 스크립트', '서비스 경험 설계'],
+    content: `
+      <div class="column-intro" style="background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%); padding: 30px; border-radius: 12px; border-left: 5px solid #dc2626; margin-bottom: 40px;">
+        <p style="font-size: 1.3em; font-weight: 700; color: #7f1d1d; margin-bottom: 20px;">⚠️ "상담은 많은데, 왜 계약은 안 될까요?"</p>
+        <p style="font-size: 1.1em; color: #991b1b; margin-bottom: 10px;">"네이버 광고비만 계속 나가고 있어요..."</p>
+        <p style="font-size: 1.1em; color: #991b1b; margin-bottom: 10px;">"상담 전화는 오는데, 막상 계약으로 안 이어져요."</p>
+        <p style="font-size: 1.1em; color: #991b1b; margin-bottom: 20px;">"보호자들이 상담 후에 연락이 끊겨버려요."</p>
+        <p style="font-size: 1.05em; color: #7f1d1d; line-height: 1.8;">많은 방문요양센터 원장님들이 <strong>'전환율'</strong> 때문에 고민하십니다. 광고비는 계속 나가는데, 정작 계약으로 이어지는 비율이 너무 낮기 때문입니다.</p>
+      </div>
+
+      <p style="font-size: 1.1em; line-height: 1.8; color: #2d3748;">오늘 이 글에서는 <strong>방문요양 전환율이 안 오르는 진짜 이유 7가지</strong>와 함께, 검색부터 계약까지 <strong>5단계 고객 여정</strong>을 완벽하게 설계하는 실전 전략을 공개합니다. 이 글을 끝까지 읽으시면, 전환율을 <strong>3배 이상 높일 수 있는 구체적인 방법</strong>을 알게 되실 것입니다.</p>
+
+      <h3 style="color: #dc2626; border-bottom: 3px solid #ef4444; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-exclamation-triangle"></i> 방문요양, 왜 다른 업종과 '완전히 다른가'?</h3>
+
+      <p style="font-size: 1.05em; line-height: 1.8;">방문요양은 단순한 서비스업이 아닙니다. 가족의 건강과 안전이 연결된 <strong>'고관여·고위험·고신뢰 산업'</strong>입니다.</p>
+
+      <div style="background: #fef2f2; padding: 25px; border-radius: 10px; margin: 30px 0; border: 2px solid #dc2626;">
+        <h4 style="margin-top: 0; color: #991b1b; font-size: 1.3em;"><i class="fas fa-heart-broken"></i> 방문요양의 특수성</h4>
+        <ul style="color: #7f1d1d; line-height: 2; font-size: 1.05em;">
+          <li><strong>선택 기준이 100% 감정 + 논리 혼합</strong>
+            <ul style="margin-top: 10px; color: #991b1b;">
+              <li>감정: "우리 부모님을 맡겨도 안전할까?"</li>
+              <li>논리: "경력은? 등급신청은? 관리체계는?"</li>
+            </ul>
+          </li>
+          <li><strong>정보 비대칭 산업</strong> - 보호자는 직접 경험해보기 전까지 정확히 알 수 없음</li>
+          <li><strong>'문제 발생 시 비용'이 매우 큼</strong> - 요양보호사 교체, 사고, 의사소통 문제 → 가족 스트레스 폭발</li>
+          <li><strong>실패하면 '전환이 영구적으로 사라짐'</strong> - 한 번 실망하면 재계약 불가, 부정적 입소문은 지역 전체로 확산</li>
+        </ul>
+      </div>
+
+      <blockquote style="background: #fff7ed; border-left: 4px solid #f59e0b; padding: 20px; margin: 25px 0;">
+        <p style="margin: 0; color: #92400e; font-size: 1.1em; font-weight: 600;">💡 핵심 인사이트: 보호자는 '구매'가 아니라 <strong>'신뢰 계약을 체결'</strong>하는 심리 구조를 가지고 있습니다. 따라서 전환 설계가 없으면 성장 자체가 불가능합니다.</p>
+      </blockquote>
+
+      <h3 style="color: #1e40af; border-bottom: 3px solid #3b82f6; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-route"></i> 방문요양 고객 여정 5단계 완벽 분석</h3>
+
+      <p style="font-size: 1.05em; line-height: 1.8;">일반 매장과 완전히 다른 <strong>방문요양 고객 여정</strong>을 단계별로 상세히 분석하겠습니다.</p>
+
+      <div style="background: #f0f9ff; padding: 30px; border-radius: 12px; margin: 30px 0; border: 2px solid #0ea5e9;">
+        <h4 style="margin-top: 0; color: #0c4a6e; font-size: 1.3em;"><i class="fas fa-search"></i> 1단계: 검색 (Search)</h4>
+        
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <p style="color: #0369a1; font-weight: 600; margin-bottom: 15px;"><strong>🔍 검색 키워드:</strong></p>
+          <ul style="color: #075985; line-height: 2;">
+            <li>"성남 방문요양"</li>
+            <li>"장기요양등급 신청"</li>
+            <li>"방문요양 후기"</li>
+            <li>"어느 기관이 잘하나"</li>
+          </ul>
+        </div>
+
+        <div style="background: #fef3c7; padding: 15px; border-radius: 8px; border-left: 4px solid #f59e0b;">
+          <p style="margin: 0; color: #78350f; font-weight: 600;">💭 고객 심리: "어떤 기관이 믿을 만한지 전혀 모르겠다"</p>
+        </div>
+      </div>
+
+      <div style="background: #f5f3ff; padding: 30px; border-radius: 12px; margin: 30px 0; border: 2px solid #a78bfa;">
+        <h4 style="margin-top: 0; color: #5b21b6; font-size: 1.3em;"><i class="fas fa-balance-scale"></i> 2단계: 비교 (Comparison)</h4>
+        
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <p style="color: #6b21a8; font-weight: 600; margin-bottom: 15px;"><strong>📊 센터 3~7곳을 동시에 비교:</strong></p>
+          <ul style="color: #7c3aed; line-height: 2;">
+            <li>사진 (직원, 사무실)</li>
+            <li>경력 (사회복지사 경력, 관리자)</li>
+            <li>후기 (맘카페, 블로그)</li>
+            <li>등급신청 설명 퀄리티</li>
+            <li>케어 철학</li>
+            <li>응대 태도</li>
+          </ul>
+        </div>
+
+        <div style="background: #fef3c7; padding: 15px; border-radius: 8px; border-left: 4px solid #f59e0b;">
+          <p style="margin: 0; color: #78350f; font-weight: 600;">💭 고객 심리: "이 기관이 진짜 투명해 보이나?"</p>
+        </div>
+      </div>
+
+      <div style="background: #ecfccb; padding: 30px; border-radius: 12px; margin: 30px 0; border: 2px solid #84cc16;">
+        <h4 style="margin-top: 0; color: #3f6212; font-size: 1.3em;"><i class="fas fa-phone-alt"></i> 3단계: 상담 (Action - Pre-care)</h4>
+        
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <p style="color: #4d7c0f; font-weight: 600; margin-bottom: 15px;"><strong>📞 전화·카톡·내방 상담:</strong></p>
+          <ul style="color: #65a30d; line-height: 2;">
+            <li>절차 안내</li>
+            <li>어르신 상태 파악</li>
+            <li>케어 방식 설명</li>
+            <li>비용 구조 안내</li>
+            <li>요양보호사 매칭 방식 설명</li>
+          </ul>
+        </div>
+
+        <div style="background: #fef3c7; padding: 15px; border-radius: 8px; border-left: 4px solid #f59e0b;">
+          <p style="margin: 0; color: #78350f; font-weight: 600;">💭 고객 심리: "이 분이 정말 우리 엄마를 이해하고 있는가?"</p>
+        </div>
+      </div>
+
+      <div style="background: #fef3c7; padding: 30px; border-radius: 12px; margin: 30px 0; border: 2px solid #f59e0b;">
+        <h4 style="margin-top: 0; color: #78350f; font-size: 1.3em;"><i class="fas fa-user-check"></i> 4단계: 첫 방문 경험 (Experience)</h4>
+        
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <p style="color: #92400e; font-weight: 600; margin-bottom: 15px;"><strong>✅ 결정적 순간:</strong></p>
+          <ul style="color: #b45309; line-height: 2;">
+            <li>요양보호사의 태도</li>
+            <li>지각 여부</li>
+            <li>케어 실력·정서 케어</li>
+            <li>사후보고</li>
+            <li>센터의 모니터링 방식</li>
+          </ul>
+        </div>
+
+        <div style="background: #fee2e2; padding: 15px; border-radius: 8px; border-left: 4px solid #dc2626;">
+          <p style="margin: 0; color: #991b1b; font-weight: 600;">💭 고객 심리: "아... 이 센터 믿어도 되겠다 / 아니다"</p>
+        </div>
+      </div>
+
+      <div style="background: #dbeafe; padding: 30px; border-radius: 12px; margin: 30px 0; border: 2px solid #3b82f6;">
+        <h4 style="margin-top: 0; color: #1e3a8a; font-size: 1.3em;"><i class="fas fa-share-alt"></i> 5단계: 지속 이용·리뷰 (Share)</h4>
+        
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <p style="color: #1e40af; font-weight: 600; margin-bottom: 15px;"><strong>🔄 선순환 구조:</strong></p>
+          <ul style="color: #2563eb; line-height: 2;">
+            <li>지인 추천</li>
+            <li>맘카페 후기</li>
+            <li>지역 카톡방 공유</li>
+            <li>등급갱신 재상담</li>
+            <li>서비스 확대 (방문간호, 목욕, 복지용구)</li>
+          </ul>
+        </div>
+
+        <div style="background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #10b981;">
+          <p style="margin: 0; color: #065f46; font-weight: 600;">💭 고객 심리: "우리 어머니가 정말 잘 케어 받고 있다"</p>
+        </div>
+      </div>
+
+      <h3 style="color: #dc2626; border-bottom: 3px solid #ef4444; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-times-circle"></i> 전환율이 안 오르는 7가지 이탈 지점</h3>
+
+      <p style="font-size: 1.05em; line-height: 1.8;">방문요양은 이탈 지점이 매우 명확하고, <strong>한 번 이탈하면 회복 불가능</strong>합니다.</p>
+
+      <div style="background: #fef2f2; padding: 25px; border-radius: 10px; margin: 30px 0; border-left: 5px solid #dc2626;">
+        <h4 style="margin-top: 0; color: #991b1b;"><i class="fas fa-ban"></i> 이탈 지점 ①: 검색 이탈</h4>
+        <ul style="color: #7f1d1d; line-height: 2;">
+          <li>❌ 기관 사진 없음</li>
+          <li>❌ 직원 프로필 없음</li>
+          <li>❌ 정보 부실 (과거 글만 존재)</li>
+          <li>❌ 등급신청 정보 부재</li>
+        </ul>
+        <p style="color: #991b1b; font-weight: 600; margin-top: 15px; background: #fee2e2; padding: 10px; border-radius: 5px;">👉 보호자 심리: "여기는 불안하다"</p>
+      </div>
+
+      <div style="background: #fef2f2; padding: 25px; border-radius: 10px; margin: 30px 0; border-left: 5px solid #dc2626;">
+        <h4 style="margin-top: 0; color: #991b1b;"><i class="fas fa-ban"></i> 이탈 지점 ②: 비교 이탈</h4>
+        <ul style="color: #7f1d1d; line-height: 2;">
+          <li>❌ 경쟁 센터보다 '신뢰 요소' 부족</li>
+          <li>❌ 홈페이지/블로그 촌스러움</li>
+          <li>❌ 요양보호사 프로필 미공개</li>
+          <li>❌ 실제 서비스 사진 없음</li>
+          <li>❌ 후기 5개 미만</li>
+          <li>❌ 정보의 최신성 없음</li>
+        </ul>
+        <p style="color: #991b1b; font-weight: 600; margin-top: 15px; background: #fee2e2; padding: 10px; border-radius: 5px;">👉 "투명하지 않아 보인다"</p>
+      </div>
+
+      <div style="background: #fef2f2; padding: 25px; border-radius: 10px; margin: 30px 0; border-left: 5px solid #dc2626;">
+        <h4 style="margin-top: 0; color: #991b1b;"><i class="fas fa-ban"></i> 이탈 지점 ③: 상담 이탈</h4>
+        <ul style="color: #7f1d1d; line-height: 2;">
+          <li>❌ 말투 딱딱함</li>
+          <li>❌ 서류 설명 복잡함</li>
+          <li>❌ 절차가 '어렵게' 느껴짐</li>
+          <li>❌ 나이 많은 보호자가 이해 못함</li>
+          <li>❌ 어르신 상태에 대한 감정 공감 부족</li>
+        </ul>
+        <p style="color: #991b1b; font-weight: 600; margin-top: 15px; background: #fee2e2; padding: 10px; border-radius: 5px;">👉 "이 기관은 소통이 불편할 것 같다"</p>
+      </div>
+
+      <div style="background: #fef2f2; padding: 25px; border-radius: 10px; margin: 30px 0; border-left: 5px solid #dc2626;">
+        <h4 style="margin-top: 0; color: #991b1b;"><i class="fas fa-ban"></i> 이탈 지점 ④: 첫 방문 이탈</h4>
+        <ul style="color: #7f1d1d; line-height: 2;">
+          <li>❌ 요양보호사 표정·말투·태도 불만족</li>
+          <li>❌ 지각</li>
+          <li>❌ 어르신 컨디션 체크 소홀</li>
+          <li>❌ 청결 문제</li>
+          <li>❌ 일지 작성 부실</li>
+          <li>❌ 센터의 지속 관리 부재</li>
+        </ul>
+        <p style="color: #991b1b; font-weight: 600; margin-top: 15px; background: #fee2e2; padding: 10px; border-radius: 5px;">👉 "다음 달은 다른 기관으로 바꿔야겠다"</p>
+      </div>
+
+      <div style="background: #fef2f2; padding: 25px; border-radius: 10px; margin: 30px 0; border-left: 5px solid #dc2626;">
+        <h4 style="margin-top: 0; color: #991b1b;"><i class="fas fa-ban"></i> 이탈 지점 ⑤: 후기·입소문 이탈</h4>
+        <ul style="color: #7f1d1d; line-height: 2;">
+          <li>❌ 감동 경험 부재</li>
+          <li>❌ 후기를 요청하지 않음</li>
+          <li>❌ 보호자에게 생생한 업데이트 제공 없음</li>
+          <li>❌ 갈등 발생 시 늦은 대응</li>
+        </ul>
+        <p style="color: #991b1b; font-weight: 600; margin-top: 15px; background: #fee2e2; padding: 10px; border-radius: 5px;">👉 "우리 주변 사람들에게 추천하고 싶지 않다"</p>
+      </div>
+
+      <h3 style="color: #10b981; border-bottom: 3px solid #34d399; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-check-double"></i> 전환율 3배 높이는 4대 핵심 전략</h3>
+
+      <div style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); padding: 30px; border-radius: 12px; margin: 30px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <h4 style="margin-top: 0; color: #065f46; font-size: 1.3em;"><i class="fas fa-shield-alt"></i> 전략 ①: '신뢰 3요소' 시스템화</h4>
+        
+        <p style="color: #047857; font-size: 1.05em; margin-bottom: 20px;">방문요양 전환율의 90%는 <strong>'신뢰'</strong>에서 결정됩니다.</p>
+
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <h5 style="color: #059669; margin-top: 0;">1️⃣ 전문성</h5>
+          <ul style="color: #047857; line-height: 2;">
+            <li>사회복지사 경력</li>
+            <li>장기요양 등급신청 경험치</li>
+            <li>사례관리 능력</li>
+            <li>맞춤 케어 프로세스</li>
+            <li>요양보호사 교육·관리 체계</li>
+          </ul>
+        </div>
+
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <h5 style="color: #059669; margin-top: 0;">2️⃣ 진정성</h5>
+          <ul style="color: #047857; line-height: 2;">
+            <li>상담 태도</li>
+            <li>보호자 감정 케어 능력</li>
+            <li>어르신 상황 공감 능력</li>
+            <li>말투·표정·응대 스킬</li>
+          </ul>
+        </div>
+
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0;">
+          <h5 style="color: #059669; margin-top: 0;">3️⃣ 투명성</h5>
+          <ul style="color: #047857; line-height: 2;">
+            <li>실제 케어 사진</li>
+            <li>방문일지 시스템</li>
+            <li>문제 발생 시 대응 프로세스</li>
+            <li>직원 프로필 공개</li>
+            <li>서비스 시간·비용·절차 명확화</li>
+          </ul>
+        </div>
+
+        <blockquote style="background: #fef3c7; padding: 15px; border-radius: 8px; border-left: 4px solid #f59e0b; margin-top: 20px;">
+          <p style="margin: 0; color: #78350f; font-weight: 600;">💡 이 세 가지가 홈페이지·상담·현장경험에 모두 일관되게 드러나야 합니다.</p>
+        </blockquote>
+      </div>
+
+      <div style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); padding: 30px; border-radius: 12px; margin: 30px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <h4 style="margin-top: 0; color: #1e3a8a; font-size: 1.3em;"><i class="fas fa-life-ring"></i> 전략 ②: '불안 제거형 콘텐츠' 구조</h4>
+        
+        <p style="color: #1e40af; font-size: 1.05em; margin-bottom: 20px;">부모님 돌봄 서비스는 고객이 <strong>궁금해서가 아니라 불안해서 검색</strong>합니다.</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 20px;">
+          <div style="background: white; padding: 20px; border-radius: 8px;">
+            <h5 style="color: #1e40af; margin-top: 0;"><i class="fas fa-clipboard-check"></i> 등급신청</h5>
+            <ul style="color: #2563eb; font-size: 0.95em; line-height: 1.8;">
+              <li>절차 3단계</li>
+              <li>준비서류</li>
+              <li>자주 묻는 질문</li>
+              <li>심사 탈락 원인</li>
+              <li>통과 사례</li>
+            </ul>
+          </div>
+
+          <div style="background: white; padding: 20px; border-radius: 8px;">
+            <h5 style="color: #1e40af; margin-top: 0;"><i class="fas fa-user-nurse"></i> 요양보호사 케어</h5>
+            <ul style="color: #2563eb; font-size: 0.95em; line-height: 1.8;">
+              <li>매칭 방식</li>
+              <li>교체 기준</li>
+              <li>케어 체크리스트</li>
+              <li>문제 대응 시나리오</li>
+            </ul>
+          </div>
+
+          <div style="background: white; padding: 20px; border-radius: 8px;">
+            <h5 style="color: #1e40af; margin-top: 0;"><i class="fas fa-cogs"></i> 센터 관리체계</h5>
+            <ul style="color: #2563eb; font-size: 0.95em; line-height: 1.8;">
+              <li>서비스 일지</li>
+              <li>주간 모니터링</li>
+              <li>보호자 소통</li>
+              <li>연계 서비스</li>
+            </ul>
+          </div>
+
+          <div style="background: white; padding: 20px; border-radius: 8px;">
+            <h5 style="color: #1e40af; margin-top: 0;"><i class="fas fa-heart"></i> 보호자 마음 케어</h5>
+            <ul style="color: #2563eb; font-size: 0.95em; line-height: 1.8;">
+              <li>불안 이해 메시지</li>
+              <li>"부담 갖지 마세요"</li>
+              <li>처음부터 끝까지 도움</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 30px; border-radius: 12px; margin: 30px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <h4 style="margin-top: 0; color: #78350f; font-size: 1.3em;"><i class="fas fa-comments"></i> 전략 ③: '상담 경험 설계'</h4>
+        
+        <p style="color: #92400e; font-size: 1.05em; margin-bottom: 20px;">방문요양에서는 <strong>상담이 성패를 가릅니다.</strong></p>
+
+        <div style="background: white; padding: 25px; border-radius: 8px; margin: 20px 0;">
+          <h5 style="color: #b45309; margin-top: 0;">📋 상담 구조 공식</h5>
+          <ol style="color: #92400e; line-height: 2.2; font-size: 1.05em;">
+            <li><strong>불안 공감</strong> - "보호자님이 걱정하시는 부분 충분히 이해합니다"</li>
+            <li><strong>절차 간단화</strong> (3단 설명) - "절차는 어렵지 않습니다. 3단계로 정리해드릴게요"</li>
+            <li><strong>사례 제시</strong> - 실제 성공 사례 공유</li>
+            <li><strong>어르신 맞춤형 안내</strong> - "어르신 상태를 보니 ○○ 유형 상담이 필요합니다"</li>
+            <li><strong>관리체계 소개</strong> - 센터의 모니터링 방식</li>
+            <li><strong>Follow-up 메시지</strong> - 상담 후 카톡/문자 발송</li>
+          </ol>
+        </div>
+
+        <blockquote style="background: #f0fdf4; padding: 15px; border-radius: 8px; border-left: 4px solid #10b981;">
+          <p style="margin: 0; color: #065f46; font-weight: 600;">💡 상담에서 신뢰가 형성되면 전환은 자동입니다.</p>
+        </blockquote>
+      </div>
+
+      <div style="background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%); padding: 30px; border-radius: 12px; margin: 30px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <h4 style="margin-top: 0; color: #5b21b6; font-size: 1.3em;"><i class="fas fa-star"></i> 전략 ④: '서비스 경험 → 후기 → 추천' 구조</h4>
+        
+        <p style="color: #6b21a8; font-size: 1.05em; margin-bottom: 20px;">방문요양은 <strong>경험이 바로 다음 고객을 만듭니다.</strong></p>
+
+        <div style="background: white; padding: 25px; border-radius: 8px; margin: 20px 0;">
+          <h5 style="color: #7c3aed; margin-top: 0;">✅ 핵심 요소 7가지</h5>
+          <ol style="color: #6b21a8; line-height: 2.2; font-size: 1.05em;">
+            <li>일지 작성 완성도</li>
+            <li>요양보호사 태도/시간 준수</li>
+            <li>센터의 빠른 대응</li>
+            <li>보호자에게 사진+보고 전송</li>
+            <li>2주차 follow-up 전화</li>
+            <li>1개월차 서비스 만족도 체크</li>
+            <li>자동 후기 유도 시스템</li>
+          </ol>
+        </div>
+
+        <div style="background: #10b981; color: white; padding: 20px; border-radius: 8px; text-align: center;">
+          <p style="font-size: 1.2em; font-weight: 700; margin: 0;">🔄 이 구조가 완성되면:<br><span style="font-size: 1.5em;">재계약률↑ + 부정적 후기↓ + 지역 입소문↑ + 검색 전환율↑</span></p>
+        </div>
+      </div>
+
+      <h3 style="color: #7c3aed; border-bottom: 3px solid #a78bfa; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-tasks"></i> 실무 적용 가능한 5단계 실행 프레임워크</h3>
+
+      <div style="background: #f8fafc; padding: 30px; border-radius: 12px; margin: 30px 0; border: 2px solid #cbd5e1;">
+        <h4 style="margin-top: 0; color: #1e293b; font-size: 1.3em;">📌 STEP별 체크리스트</h4>
+        
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #3b82f6;">
+          <h5 style="color: #1e40af; margin-top: 0;">STEP 1. 검색 기반 정비</h5>
+          <ul style="color: #334155; line-height: 2;">
+            <li>✅ 네이버 지도 정보 최적화</li>
+            <li>✅ 대표자·센터 사진·프로필 포함</li>
+            <li>✅ 최신글 15개 이상 유지</li>
+            <li>✅ 등급신청/방문요양/복지용구 카테고리 분리</li>
+            <li>✅ 어르신 케어 사진 일부 공개 (익명 처리)</li>
+          </ul>
+        </div>
+
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #10b981;">
+          <h5 style="color: #059669; margin-top: 0;">STEP 2. 비교 우위 확보</h5>
+          <ul style="color: #334155; line-height: 2;">
+            <li>✅ 경력 강점 강조 (예: 15년 경력)</li>
+            <li>✅ 요양보호사 교육·관리 시스템 공개</li>
+            <li>✅ 사무실·상담실 사진</li>
+            <li>✅ 주간보고 시스템 안내</li>
+            <li>✅ 보호자 후기 (실명 일부 캡처)</li>
+            <li>✅ 문제 해결 프로세스 안내</li>
+          </ul>
+        </div>
+
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #f59e0b;">
+          <h5 style="color: #d97706; margin-top: 0;">STEP 3. 상담 경험 구축</h5>
+          <ul style="color: #334155; line-height: 2;">
+            <li>✅ 보호자 감정 공감 스크립트</li>
+            <li>✅ 3단계 절차 안내</li>
+            <li>✅ 실제 케이스로 신뢰 확보</li>
+            <li>✅ '어르신 맞춤 케어 전략' 제시</li>
+            <li>✅ 상담 후 체크리스트+메시지 발송</li>
+          </ul>
+        </div>
+
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #8b5cf6;">
+          <h5 style="color: #7c3aed; margin-top: 0;">STEP 4. 서비스 경험 디자인</h5>
+          <ul style="color: #334155; line-height: 2;">
+            <li>✅ 요양보호사 평가 기준</li>
+            <li>✅ 문제 대응 매뉴얼</li>
+            <li>✅ 보호자 커뮤니케이션 방식</li>
+            <li>✅ 사진/리포트 자동화</li>
+            <li>✅ 방문간호/목욕/복지용구 연계 플로우</li>
+          </ul>
+        </div>
+
+        <div style="background: white; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #ec4899;">
+          <h5 style="color: #be185d; margin-top: 0;">STEP 5. 후기·입소문 자동 루프</h5>
+          <ul style="color: #334155; line-height: 2;">
+            <li>✅ 보호자 감동 포인트 설계</li>
+            <li>✅ 후기 요청 시점 자동화</li>
+            <li>✅ 맘카페 친절 후기 기반 확산</li>
+            <li>✅ 카카오채널 상담 DB 확보</li>
+            <li>✅ 등급갱신 시 자동 상담 연결</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 style="color: #dc2626; border-bottom: 3px solid #ef4444; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-bullhorn"></i> 결론: 전환 설계가 성장을 결정합니다</h3>
+
+      <div style="background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%); padding: 30px; border-radius: 12px; margin: 30px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <p style="color: #7f1d1d; font-size: 1.1em; line-height: 2; margin-bottom: 20px;">방문요양은 <strong>'신뢰 산업'</strong>입니다.</p>
+        
+        <div style="background: white; padding: 25px; border-radius: 8px; margin: 20px 0;">
+          <p style="color: #991b1b; font-size: 1.05em; line-height: 2; margin: 0;">
+            ✅ 신뢰는 <strong>콘텐츠에서 시작</strong>되고<br>
+            ✅ <strong>상담에서 강화</strong>되며<br>
+            ✅ <strong>서비스 경험에서 완성</strong>되고<br>
+            ✅ <strong>후기를 통해 확장</strong>됩니다
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 30px;">
+          <div style="background: #fef2f2; padding: 20px; border-radius: 8px; border: 2px solid #dc2626;">
+            <h5 style="color: #991b1b; margin-top: 0; text-align: center;">❌ 전환 설계가 없는 센터</h5>
+            <p style="color: #7f1d1d; text-align: center; font-size: 1.05em;">광고비만 소모하고<br>성장하지 못함</p>
+          </div>
+
+          <div style="background: #f0fdf4; padding: 20px; border-radius: 8px; border: 2px solid #10b981;">
+            <h5 style="color: #065f46; margin-top: 0; text-align: center;">✅ 전환 설계를 갖춘 센터</h5>
+            <p style="color: #047857; text-align: center; font-size: 1.05em;">광고 없이도<br>'입소문→검색→상담→재계약'<br>자동 선순환</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 12px; text-align: center; margin: 40px 0;">
+        <h3 style="margin-top: 0; font-size: 1.8em; color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-weight: 700;">전환율 고민, 이제 끝내세요!</h3>
+        <p style="font-size: 1.1em; margin: 20px 0; color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">검색부터 계약까지 5단계 고객 여정을 완벽하게 설계하고,<br>전환율을 <strong>3배 이상 높이는 실전 전략</strong>이 궁금하신가요?<br>케어넥 마케팅이 <strong>신뢰 기반 전환 설계</strong>를 도와드립니다.</p>
+        <a href="https://nursmarket-a2dzpd9o.manus.space/" target="_blank" style="display: inline-block; background: white; color: #5a67d8; padding: 15px 40px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 1.1em; margin-top: 10px; transition: transform 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
+          <i class="fas fa-gift"></i> 전환율 무료 진단 받기
+        </a>
+        <p style="font-size: 0.9em; margin-top: 15px; color: #ffffff; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">* 상담은 무료이며, 센터별 전환율 분석 및 개선 전략을 제시해드립니다</p>
+      </div>
+
+      <blockquote style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 20px; margin: 30px 0;">
+        <strong style="color: #92400e;">💡 마지막 조언:</strong> 전환율은 '운'이 아닙니다. <strong>설계의 결과</strong>입니다. 케어넥 마케팅과 함께 보호자가 진정으로 신뢰하고 선택하는 센터를 만들어가세요.
       </blockquote>
     `
   }))
