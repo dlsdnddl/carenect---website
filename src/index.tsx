@@ -30,7 +30,7 @@ const getAnalyticsScripts = () => `
   <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
   <script type="text/javascript">
     if(!wcs_add) var wcs_add = {};
-    wcs_add["wa"] = "s_3dd91f6e8b4d";
+    wcs_add["wa"] = "157eb5f5586a190";
     if(window.wcs) {
       wcs.inflow();
       wcs_do();
