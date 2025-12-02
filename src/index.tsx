@@ -15,6 +15,29 @@ app.use('/api/*', cors())
 // Serve static files
 app.use('/static/*', serveStatic({ root: './public' }))
 
+// Analytics scripts (Google Analytics + Naver Analytics)
+const getAnalyticsScripts = () => `
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S2EJETNPRT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-S2EJETNPRT');
+  </script>
+  
+  <!-- Naver Analytics -->
+  <script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+  <script type="text/javascript">
+    if(!wcs_add) var wcs_add = {};
+    wcs_add["wa"] = "s_3dd91f6e8b4d";
+    if(window.wcs) {
+      wcs.inflow();
+      wcs_do();
+    }
+  </script>
+`
+
 // Naver verification file route
 app.get('/navere7b699febaa941daec996d8cc2279576.html', (c) => {
   return c.text('naver-site-verification: navere7b699febaa941daec996d8cc2279576.html', 200, {
@@ -34,6 +57,8 @@ app.get('/column', (c) => {
         <meta name="description" content="케어넥 마케팅의 방문요양 홍보, 요양원 마케팅 전문가가 공유하는 실전 노하우와 성공 사례를 확인하세요.">
         <meta name="keywords" content="방문요양 마케팅 칼럼, 요양원 홍보 노하우, 실버산업 마케팅 전략, 케어넥 마케팅 칼럼, 방문요양 성공사례">
         <meta name="theme-color" content="#3182f6">
+        
+        ${getAnalyticsScripts()}
         
         <!-- Fonts -->
         <link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -2482,6 +2507,8 @@ function getColumnPageHTML({slug, id, title, description, category, date, keywor
         ${JSON.stringify(structuredData, null, 2)}
         </script>
         
+        ${getAnalyticsScripts()}
+        
         <!-- Fonts and Icons -->
         <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css" rel="stylesheet">
@@ -2819,6 +2846,8 @@ app.get('/', (c) => {
           }
         }
         </script>
+        
+        ${getAnalyticsScripts()}
         
         <!-- Fonts -->
         <link rel="preconnect" href="https://cdn.jsdelivr.net">
