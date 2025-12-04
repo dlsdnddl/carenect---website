@@ -3439,7 +3439,7 @@ app.get('/', (c) => {
                 <div class="container">
                     <div class="section-header">
                         <h2 class="section-title">전문 칼럼</h2>
-                        <p class="section-subtitle"><strong>더 깊이 있는 정보가 필요하시다면 실전 경험으로 채운</strong><br><strong>저희의 전문 칼럼을 확인해 보세요.</strong></p>
+                        <p class="section-subtitle"><strong>더 깊이 있는 정보가 필요하시다면 실전 경험으로</strong><br><strong>채운 저희의 전문 칼럼을 확인해 보세요.</strong></p>
                     </div>
                     <div class="column-preview-content">
                         <div class="column-cta">
@@ -3462,8 +3462,8 @@ app.get('/', (c) => {
                                 꼭 계약해야 하는 것은 아닙니다.
                             </h2>
                             <p class="contact-description">
-                                대표님의 현재 상황을 진단하고, 경쟁사보다 한 발 앞서나갈 수 있는<br>
-                                마케팅 전략을 편하게 들어보세요.
+                                대표님의 현재 상황을 진단하고, 경쟁사보다 한 발<br>
+                                앞서나갈 수 있는 마케팅 전략을 편하게 들어보세요.
                             </p>
                             <div class="contact-benefits">
                                 <div class="benefit-item">

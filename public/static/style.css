@@ -2116,6 +2116,10 @@ body {
         text-align: center;
     }
 
+    .footer-contact p {
+        justify-content: center;
+    }
+
     .column-grid {
         grid-template-columns: 1fr;
         gap: 24px;
