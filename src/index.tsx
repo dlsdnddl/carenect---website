@@ -3242,44 +3242,43 @@ app.get('/', (c) => {
                     <div class="services-content">
                         <div class="services-intro">
                             <div class="intro-highlight animate-on-scroll" style="animation-delay: 0.1s;">
-                                <div class="highlight-badge">
+                                <div class="highlight-header">
                                     <span class="highlight-number">01</span>
                                     <span class="highlight-category">Search (발견)</span>
                                 </div>
-                                <h3 class="highlight-title">검색하는 순간, 가장 먼저 보이는 <strong>'대표님 업체'</strong></h3>
+                                <h3 class="highlight-title">검색하는 순간,<br>가장 먼저 보이는 <strong>'대표님 업체'</strong></h3>
                                 <p class="highlight-description">
-                                    고객이 니즈를 느낀 그 순간, 경쟁사가 아닌 귀사가 정답으로 제시됩니다. 
-                                    단순 노출을 넘어 클릭을 부르는 키워드 선점 전략으로 고객의 시선을 사로잡습니다.
+                                    고객이 니즈를 느낀 그 순간, 경쟁사가 아닌 귀사가 정답으로 제시됩니다. 단순 노출을 넘어 클릭을 부르는 키워드 선점 전략으로 고객의 시선을 사로잡습니다.
                                 </p>
                             </div>
                             <div class="intro-arrow animate-on-scroll" style="animation-delay: 0.2s;">
                                 <i class="fas fa-arrow-down"></i>
                             </div>
                             <div class="intro-highlight animate-on-scroll" style="animation-delay: 0.3s;">
-                                <div class="highlight-badge">
+                                <div class="highlight-header">
                                     <span class="highlight-number">02</span>
                                     <span class="highlight-category">Contents (설득)</span>
                                 </div>
-                                <h3 class="highlight-title">블로그, 유튜브, 인스타, 스레드... <strong>어디서든 증명되는 전문성</strong></h3>
+                                <h3 class="highlight-title">블로그, 유튜브, 인스타, 스레드...<br><strong>어디서든 증명되는 전문성</strong></h3>
                                 <p class="highlight-description">
-                                    긴 호흡의 설득은 블로그와 유튜브로, 빠른 소통과 확산은 인스타와 스레드로. 
-                                    각 채널 특성에 맞춘 최적화된 콘텐츠가 귀사를 <strong>'믿을 수 있는 대세'</strong>로 만듭니다.
+                                    긴 호흡의 설득은 블로그와 유튜브로, 빠른 소통과 확산은 인스타와 스레드로. 각 채널 특성에 맞춘 최적화된 콘텐츠가 귀사를 <strong>'믿을 수 있는 대세'</strong>로 만듭니다.
                                 </p>
                             </div>
                             <div class="intro-arrow animate-on-scroll" style="animation-delay: 0.4s;">
                                 <i class="fas fa-arrow-down"></i>
                             </div>
                             <div class="intro-highlight intro-result animate-on-scroll" style="animation-delay: 0.5s;">
-                                <div class="highlight-badge">
+                                <div class="highlight-header">
                                     <span class="highlight-number">03</span>
                                     <span class="highlight-category">Conversion (전환)</span>
                                 </div>
-                                <h3 class="highlight-title">높아진 브랜드 위상은 <strong style="color: #dc2626;">'망설임 없는 선택'</strong>을 만듭니다</h3>
+                                <h3 class="highlight-title">높아진 브랜드 위상은<br><strong style="color: #dc2626;">'망설임 없는 선택'</strong>을 만듭니다</h3>
                                 <p class="highlight-description">
-                                    단순히 이름만 알리는 것이 아닙니다. <strong>"여기는 진짜네"</strong>라는 확실한 인지도는 
-                                    가격 비교를 무의미하게 만들고, 자연스럽게 구매와 문의 버튼을 누르게 합니다.
+                                    단순히 이름만 알리는 것이 아닙니다. <strong>"여기는 진짜네"</strong>라는 확실한 인지도는 가격 비교를 무의미하게 만들고, 자연스럽게 구매와 문의 버튼을 누르게 합니다.
                                 </p>
-                                <i class="fas fa-chart-line result-icon"></i>
+                                <div class="result-badge">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
                             </div>
                         </div>
                         <div class="services-grid">
