@@ -220,7 +220,7 @@ body {
 /* Hero Section */
 .hero-section {
     position: relative;
-    min-height: 100vh;
+    min-height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -257,7 +257,7 @@ body {
     position: relative;
     z-index: 1;
     text-align: center;
-    padding: 120px 0 80px;
+    padding: 100px 0 60px;
 }
 
 .hero-title {
@@ -831,7 +831,7 @@ body {
 }
 
 .highlight-title {
-    font-size: 24px;
+    font-size: 26px;
     font-weight: 700;
     color: #1f2937;
     line-height: 1.5;
@@ -859,7 +859,7 @@ body {
 }
 
 .highlight-description {
-    font-size: 16px;
+    font-size: 18px;
     color: #6b7280;
     line-height: 1.8;
     margin: 0;
@@ -1987,7 +1987,7 @@ body {
     }
 
     .hero-content {
-        padding: 100px 0 60px;
+        padding: 80px 0 50px;
     }
 
     .hero-actions {
@@ -2066,12 +2066,12 @@ body {
     }
 
     .highlight-title {
-        font-size: 19px;
+        font-size: 21px;
         line-height: 1.5;
     }
 
     .highlight-description {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .intro-arrow {
