@@ -143,6 +143,22 @@ app.get('/column', (c) => {
                     </div>
                     
                     <div class="column-grid">
+                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/suwon-home-care-marketing'">
+                            <div class="column-meta">
+                                <span class="column-category">지역 마케팅</span>
+                                <span class="column-date">2025.11.15</span>
+                            </div>
+                            <h3>수원 방문요양 마케팅, 광고비만 날리고 계신가요?</h3>
+                            <p class="column-excerpt">
+                                "같은 수원인데 왜 저 센터만 대기자가 줄을 설까?" 수원 4개 구별 맞춤 전략으로 월 문의 12건 달성한 실제 사례. 지역 특성을 모르면 마케팅 비용만 낭비됩니다.
+                            </p>
+                            <div class="column-stats">
+                                <span><i class="fas fa-eye"></i> 124</span>
+                                <span><i class="fas fa-heart"></i> 8</span>
+                                <span><i class="fas fa-comment"></i> 5</span>
+                            </div>
+                        </article>
+
                         <article class="column-card animate-on-scroll" onclick="window.location.href='/column/home-care-conversion-strategy'">
                             <div class="column-meta">
                                 <span class="column-category">전환율 최적화</span>
@@ -1484,6 +1500,241 @@ app.get('/column/day-care-branding-strategy', (c) => {
 
       <blockquote style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 20px; margin: 30px 0;">
         <strong style="color: #92400e;">💡 마지막 조언:</strong> 주간보호센터 홍보는 '한 번 하면 끝'이 아닙니다. <strong>신뢰는 꾸준함에서 나옵니다.</strong> 케어넥 마케팅과 함께 보호자가 진정으로 믿고 선택하는 센터를 만들어가세요.
+      </blockquote>
+    `
+  }))
+})
+
+// 새로운 칼럼: 수원 방문요양 마케팅 전략
+app.get('/column/suwon-home-care-marketing', (c) => {
+  return c.html(getColumnPageHTML({
+    slug: 'suwon-home-care-marketing',
+    id: 8,
+    title: '수원 방문요양 마케팅, 광고비만 날리고 계신가요?',
+    description: '같은 수원인데 왜 저 센터만 대기자가 줄을 설까? 수원 4개 구별 맞춤 전략으로 3개월 만에 월 문의 12건 달성한 실제 사례. 장안구, 권선구, 팔달구, 영통구 지역 특성 기반 마케팅 전략을 공개합니다.',
+    category: '지역 마케팅',
+    date: '2025.11.15',
+    keywords: ['수원 방문요양 마케팅', '수원 방문요양', '권선구 방문요양', '영통구 방문요양', '수원 지역 마케팅', '방문요양 홍보', '지역별 마케팅 전략', '수원 요양 센터', '방문요양 문의 증가', '수원 마케팅 대행'],
+    content: `
+      <div class="column-intro" style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 30px; border-radius: 12px; border-left: 5px solid #f59e0b; margin-bottom: 40px;">
+        <p style="font-size: 1.3em; font-weight: 700; color: #92400e; margin-bottom: 20px;">❓ "같은 수원인데, 왜 저 센터만 대기자가 줄을 설까?"</p>
+        <p style="font-size: 1.1em; color: #b45309; margin-bottom: 10px;">"네이버 광고비만 월 50만원씩 나가는데 문의는 고작 1-2건..."</p>
+        <p style="font-size: 1.1em; color: #b45309; margin-bottom: 10px;">"전단지도 돌리고 블로그도 만들었는데 효과가 없어요."</p>
+        <p style="font-size: 1.1em; color: #b45309; margin-bottom: 20px;">"경쟁이 너무 치열해서 이제 포기해야 하나..."</p>
+        <p style="font-size: 1.05em; color: #92400e; line-height: 1.8;">센터장님, 마케팅 대행사들의 화려한 말발에 속아 정작 중요한 <strong>'숫자'</strong>를 놓치고 계시진 않으신가요? 수원 방문요양 마케팅의 핵심은 단순한 노출이 아니라, <strong>실제 수급자 보호자의 전화를 울리게 하는 '전환'</strong>에 있습니다.</p>
+      </div>
+
+      <p style="font-size: 1.1em; line-height: 1.8; color: #2d3748; margin-bottom: 20px;">저는 <strong>13년 차 마케터</strong>이자, <strong>3년간 요양보호사 교육원을 직접 운영</strong>하며 현장의 애환을 몸소 체험했습니다. 현장을 모르는 마케터는 절대 알 수 없는 <strong>'보호자의 심리'</strong>와 <strong>'수원의 지역적 특성'</strong>을 꿰뚫고 있기에, 결과가 다를 수밖에 없습니다.</p>
+
+      <p style="font-size: 1.05em; line-height: 1.8; color: #374151;">백 마디 말보다, 케어넥 마케팅이 만들어낸 <strong>실제 성과</strong>를 먼저 보여드리고 시작하겠습니다.</p>
+
+      <div style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%); padding: 30px; border-radius: 12px; margin: 30px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <h4 style="margin-top: 0; color: #1e40af; font-size: 1.4em; text-align: center;"><i class="fas fa-trophy"></i> 수원 권선구 A센터 실제 컨설팅 사례</h4>
+        
+        <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 20px; align-items: center; margin: 30px 0;">
+          <div style="background: white; padding: 20px; border-radius: 8px; text-align: center;">
+            <p style="color: #dc2626; font-size: 0.9em; margin-bottom: 10px; font-weight: 600;">❌ 이전 상황</p>
+            <p style="color: #374151; font-size: 1.05em; margin: 5px 0;">• 전단지 배포 위주 홍보</p>
+            <p style="color: #374151; font-size: 1.05em; margin: 5px 0;">• 블로그 방치 (월 방문 30명)</p>
+            <p style="color: #dc2626; font-size: 1.3em; font-weight: 700; margin-top: 15px;">월 신규 문의<br>1~2건</p>
+          </div>
+          
+          <div style="text-align: center;">
+            <i class="fas fa-arrow-right" style="font-size: 2em; color: #3b82f6;"></i>
+          </div>
+          
+          <div style="background: white; padding: 20px; border-radius: 8px; text-align: center;">
+            <p style="color: #10b981; font-size: 0.9em; margin-bottom: 10px; font-weight: 600;">✅ 3개월 후 결과</p>
+            <p style="color: #374151; font-size: 1.05em; margin: 5px 0;">• 블로그 일 방문 60명</p>
+            <p style="color: #374151; font-size: 1.05em; margin: 5px 0;">• 진성 고객 비율 80%</p>
+            <p style="color: #10b981; font-size: 1.3em; font-weight: 700; margin-top: 15px;">월 신규 문의<br>12건</p>
+          </div>
+        </div>
+
+        <div style="background: #fef3c7; padding: 15px; border-radius: 8px; text-align: center; border-left: 4px solid #f59e0b;">
+          <p style="margin: 0; color: #92400e; font-weight: 600; font-size: 1.1em;">📈 약 6배 상승! "글 보고 믿음이 가서 연락했다"는 진성 고객 비율 80%</p>
+        </div>
+      </div>
+
+      <p style="font-size: 1.15em; line-height: 1.8; color: #1e40af; font-weight: 600; text-align: center; margin: 30px 0;">어떻게 3개월 만에 이런 변화가 가능했을까요?<br>그 구체적인 전략을 지금부터 모두 공개합니다.</p>
+
+      <h3 style="color: #3b82f6; border-bottom: 3px solid #60a5fa; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-map-marked-alt"></i> 1. 수원 방문요양, 구(區)마다 보호자의 검색 패턴이 완전히 다릅니다</h3>
+
+      <p style="font-size: 1.05em; line-height: 1.8; margin-bottom: 15px;">가장 중요한 첫 번째 비결은 <strong>'수원이라는 지역을 4개의 다른 시장으로 보고 접근했다'</strong>는 점입니다.</p>
+
+      <p style="font-size: 1.05em; line-height: 1.8; color: #374151;">왜냐하면 수원시는 <strong>장안구, 권선구, 팔달구, 영통구</strong>의 인구 구조와 생활권이 완전히 다르기 때문입니다. 단순히 "수원 방문요양"이라는 키워드만 잡으려다가는 <strong>광고비만 날리고 효과는 못 봅니다.</strong></p>
+
+      <div style="background: #f0f9ff; padding: 25px; border-radius: 10px; margin: 30px 0; border: 2px solid #0ea5e9;">
+        <h4 style="margin-top: 0; color: #0c4a6e; font-size: 1.3em;"><i class="fas fa-lightbulb"></i> 케어넥 마케팅의 지역별 차별화 전략</h4>
+        <p style="color: #0369a1; margin-bottom: 20px;">교육원 운영 당시 축적된 상담 데이터와 수원시 인구 통계 분석을 통해 지역별로 접근 방식을 달리했습니다.</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+          <div style="background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%); padding: 20px; border-radius: 8px; border-left: 4px solid #8b5cf6;">
+            <h5 style="color: #5b21b6; margin-top: 0; font-size: 1.1em;"><i class="fas fa-building"></i> 영통구/광교권</h5>
+            <p style="color: #6b21a8; font-weight: 600; margin-bottom: 10px;">타겟: 30-40대 자녀 보호자 중심</p>
+            <ul style="color: #7c3aed; line-height: 1.8; font-size: 0.95em;">
+              <li>직장 생활로 바쁜 워킹맘/워킹대디</li>
+              <li>모바일 중심 검색 행동</li>
+              <li>빠른 정보 파악 선호</li>
+            </ul>
+            <div style="background: white; padding: 10px; border-radius: 5px; margin-top: 15px;">
+              <p style="margin: 0; color: #6b21a8; font-size: 0.9em;"><strong>핵심 메시지:</strong> "깔끔한 정보 정리" + "행정 처리 완벽 대행"</p>
+            </div>
+          </div>
+
+          <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 20px; border-radius: 8px; border-left: 4px solid #f59e0b;">
+            <h5 style="color: #92400e; margin-top: 0; font-size: 1.1em;"><i class="fas fa-home"></i> 팔달구/장안구</h5>
+            <p style="color: #b45309; font-weight: 600; margin-bottom: 10px;">타겟: 지역 밀착형 어르신/배우자</p>
+            <ul style="color: #d97706; line-height: 1.8; font-size: 0.95em;">
+              <li>한곳에서 오래 거주한 주민</li>
+              <li>직접 방문 상담 선호</li>
+              <li>오프라인 신뢰 중시</li>
+            </ul>
+            <div style="background: white; padding: 10px; border-radius: 5px; margin-top: 15px;">
+              <p style="margin: 0; color: #92400e; font-size: 0.9em;"><strong>핵심 메시지:</strong> "우리 동네 가장 가까운 센터" + "편안한 상담 분위기"</p>
+            </div>
+          </div>
+        </div>
+
+        <blockquote style="background: #fff7ed; padding: 15px; border-radius: 8px; border-left: 4px solid #ea580c; margin-top: 20px;">
+          <p style="margin: 0; color: #9a3412; font-weight: 600; font-size: 1.05em;">💡 핵심 인사이트: 남들이 "수원 1등"을 외칠 때, 저희는 <strong>"권선동 주민이 가장 믿고 맡기는 센터"</strong>라는 뾰족한 메시지로 실제 거주하는 잠재 고객을 저격했습니다. 이것이 문의 폭주로 이어진 결정적 이유입니다.</p>
+        </blockquote>
+      </div>
+
+      <h3 style="color: #10b981; border-bottom: 3px solid #34d399; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-certificate"></i> 2. 방문요양 홍보, 뜬구름 잡는 소리는 빼고 '증거'만 남깁니다</h3>
+
+      <p style="font-size: 1.05em; line-height: 1.8; margin-bottom: 15px;">두 번째 비결은 <strong>'센터장님의 머릿속에만 있는 강점을 눈에 보이는 증거로 치환했다'</strong>는 것입니다.</p>
+
+      <p style="font-size: 1.05em; line-height: 1.8; color: #374151;">대부분의 블로그는 "가족처럼 모십니다", "최선을 다합니다"라는 <strong>추상적인 말만 되풀이</strong>합니다. 하지만 보호자는 <em>"그래서 내 부모님을 어떻게 케어해줄 건데?"</em>라는 <strong>구체적인 답</strong>을 원합니다.</p>
+
+      <div style="background: #f0fdf4; padding: 25px; border-radius: 10px; margin: 30px 0; border: 2px solid #10b981;">
+        <h4 style="margin-top: 0; color: #065f46; font-size: 1.3em;"><i class="fas fa-check-double"></i> 실제 A센터 사례: 증거 기반 콘텐츠로의 전환</h4>
+        
+        <p style="color: #047857; margin-bottom: 20px;">저희는 A센터장님과의 <strong>심층 인터뷰</strong>를 통해 "과거 요양병원 수간호사 경력"과 "차량 목욕 서비스 가능"이라는 <strong>팩트</strong>를 찾아냈습니다. 그리고 이를 콘텐츠화했습니다.</p>
+
+        <div style="display: grid; grid-template-columns: 1fr auto 1fr; gap: 20px; align-items: center; margin: 20px 0;">
+          <div style="background: #fee2e2; padding: 20px; border-radius: 8px; border: 2px solid #dc2626;">
+            <p style="color: #dc2626; font-weight: 700; margin-bottom: 10px; font-size: 1.1em;">❌ Before</p>
+            <p style="color: #7f1d1d; font-size: 1.05em; line-height: 1.6;">"친절한 요양보호사를 보내드립니다."</p>
+          </div>
+          
+          <div style="text-align: center;">
+            <i class="fas fa-arrow-right" style="font-size: 2em; color: #10b981;"></i>
+          </div>
+          
+          <div style="background: #d1fae5; padding: 20px; border-radius: 8px; border: 2px solid #10b981;">
+            <p style="color: #10b981; font-weight: 700; margin-bottom: 10px; font-size: 1.1em;">✅ After</p>
+            <p style="color: #065f46; font-size: 1.05em; line-height: 1.6;">"수간호사 출신 센터장이 응급상황 시 5분 안에 화상 통화로 대처합니다."</p>
+          </div>
+        </div>
+
+        <div style="background: #fef3c7; padding: 15px; border-radius: 8px; border-left: 4px solid #f59e0b; margin-top: 20px;">
+          <p style="margin: 0; color: #92400e; font-weight: 600;">💬 이 한 줄의 차이가 보호자에게 주는 <strong>신뢰감의 무게는 하늘과 땅 차이</strong>입니다.</p>
+        </div>
+      </div>
+
+      <p style="font-size: 1.05em; line-height: 1.8; color: #374151;">케어넥 마케팅은 교육원 운영 경험을 살려, 보호자들이 요양보호사 파견 시 가장 걱정하는 포인트<strong>(학대, 방임, 전문성 부족)</strong>를 정확히 긁어주는 콘텐츠를 제작합니다.</p>
+
+      <h3 style="color: #8b5cf6; border-bottom: 3px solid #a78bfa; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-cogs"></i> 3. 수원 방문요양 마케팅, 철저한 3단계 프로세스로 움직입니다</h3>
+
+      <p style="font-size: 1.05em; line-height: 1.8; margin-bottom: 15px;">마지막으로, 저희는 주먹구구식으로 글을 쓰지 않습니다. <strong>'문의가 올 수밖에 없는 설계도'</strong>를 먼저 그립니다.</p>
+
+      <p style="font-size: 1.05em; line-height: 1.8; color: #374151;">센터장님들이 가장 답답해하시는 것이 <em>"맡기면 뭘 해주는 건가요?"</em>입니다. 케어넥 마케팅의 작업은 아래와 같이 <strong>체계적으로 진행</strong>됩니다.</p>
+
+      <div style="background: #faf5ff; padding: 30px; border-radius: 12px; margin: 30px 0; border: 2px solid #a78bfa;">
+        <h4 style="margin-top: 0; color: #6b21a8; font-size: 1.3em; text-align: center;"><i class="fas fa-clipboard-list"></i> 케어넥 마케팅 3단계 프로세스</h4>
+
+        <div style="margin-top: 30px;">
+          <div style="background: white; padding: 25px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #3b82f6;">
+            <h5 style="color: #1e40af; margin-top: 0; font-size: 1.2em;"><i class="fas fa-search"></i> 1단계: 심층 인터뷰 & 진단</h5>
+            <p style="color: #374151; line-height: 1.8; margin-bottom: 15px;">센터장님과 <strong>60분 인터뷰</strong>를 통해 우리 센터만의 '<strong>필살기(USP)</strong>'를 <strong>10가지 이상</strong> 발굴하고, 경쟁 센터를 분석합니다.</p>
+            <div style="background: #f0f9ff; padding: 15px; border-radius: 5px;">
+              <p style="margin: 0; color: #0369a1; font-size: 0.95em;"><strong>산출물:</strong> 센터 강점 리스트, 경쟁사 분석 리포트, USP 정의서</p>
+            </div>
+          </div>
+
+          <div style="background: white; padding: 25px; border-radius: 8px; margin-bottom: 20px; border-left: 5px solid #10b981;">
+            <h5 style="color: #047857; margin-top: 0; font-size: 1.2em;"><i class="fas fa-pencil-ruler"></i> 2단계: 설득 시나리오 설계</h5>
+            <p style="color: #374151; line-height: 1.8; margin-bottom: 15px;">발굴된 강점을 바탕으로 블로그의 <strong>카테고리</strong>(센터장 철학, 케어 사례, 정보 제공)를 구성하고, 상위 노출될 <strong>'수원 지역 세부 키워드 맵'</strong>을 짭니다.</p>
+            <div style="background: #f0fdf4; padding: 15px; border-radius: 5px;">
+              <p style="margin: 0; color: #047857; font-size: 0.95em;"><strong>산출물:</strong> 키워드 맵, 콘텐츠 카테고리 구조, 월별 발행 계획</p>
+            </div>
+          </div>
+
+          <div style="background: white; padding: 25px; border-radius: 8px; border-left: 5px solid #f59e0b;">
+            <h5 style="color: #92400e; margin-top: 0; font-size: 1.2em;"><i class="fas fa-rocket"></i> 3단계: 콘텐츠 발행 & 최적화</h5>
+            <p style="color: #374151; line-height: 1.8; margin-bottom: 15px;">첫 4주간 블로그 포스팅 <strong>10편</strong>(핵심 칼럼 포함)을 집중 발행하여 블로그 지수를 높이고, 동시에 네이버 플레이스 정보를 매력적으로 리빌딩합니다.</p>
+            <div style="background: #fff7ed; padding: 15px; border-radius: 5px;">
+              <p style="margin: 0; color: #92400e; font-size: 0.95em;"><strong>산출물:</strong> 월 10편 포스팅, 플레이스 최적화, 실시간 성과 리포트</p>
+            </div>
+          </div>
+        </div>
+
+        <div style="background: linear-gradient(135deg, #a78bfa 0%, #8b5cf6 100%); color: white; padding: 20px; border-radius: 8px; text-align: center; margin-top: 30px;">
+          <p style="font-size: 1.2em; font-weight: 700; margin: 0;">✨ 이 과정을 거치면, 블로그는 단순한 홍보 게시판이 아니라<br><strong>24시간 쉬지 않고 상담을 받아내는 영업사원</strong>으로 재탄생합니다.</p>
+        </div>
+      </div>
+
+      <h3 style="color: #dc2626; border-bottom: 3px solid #ef4444; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-flag-checkered"></i> 결론: 수원 방문요양 마케팅의 성공 공식</h3>
+
+      <p style="font-size: 1.15em; line-height: 1.8; color: #1f2937; font-weight: 600; margin-bottom: 20px;">오늘 우리는 수원 방문요양 마케팅의 성공 공식이 단순 노출이 아닌 <strong>'정밀한 타겟팅'</strong>과 <strong>'구체적인 증거'</strong>에 있음을 확인했습니다.</p>
+
+      <div style="background: #f9fafb; padding: 25px; border-radius: 10px; margin: 30px 0; border: 2px solid #cbd5e1;">
+        <h4 style="margin-top: 0; color: #1e293b; font-size: 1.3em;"><i class="fas fa-check-circle"></i> 핵심 요약</h4>
+        <ul style="color: #334155; line-height: 2.2; font-size: 1.05em;">
+          <li>✅ <strong>월 문의 12건</strong>이라는 숫자는 운이 아니라 <strong>철저한 전략의 결과</strong>였습니다</li>
+          <li>✅ <strong>수원이라는 지역을 구 단위, 동 단위로 쪼개어 접근</strong>해야 승산이 있습니다</li>
+          <li>✅ 추상적인 말 대신 <strong>구체적인 증거와 팩트</strong>로 신뢰를 구축해야 합니다</li>
+          <li>✅ <strong>체계적인 3단계 프로세스</strong> 없이는 밑 빠진 독에 물 붓기입니다</li>
+        </ul>
+      </div>
+
+      <div style="background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%); padding: 30px; border-radius: 12px; margin: 30px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <p style="color: #7f1d1d; font-size: 1.1em; line-height: 2; margin-bottom: 20px;">요양보호사 교육원을 운영하며 수많은 센터장님의 <strong>흥망성쇠</strong>를 지켜봤습니다. <strong>본질 없는 마케팅</strong>으로 고통받는 것을 더 이상 지켜볼 수 없어 케어넥 마케팅을 시작했습니다.</p>
+        
+        <div style="background: white; padding: 25px; border-radius: 8px;">
+          <p style="color: #991b1b; font-size: 1.15em; font-weight: 700; margin: 0; text-align: center;">센터장님은 어르신 케어에만 집중하세요.<br>복잡한 마케팅과 수급자 모집은 <strong>현장을 아는 전문가</strong>가 책임지겠습니다.</p>
+        </div>
+      </div>
+
+      <h3 style="color: #7c3aed; border-bottom: 3px solid #a78bfa; padding-bottom: 10px; margin-top: 50px;"><i class="fas fa-gift"></i> 특별 혜택: 선착순 5센터 한정!</h3>
+
+      <p style="font-size: 1.15em; line-height: 1.8; color: #1f2937; text-align: center; margin-bottom: 20px;">수원 방문요양 마케팅, 이제 그림이 그려지시나요?<br><strong>우리 센터도 3개월 뒤 '대기자'를 받을 수 있을까요?</strong></p>
+
+      <p style="font-size: 1.05em; line-height: 1.8; color: #374151; text-align: center; margin-bottom: 30px;">지금 문의 남겨주시는 센터장님께는 단순 상담이 아닌,<br>실제 돈을 받고 제공하던 <strong>[30만 원 상당의 마케팅 전략 패키지]</strong>를 무료로 제공해 드립니다.</p>
+
+      <div style="background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); padding: 30px; border-radius: 12px; margin: 30px 0; border: 2px solid #f59e0b;">
+        <h4 style="margin-top: 0; color: #92400e; font-size: 1.3em; text-align: center;"><i class="fas fa-star"></i> 30만 원 상당의 마케팅 전략 패키지 (선착순 5센터)</h4>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-top: 20px;">
+          <div style="background: white; padding: 20px; border-radius: 8px;">
+            <h5 style="color: #d97706; margin-top: 0;"><i class="fas fa-clipboard-check"></i> 우리 센터 마케팅 점수표</h5>
+            <p style="color: #78350f; font-size: 0.95em; line-height: 1.6;">현재 블로그/플레이스 상태 적나라한 진단 (100점 만점)</p>
+          </div>
+
+          <div style="background: white; padding: 20px; border-radius: 8px;">
+            <h5 style="color: #d97706; margin-top: 0;"><i class="fas fa-map"></i> 수원 지역 황금 키워드 맵</h5>
+            <p style="color: #78350f; font-size: 0.95em; line-height: 1.6;">우리 동네 보호자들이 검색하는 실제 키워드 리스트</p>
+          </div>
+
+          <div style="background: white; padding: 20px; border-radius: 8px;">
+            <h5 style="color: #d97706; margin-top: 0;"><i class="fas fa-tasks"></i> 3개월 액션 플랜</h5>
+            <p style="color: #78350f; font-size: 0.95em; line-height: 1.6;">당장 다음 주부터 적용 가능한 구체적인 실행 계획 3가지</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px; border-radius: 12px; text-align: center; margin: 40px 0;">
+        <h3 style="margin-top: 0; font-size: 1.8em; color: #ffffff; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); font-weight: 700;">경쟁 센터가 이 글을 읽고 먼저 움직이기 전에!</h3>
+        <p style="font-size: 1.1em; margin: 20px 0; color: #ffffff; text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">아래 링크를 눌러 <strong>혜택을 선점</strong>하세요.<br>수원 방문요양 시장에서 <strong>1등 센터</strong>로 성장할 수 있는 기회입니다.</p>
+        <a href="https://nursmarket-a2dzpd9o.manus.space/" target="_blank" style="display: inline-block; background: white; color: #5a67d8; padding: 15px 40px; border-radius: 30px; text-decoration: none; font-weight: 700; font-size: 1.1em; margin-top: 10px; transition: transform 0.2s; box-shadow: 0 4px 6px rgba(0,0,0,0.2);">
+          <i class="fas fa-gift"></i> 우리 센터 진단받고 액션 플랜 무료로 받기
+        </a>
+        <p style="font-size: 0.9em; margin-top: 15px; color: #ffffff; text-shadow: 1px 1px 2px rgba(0,0,0,0.2);">* 선착순 5센터 한정, 먼저 신청하신 분만 혜택을 받으실 수 있습니다</p>
+      </div>
+
+      <blockquote style="background: #fef3c7; border-left: 4px solid #f59e0b; padding: 20px; margin: 30px 0;">
+        <strong style="color: #92400e;">💡 마지막 조언:</strong> 수원 방문요양 마케팅은 <strong>지역을 아는 것</strong>에서 시작됩니다. 단순히 "수원"이라는 큰 단위가 아니라, <strong>영통구 보호자와 팔달구 보호자의 검색 패턴</strong>을 이해해야 합니다. 케어넥 마케팅과 함께 우리 동네에서 가장 신뢰받는 센터를 만들어가세요.
       </blockquote>
     `
   }))
