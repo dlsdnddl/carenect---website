@@ -740,14 +740,14 @@ body {
     background: linear-gradient(135deg, #ffffff, #f8fafc);
     border: 2px solid #e5e7eb;
     border-radius: 20px;
-    padding: 36px 48px;
+    padding: 40px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 20px;
+    gap: 18px;
     width: 100%;
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
@@ -828,12 +828,13 @@ body {
 }
 
 .highlight-title {
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     color: #1f2937;
-    line-height: 1.6;
+    line-height: 1.5;
     margin: 0;
     width: 100%;
+    word-break: keep-all;
 }
 
 .highlight-title strong {
@@ -857,9 +858,10 @@ body {
 .highlight-description {
     font-size: 16px;
     color: #6b7280;
-    line-height: 1.75;
+    line-height: 1.8;
     margin: 0;
     width: 100%;
+    word-break: keep-all;
 }
 
 .services-intro .intro-highlight .highlight-text,
@@ -2032,13 +2034,14 @@ body {
     }
 
     .intro-highlight {
-        padding: 28px 24px;
+        padding: 30px 28px;
         text-align: center;
         gap: 16px;
+        max-width: 100%;
     }
 
     .intro-result {
-        padding-right: 24px;
+        padding-right: 28px;
         padding-bottom: 80px;
     }
 
@@ -2047,8 +2050,8 @@ body {
     }
 
     .highlight-number {
-        width: 40px;
-        height: 40px;
+        width: 42px;
+        height: 42px;
         font-size: 16px;
     }
 
@@ -2057,7 +2060,8 @@ body {
     }
 
     .highlight-title {
-        font-size: 18px;
+        font-size: 19px;
+        line-height: 1.5;
     }
 
     .highlight-description {
