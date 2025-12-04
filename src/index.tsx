@@ -3236,7 +3236,7 @@ app.get('/', (c) => {
             <section id="services" class="services-section">
                 <div class="container">
                     <div class="section-header">
-                        <h2 class="section-title">고객의 모든 동선에 귀사를 <strong style="color: #dc2626;">'찾아올 수밖에 없는 이유'</strong>를 만듭니다</h2>
+                        <h2 class="section-title">고객의 모든 동선에 귀사를 <br class="mobile-br"><strong style="color: #dc2626;">'찾아올 수밖에 없는 이유'</strong>를 <br class="mobile-br">만듭니다</h2>
                         <p class="section-subtitle">검색부터 SNS까지, 이탈 없는 <strong>'올인원 마케팅 생태계'</strong></p>
                     </div>
                     <div class="services-content">
@@ -3276,9 +3276,6 @@ app.get('/', (c) => {
                                 <p class="highlight-description">
                                     단순히 이름만 알리는 것이 아닙니다. <strong>"여기는 진짜네"</strong>라는 확실한 인지도는 가격 비교를 무의미하게 만들고, 자연스럽게 구매와 문의 버튼을 누르게 합니다.
                                 </p>
-                                <div class="result-badge">
-                                    <i class="fas fa-chart-line"></i>
-                                </div>
                             </div>
                         </div>
                         <div class="services-grid">
