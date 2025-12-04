@@ -600,10 +600,11 @@ body {
 }
 
 .section-subtitle {
-    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    font-size: clamp(1.125rem, 2vw, 1.375rem);
     color: #4a5568;
-    max-width: 600px;
+    max-width: 700px;
     margin: 0 auto;
+    font-weight: 500;
 }
 
 /* About Section */
@@ -736,20 +737,21 @@ body {
 }
 
 .intro-highlight {
-    background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+    background: linear-gradient(135deg, #ffffff, #f8fafc);
     border: 2px solid #e5e7eb;
-    border-radius: 16px;
-    padding: 24px 32px;
+    border-radius: 20px;
+    padding: 32px 40px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
     gap: 16px;
     width: 100%;
-    max-width: 600px;
-    transition: all 0.3s ease;
+    max-width: 800px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .intro-highlight::before {
@@ -765,8 +767,9 @@ body {
 
 .intro-highlight:hover {
     border-color: #3182f6;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.15);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(59, 130, 246, 0.2);
+    background: linear-gradient(135deg, #ffffff, #eff6ff);
 }
 
 .intro-highlight:hover::before {
@@ -774,19 +777,28 @@ body {
 }
 
 .intro-result {
-    background: linear-gradient(135deg, #dbeafe, #bfdbfe);
-    border-color: #3182f6;
+    background: linear-gradient(135deg, #fef2f2, #fee2e2);
+    border-color: #dc2626;
+    box-shadow: 0 6px 20px rgba(220, 38, 38, 0.15);
 }
 
 .intro-result:hover {
-    background: linear-gradient(135deg, #bfdbfe, #93c5fd);
+    background: linear-gradient(135deg, #fee2e2, #fecaca);
+    box-shadow: 0 12px 35px rgba(220, 38, 38, 0.25);
+}
+
+.highlight-badge {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 8px;
 }
 
 .highlight-number {
     background: linear-gradient(135deg, #3182f6, #2563eb);
     color: white;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -797,6 +809,40 @@ body {
     flex-shrink: 0;
     box-shadow: 0 4px 12px rgba(49, 130, 246, 0.3);
     line-height: 1;
+}
+
+.highlight-category {
+    background: linear-gradient(135deg, #3182f6, #2563eb);
+    color: white;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(49, 130, 246, 0.25);
+}
+
+.highlight-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: #1f2937;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.highlight-title strong {
+    color: #3182f6;
+}
+
+.intro-result .highlight-title strong {
+    color: #dc2626;
+}
+
+.highlight-description {
+    font-size: 15px;
+    color: #6b7280;
+    line-height: 1.7;
+    margin: 0;
 }
 
 .services-intro .intro-highlight .highlight-text,
@@ -830,10 +876,14 @@ body {
 }
 
 .result-icon {
-    color: #10b981;
-    font-size: 24px;
-    margin-left: 8px;
+    color: #dc2626;
+    font-size: 32px;
+    position: absolute;
+    right: 32px;
+    top: 50%;
+    transform: translateY(-50%);
     animation: pulse 2s infinite;
+    opacity: 0.8;
 }
 
 @keyframes bounce {
@@ -1956,39 +2006,34 @@ body {
     }
 
     .intro-highlight {
-        padding: 20px 24px;
-        flex-direction: column;
-        text-align: center;
+        padding: 24px 20px;
+        text-align: left;
         gap: 12px;
+    }
+
+    .highlight-badge {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
     }
 
     .highlight-number {
         width: 36px;
         height: 36px;
         font-size: 14px;
-        display: flex !important;
-        align-items: center !important;
-        justify-content: center !important;
-        text-align: center !important;
-        line-height: 1 !important;
     }
 
-    .services-intro .intro-highlight .highlight-text,
-    .highlight-text {
-        font-size: 20px !important;
-        color: #374151 !important;
+    .highlight-category {
+        font-size: 13px;
+        padding: 5px 12px;
     }
 
-    .services-intro .intro-highlight .highlight-keyword,
-    .highlight-keyword {
-        font-size: 22px !important;
-        color: #1e40af !important;
+    .highlight-title {
+        font-size: 17px;
     }
 
-    .services-intro .intro-result .highlight-result,
-    .highlight-result {
-        font-size: 24px !important;
-        color: #1e40af !important;
+    .highlight-description {
+        font-size: 14px;
     }
 
     .intro-arrow {
@@ -1996,8 +2041,11 @@ body {
     }
 
     .result-icon {
-        font-size: 20px;
-        margin-left: 0;
+        font-size: 24px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        transform: none;
         margin-top: 4px;
     }
 

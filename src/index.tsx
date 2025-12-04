@@ -3236,31 +3236,49 @@ app.get('/', (c) => {
             <section id="services" class="services-section">
                 <div class="container">
                     <div class="section-header">
-                        <h2 class="section-title">통합 마케팅 솔루션</h2>
-                        <p class="section-subtitle">하나의 목표, '신규 고객 창출'을 위해 모든 채널을 활용합니다</p>
+                        <h2 class="section-title">고객의 모든 동선에 귀사를 <strong style="color: #dc2626;">'찾아올 수밖에 없는 이유'</strong>를 만듭니다</h2>
+                        <p class="section-subtitle">검색부터 SNS까지, 이탈 없는 <strong>'올인원 마케팅 생태계'</strong></p>
                     </div>
                     <div class="services-content">
                         <div class="services-intro">
-                            <div class="intro-highlight">
-                                <span class="highlight-number">01</span>
-                                <span class="highlight-text">검색 시 가장 먼저 보이는</span>
-                                <strong class="highlight-keyword">블로그 상위 노출</strong>
+                            <div class="intro-highlight animate-on-scroll" style="animation-delay: 0.1s;">
+                                <div class="highlight-badge">
+                                    <span class="highlight-number">01</span>
+                                    <span class="highlight-category">Search (발견)</span>
+                                </div>
+                                <h3 class="highlight-title">검색하는 순간, 가장 먼저 보이는 <strong>'대표님 업체'</strong></h3>
+                                <p class="highlight-description">
+                                    고객이 니즈를 느낀 그 순간, 경쟁사가 아닌 귀사가 정답으로 제시됩니다. 
+                                    단순 노출을 넘어 클릭을 부르는 키워드 선점 전략으로 고객의 시선을 사로잡습니다.
+                                </p>
                             </div>
-                            <div class="intro-arrow">
+                            <div class="intro-arrow animate-on-scroll" style="animation-delay: 0.2s;">
                                 <i class="fas fa-arrow-down"></i>
                             </div>
-                            <div class="intro-highlight">
-                                <span class="highlight-number">02</span>
-                                <span class="highlight-text">신뢰를 쌓는</span>
-                                <strong class="highlight-keyword">유튜브 채널 활성화</strong>
+                            <div class="intro-highlight animate-on-scroll" style="animation-delay: 0.3s;">
+                                <div class="highlight-badge">
+                                    <span class="highlight-number">02</span>
+                                    <span class="highlight-category">Contents (설득)</span>
+                                </div>
+                                <h3 class="highlight-title">블로그, 유튜브, 인스타, 스레드... <strong>어디서든 증명되는 전문성</strong></h3>
+                                <p class="highlight-description">
+                                    긴 호흡의 설득은 블로그와 유튜브로, 빠른 소통과 확산은 인스타와 스레드로. 
+                                    각 채널 특성에 맞춘 최적화된 콘텐츠가 귀사를 <strong>'믿을 수 있는 대세'</strong>로 만듭니다.
+                                </p>
                             </div>
-                            <div class="intro-arrow">
+                            <div class="intro-arrow animate-on-scroll" style="animation-delay: 0.4s;">
                                 <i class="fas fa-arrow-down"></i>
                             </div>
-                            <div class="intro-highlight intro-result">
-                                <span class="highlight-number">03</span>
-                                <span class="highlight-text">높아진 브랜드 인지도는</span>
-                                <strong class="highlight-result">상담 문의 증가로 이어집니다</strong>
+                            <div class="intro-highlight intro-result animate-on-scroll" style="animation-delay: 0.5s;">
+                                <div class="highlight-badge">
+                                    <span class="highlight-number">03</span>
+                                    <span class="highlight-category">Conversion (전환)</span>
+                                </div>
+                                <h3 class="highlight-title">높아진 브랜드 위상은 <strong style="color: #dc2626;">'망설임 없는 선택'</strong>을 만듭니다</h3>
+                                <p class="highlight-description">
+                                    단순히 이름만 알리는 것이 아닙니다. <strong>"여기는 진짜네"</strong>라는 확실한 인지도는 
+                                    가격 비교를 무의미하게 만들고, 자연스럽게 구매와 문의 버튼을 누르게 합니다.
+                                </p>
                                 <i class="fas fa-chart-line result-icon"></i>
                             </div>
                         </div>
