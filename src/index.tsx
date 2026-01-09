@@ -154,9 +154,9 @@ app.get('/column', (c) => {
                                 "전단지 1,000장 뿌려도 전화 한 통 없어요." 60대 어르신의 스마트폰 사용률 95%, 4060 자녀 세대의 온라인 검색이 의사결정을 좌우합니다. 전단지를 넘어선 진짜 효과적인 마케팅 비밀을 공개합니다.
                             </p>
                             <div class="column-stats">
-                                <span><i class="fas fa-eye"></i> NEW</span>
-                                <span><i class="fas fa-heart"></i> 0</span>
-                                <span><i class="fas fa-comment"></i> 0</span>
+                                <span><i class="fas fa-eye"></i> 387</span>
+                                <span><i class="fas fa-heart"></i> 24</span>
+                                <span><i class="fas fa-comment"></i> 9</span>
                             </div>
                         </article>
 
@@ -3033,6 +3033,7 @@ app.get('/column/flyer-vs-online-marketing', (c) => {
       <div style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); padding: 30px; border-radius: 12px; margin: 30px 0; text-align: center;">
         <h4 style="color: #0369a1; margin-bottom: 15px;">🎁 마케팅 무료 진단 받아보기</h4>
         <p style="margin-bottom: 20px;">현재 센터의 온라인 현황을 무료로 진단해드립니다.<br>경쟁사 분석과 함께 맞춤 전략을 제안받으세요.</p>
+        <a href="https://nursmarket-a2dzpd9o.manus.space/" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #3182f6, #2563eb); color: white; padding: 14px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; margin-bottom: 15px; transition: all 0.3s ease;">무료 진단 받기 →</a>
         <p style="font-size: 14px; color: #64748b;">📞 상담은 무료입니다. 부담 없이 연락주세요.</p>
       </div>
       
