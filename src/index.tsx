@@ -3357,12 +3357,12 @@ function getColumnPageHTML({slug, id, title, description, category, date, keywor
             const relatedGrid = document.querySelector('.related-grid');
             
             if (relatedGrid) {
-                relatedGrid.innerHTML = relatedArticles.map(article => \`
-                    <div class="related-article">
-                        <div class="related-article-category">\${article.category}</div>
-                        <h3><a href="/column/\${article.slug}">\${article.title}</a></h3>
-                    </div>
-                \`).join('');
+                relatedGrid.innerHTML = relatedArticles.map(article => 
+                    '<div class="related-article">' +
+                        '<div class="related-article-category">' + article.category + '</div>' +
+                        '<h3><a href="/column/' + article.slug + '">' + article.title + '</a></h3>' +
+                    '</div>'
+                ).join('');
             }
         }
         </script>
