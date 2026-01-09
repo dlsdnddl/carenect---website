@@ -2547,6 +2547,80 @@ body {
     color: #3182f6;
 }
 
+/* Pagination Styles */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.pagination-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    color: #4a5568;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background: #f7fafc;
+    border-color: #3182f6;
+    color: #3182f6;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-numbers {
+    display: flex;
+    gap: 8px;
+}
+
+.pagination-num {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    color: #4a5568;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination-num:hover:not(.active) {
+    background: #f7fafc;
+    border-color: #3182f6;
+    color: #3182f6;
+}
+
+.pagination-num.active {
+    background: #3182f6;
+    border-color: #3182f6;
+    color: white;
+}
+
+/* Column card hidden state for pagination */
+.column-card.hidden {
+    display: none;
+}
+
 /* Mobile Responsive */
 @media (max-width: 768px) {
     .article-title {
@@ -2580,5 +2654,22 @@ body {
     .related-grid {
         grid-template-columns: 1fr;
         gap: 20px;
+    }
+    
+    /* Pagination mobile styles */
+    .pagination {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+    
+    .pagination-btn {
+        padding: 10px 15px;
+        font-size: 13px;
+    }
+    
+    .pagination-num {
+        width: 36px;
+        height: 36px;
+        font-size: 13px;
     }
 }

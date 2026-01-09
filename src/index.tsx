@@ -142,8 +142,25 @@ app.get('/column', (c) => {
                         <p class="section-subtitle animate-on-scroll">현장에서 검증된 마케팅 전략과 노하우를 공유합니다</p>
                     </div>
                     
-                    <div class="column-grid">
-                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/suwon-home-care-marketing'">
+                    <div class="column-grid" id="columnGrid">
+                        <!-- 새 칼럼: 방문요양 홍보, 전단지 1,000장보다 효과적인 '이것'의 비밀 -->
+                        <article class="column-card animate-on-scroll" data-page="1" onclick="window.location.href='/column/flyer-vs-online-marketing'">
+                            <div class="column-meta">
+                                <span class="column-category">온라인 마케팅</span>
+                                <span class="column-date">2026.01.09</span>
+                            </div>
+                            <h3>방문요양 홍보, 전단지 1,000장보다 효과적인 '이것'의 비밀</h3>
+                            <p class="column-excerpt">
+                                "전단지 1,000장 뿌려도 전화 한 통 없어요." 60대 어르신의 스마트폰 사용률 95%, 4060 자녀 세대의 온라인 검색이 의사결정을 좌우합니다. 전단지를 넘어선 진짜 효과적인 마케팅 비밀을 공개합니다.
+                            </p>
+                            <div class="column-stats">
+                                <span><i class="fas fa-eye"></i> NEW</span>
+                                <span><i class="fas fa-heart"></i> 0</span>
+                                <span><i class="fas fa-comment"></i> 0</span>
+                            </div>
+                        </article>
+
+                        <article class="column-card animate-on-scroll" data-page="1" onclick="window.location.href='/column/suwon-home-care-marketing'">
                             <div class="column-meta">
                                 <span class="column-category">지역 마케팅</span>
                                 <span class="column-date">2025.11.15</span>
@@ -159,7 +176,7 @@ app.get('/column', (c) => {
                             </div>
                         </article>
 
-                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/home-care-conversion-strategy'">
+                        <article class="column-card animate-on-scroll" data-page="1" onclick="window.location.href='/column/home-care-conversion-strategy'">
                             <div class="column-meta">
                                 <span class="column-category">전환율 최적화</span>
                                 <span class="column-date">2025.11.12</span>
@@ -175,7 +192,7 @@ app.get('/column', (c) => {
                             </div>
                         </article>
 
-                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/day-care-branding-strategy'">
+                        <article class="column-card animate-on-scroll" data-page="1" onclick="window.location.href='/column/day-care-branding-strategy'">
                             <div class="column-meta">
                                 <span class="column-category">브랜딩 전략</span>
                                 <span class="column-date">2025.11.08</span>
@@ -191,7 +208,7 @@ app.get('/column', (c) => {
                             </div>
                         </article>
 
-                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/day-care-online-strategy'">
+                        <article class="column-card animate-on-scroll" data-page="1" onclick="window.location.href='/column/day-care-online-strategy'">
                             <div class="column-meta">
                                 <span class="column-category">온라인 홍보</span>
                                 <span class="column-date">2025.11.04</span>
@@ -207,7 +224,7 @@ app.get('/column', (c) => {
                             </div>
                         </article>
 
-                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/home-care-promotion-strategy'">
+                        <article class="column-card animate-on-scroll" data-page="1" onclick="window.location.href='/column/home-care-promotion-strategy'">
                             <div class="column-meta">
                                 <span class="column-category">온라인 홍보</span>
                                 <span class="column-date">2025.10.28</span>
@@ -223,7 +240,7 @@ app.get('/column', (c) => {
                             </div>
                         </article>
 
-                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/seo-marketing-strategy'">
+                        <article class="column-card animate-on-scroll" data-page="1" onclick="window.location.href='/column/seo-marketing-strategy'">
                             <div class="column-meta">
                                 <span class="column-category">SEO 마케팅</span>
                                 <span class="column-date">2025.10.15</span>
@@ -239,7 +256,7 @@ app.get('/column', (c) => {
                             </div>
                         </article>
 
-                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/youtube-shorts-strategy'">
+                        <article class="column-card animate-on-scroll" data-page="1" onclick="window.location.href='/column/youtube-shorts-strategy'">
                             <div class="column-meta">
                                 <span class="column-category">유튜브 마케팅</span>
                                 <span class="column-date">2025.10.12</span>
@@ -255,7 +272,7 @@ app.get('/column', (c) => {
                             </div>
                         </article>
 
-                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/sns-branding-strategy'">
+                        <article class="column-card animate-on-scroll" data-page="1" onclick="window.location.href='/column/sns-branding-strategy'">
                             <div class="column-meta">
                                 <span class="column-category">SNS 마케팅</span>
                                 <span class="column-date">2025.10.08</span>
@@ -271,7 +288,7 @@ app.get('/column', (c) => {
                             </div>
                         </article>
 
-                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/2026-industry-trends'">
+                        <article class="column-card animate-on-scroll" data-page="2" onclick="window.location.href='/column/2026-industry-trends'">
                             <div class="column-meta">
                                 <span class="column-category">업계 트렌드</span>
                                 <span class="column-date">2025.10.05</span>
@@ -287,7 +304,7 @@ app.get('/column', (c) => {
                             </div>
                         </article>
 
-                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/three-sectors-comparison'">
+                        <article class="column-card animate-on-scroll" data-page="2" onclick="window.location.href='/column/three-sectors-comparison'">
                             <div class="column-meta">
                                 <span class="column-category">마케팅 전략</span>
                                 <span class="column-date">2025.09.28</span>
@@ -303,7 +320,7 @@ app.get('/column', (c) => {
                             </div>
                         </article>
 
-                        <article class="column-card animate-on-scroll" onclick="window.location.href='/column/small-city-success-case'">
+                        <article class="column-card animate-on-scroll" data-page="2" onclick="window.location.href='/column/small-city-success-case'">
                             <div class="column-meta">
                                 <span class="column-category">케이스 스터디</span>
                                 <span class="column-date">2025.07.20</span>
@@ -320,6 +337,19 @@ app.get('/column', (c) => {
                         </article>
                     </div>
 
+                    <!-- Pagination -->
+                    <div class="pagination" id="pagination">
+                        <button class="pagination-btn" id="prevBtn" onclick="changePage(-1)" disabled>
+                            <i class="fas fa-chevron-left"></i> 이전
+                        </button>
+                        <div class="pagination-numbers" id="paginationNumbers">
+                            <button class="pagination-num active" data-page="1" onclick="goToPage(1)">1</button>
+                            <button class="pagination-num" data-page="2" onclick="goToPage(2)">2</button>
+                        </div>
+                        <button class="pagination-btn" id="nextBtn" onclick="changePage(1)">
+                            다음 <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
 
                 </div>
             </section>
@@ -376,6 +406,103 @@ app.get('/column', (c) => {
 
         <!-- Scripts -->
         <script src="/static/app.js?v=20251028-2"></script>
+        
+        <!-- Pagination Script -->
+        <script>
+        // Pagination configuration
+        const ITEMS_PER_PAGE = 9;
+        let currentPage = 1;
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            initPagination();
+        });
+        
+        function initPagination() {
+            const cards = document.querySelectorAll('.column-card');
+            const totalPages = Math.ceil(cards.length / ITEMS_PER_PAGE);
+            
+            // Assign page numbers to cards
+            cards.forEach((card, index) => {
+                const pageNum = Math.floor(index / ITEMS_PER_PAGE) + 1;
+                card.setAttribute('data-page', pageNum);
+            });
+            
+            // Generate pagination numbers
+            updatePaginationNumbers(totalPages);
+            
+            // Show first page
+            showPage(1);
+        }
+        
+        function updatePaginationNumbers(totalPages) {
+            const paginationNumbers = document.getElementById('paginationNumbers');
+            if (!paginationNumbers) return;
+            
+            paginationNumbers.innerHTML = '';
+            for (let i = 1; i <= totalPages; i++) {
+                const btn = document.createElement('button');
+                btn.className = 'pagination-num' + (i === 1 ? ' active' : '');
+                btn.setAttribute('data-page', i);
+                btn.textContent = i;
+                btn.onclick = () => goToPage(i);
+                paginationNumbers.appendChild(btn);
+            }
+        }
+        
+        function showPage(page) {
+            const cards = document.querySelectorAll('.column-card');
+            const totalPages = Math.ceil(cards.length / ITEMS_PER_PAGE);
+            
+            cards.forEach(card => {
+                const cardPage = parseInt(card.getAttribute('data-page'));
+                if (cardPage === page) {
+                    card.classList.remove('hidden');
+                    card.style.display = '';
+                } else {
+                    card.classList.add('hidden');
+                    card.style.display = 'none';
+                }
+            });
+            
+            // Update pagination buttons
+            const pageButtons = document.querySelectorAll('.pagination-num');
+            pageButtons.forEach(btn => {
+                if (parseInt(btn.getAttribute('data-page')) === page) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+            
+            // Update prev/next buttons
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            if (prevBtn) prevBtn.disabled = page <= 1;
+            if (nextBtn) nextBtn.disabled = page >= totalPages;
+            
+            currentPage = page;
+            
+            // Scroll to top of column section
+            const columnSection = document.querySelector('.column-list-section');
+            if (columnSection) {
+                columnSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }
+        
+        function goToPage(page) {
+            showPage(page);
+        }
+        
+        function changePage(direction) {
+            const cards = document.querySelectorAll('.column-card');
+            const totalPages = Math.ceil(cards.length / ITEMS_PER_PAGE);
+            const newPage = currentPage + direction;
+            
+            if (newPage >= 1 && newPage <= totalPages) {
+                showPage(newPage);
+            }
+        }
+        </script>
     </body>
     </html>
   `)
@@ -396,6 +523,12 @@ app.get('/sitemap.xml', (c) => {
         <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://carenect.kr/column/flyer-vs-online-marketing</loc>
+        <lastmod>2026-01-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
     </url>
     <url>
         <loc>https://carenect.kr/column/seo-marketing-strategy</loc>
@@ -2665,6 +2798,251 @@ app.get('/column/small-city-success-case', (c) => {
   }))
 })
 
+// 새 칼럼: 방문요양 홍보, 전단지 1,000장보다 효과적인 '이것'의 비밀
+app.get('/column/flyer-vs-online-marketing', (c) => {
+  return c.html(getColumnPageHTML({
+    slug: 'flyer-vs-online-marketing',
+    id: 12,
+    title: "방문요양 홍보, 전단지 1,000장보다 효과적인 '이것'의 비밀",
+    description: '전단지 홍보의 한계를 넘어, 60대 어르신과 4060 자녀 세대를 모두 사로잡는 온라인 마케팅 전략. 케어넥 마케팅이 공개하는 신뢰 기반 설득 시스템의 비밀.',
+    category: '온라인 마케팅',
+    date: '2026.01.09',
+    keywords: ['방문요양 홍보', '온라인 마케팅', '시니어 마케팅', '60대 스마트폰', '4060 자녀세대', '네이버 검색', '구글 SEO', '케어넥 마케팅', '전단지 홍보', '신뢰 마케팅', '실버산업 마케팅', '방문요양센터 홍보'],
+    content: `
+      <div class="column-intro">
+        <p><strong>"전단지 1,000장 뿌려도 전화 한 통 없어요."</strong></p>
+        <p><strong>"온라인 홍보를 해야 한다는데, 어르신들이 인터넷을 보실까요?"</strong></p>
+        <p>방문요양센터를 운영하시는 대표님이라면 이런 고민, 한 번쯤 해보셨을 겁니다. 실제로 많은 센터가 여전히 전단지, 현수막, 지역 신문 광고에 의존하고 있습니다. 하지만 세상은 이미 바뀌었습니다.</p>
+        <p>오늘은 <strong>전단지 1,000장보다 효과적인 '온라인 마케팅'의 비밀</strong>을 케어넥 마케팅의 실전 노하우와 함께 공개합니다.</p>
+      </div>
+
+      <h3>1. 온라인 마케팅, 이제는 '생존'의 문제입니다</h3>
+      
+      <p>코로나19 이후, 비대면 상담이 일상이 되었습니다. 방문요양 서비스를 찾는 고객들도 이제는 <strong>먼저 온라인에서 검색</strong>하고, 정보를 수집한 뒤 연락합니다.</p>
+      
+      <h4>💡 데이터로 보는 변화</h4>
+      <ul>
+        <li>60대 스마트폰 보급률: <strong>95% 이상</strong> (2025년 기준)</li>
+        <li>60대의 네이버/카카오 일일 사용 시간: <strong>평균 2시간 이상</strong></li>
+        <li>요양서비스 관련 검색량: <strong>매년 15% 이상 증가</strong></li>
+      </ul>
+      
+      <p>더 이상 "어르신들은 인터넷을 안 보신다"는 말은 통하지 않습니다. <strong>온라인에서 존재감이 없으면, 애초에 선택지에도 들어가지 못합니다.</strong></p>
+
+      <h3>2. 60대의 스마트폰 사용, 당신의 예상보다 훨씬 높습니다</h3>
+      
+      <p>많은 분들이 놀라시지만, 오늘날 60대는 <strong>디지털에 매우 익숙한 세대</strong>입니다.</p>
+      
+      <h4>📱 60대의 온라인 행동 패턴</h4>
+      <ul>
+        <li><strong>카카오톡</strong>으로 가족, 친구와 매일 소통</li>
+        <li><strong>네이버</strong>에서 건강 정보, 지역 정보 검색</li>
+        <li><strong>유튜브</strong>로 뉴스, 건강 콘텐츠 시청</li>
+        <li><strong>카페/커뮤니티</strong>에서 후기 확인 및 정보 교환</li>
+      </ul>
+      
+      <p>즉, 방문요양 서비스를 직접 받으실 어르신 본인도 온라인에서 정보를 찾고 계십니다. <strong>"내 지역 방문요양"</strong>을 검색했을 때, 당신의 센터가 보이지 않는다면?</p>
+      
+      <blockquote>
+        "검색해도 안 나오는 센터는 없는 센터와 같습니다."
+      </blockquote>
+
+      <h3>3. 진짜 의사결정자는 '4060 자녀 세대'입니다</h3>
+      
+      <p>방문요양 서비스의 실제 의사결정 구조를 이해해야 합니다.</p>
+      
+      <h4>🎯 의사결정 과정</h4>
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #f8fafc;">
+            <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">단계</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">주체</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">행동</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">1단계</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">4060 자녀</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>온라인 검색</strong>으로 센터 후보 선정</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">2단계</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">4060 자녀</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">블로그, 후기, 홈페이지 <strong>신뢰도 검증</strong></td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">3단계</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">4060 자녀</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">부모님께 <strong>추천 및 설명</strong></td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">4단계</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">어르신 + 자녀</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>함께 상담</strong> 후 최종 결정</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p><strong>4060 자녀 세대</strong>는 부모님의 케어를 책임지는 핵심 의사결정자입니다. 이들은 100% 온라인에서 정보를 수집합니다. 전단지는 이들에게 도달할 방법이 없습니다.</p>
+
+      <h3>4. '온라인 인테리어'가 신뢰를 만듭니다</h3>
+      
+      <p>고객이 처음 방문하는 곳은 센터가 아닙니다. <strong>당신의 블로그, 홈페이지, 네이버 플레이스</strong>입니다.</p>
+      
+      <h4>🏠 온라인 인테리어의 핵심 요소</h4>
+      
+      <p><strong>① 네이버 블로그</strong></p>
+      <ul>
+        <li>센터 일상, 프로그램 소개, 요양 정보 콘텐츠</li>
+        <li>"OO지역 방문요양" 키워드 상위 노출</li>
+        <li>진정성 있는 글로 신뢰 구축</li>
+      </ul>
+      
+      <p><strong>② 네이버 플레이스</strong></p>
+      <ul>
+        <li>정확한 위치, 운영시간, 연락처 정보</li>
+        <li>실제 이용 후기 관리</li>
+        <li>대표 사진으로 센터 분위기 전달</li>
+      </ul>
+      
+      <p><strong>③ 홈페이지 또는 랜딩페이지</strong></p>
+      <ul>
+        <li>서비스 내용과 차별점 명확히 전달</li>
+        <li>상담 신청 폼으로 즉시 전환 유도</li>
+        <li>대표님/직원 소개로 인간미 어필</li>
+      </ul>
+      
+      <blockquote>
+        "온라인에서의 첫인상이 곧 센터의 첫인상입니다."
+      </blockquote>
+
+      <h3>5. 신뢰를 주는 '설득 구조'를 설계하세요</h3>
+      
+      <p>단순히 온라인에 존재하는 것만으로는 부족합니다. <strong>고객의 불안을 해소하고 신뢰를 주는 콘텐츠 구조</strong>가 필요합니다.</p>
+      
+      <h4>✅ 불안 제거형 콘텐츠 4가지 영역</h4>
+      
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #f8fafc;">
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">불안 영역</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">해결 콘텐츠</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>등급신청</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">"등급신청, 저희가 처음부터 끝까지 도와드립니다"</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>요양보호사 케어</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">"OO센터 요양보호사님들은 이렇게 달라요"</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>센터 관리체계</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">"매주 어르신 상태 리포트를 보내드립니다"</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>보호자 마음 케어</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">"부모님 맡기는 마음, 저희가 압니다"</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h4>📞 상담 경험 설계 공식</h4>
+      <ol>
+        <li><strong>불안 공감</strong>: "처음이시라 걱정되시죠? 저희가 도와드릴게요."</li>
+        <li><strong>절차 간단화</strong>: "복잡한 서류는 저희가 다 준비해드립니다."</li>
+        <li><strong>사례 제시</strong>: "비슷한 상황의 어르신이 이렇게 좋아지셨어요."</li>
+        <li><strong>맞춤 안내</strong>: "어르신 상황에 맞는 서비스를 제안드릴게요."</li>
+        <li><strong>관리체계 소개</strong>: "정기적으로 상태를 공유해드립니다."</li>
+        <li><strong>Follow-up</strong>: "상담 후에도 궁금하신 점 언제든 연락주세요."</li>
+      </ol>
+
+      <h3>6. 케어넥 마케팅 솔루션: 3가지 핵심 전략</h3>
+      
+      <p>케어넥 마케팅은 실버산업 전문 마케팅 대행업체로서, 50여 개 센터의 성공을 이끌어왔습니다.</p>
+      
+      <h4>🎯 전략 ① 타깃 정밀 분석</h4>
+      <ul>
+        <li>어르신(직접 수요자)과 자녀(의사결정자) 모두를 타깃팅</li>
+        <li>지역별 검색 패턴과 경쟁 상황 분석</li>
+        <li>최적의 키워드 조합 도출</li>
+      </ul>
+      
+      <h4>🏠 전략 ② 신뢰 인테리어 구축</h4>
+      <ul>
+        <li>네이버 블로그 최적화 및 상위 노출 전략</li>
+        <li>네이버 플레이스 관리 및 후기 관리</li>
+        <li>전환율 높은 랜딩페이지 제작</li>
+      </ul>
+      
+      <h4>🔄 전략 ③ 설득 시스템 구축</h4>
+      <ul>
+        <li>상담 전환율을 높이는 콘텐츠 설계</li>
+        <li>서비스 경험 → 후기 → 추천의 선순환 구조</li>
+        <li>지속적인 성과 분석 및 최적화</li>
+      </ul>
+
+      <h3>7. 실행 프레임워크: 5단계 체크리스트</h3>
+      
+      <h4>📋 STEP 1: 현황 진단 (1주차)</h4>
+      <ul>
+        <li>☐ 현재 온라인 존재감 점검 (검색 시 노출 여부)</li>
+        <li>☐ 경쟁 센터 온라인 현황 분석</li>
+        <li>☐ 타깃 고객 정의 (어르신 연령대, 자녀 세대 특성)</li>
+      </ul>
+      
+      <h4>📋 STEP 2: 기반 구축 (2-3주차)</h4>
+      <ul>
+        <li>☐ 네이버 블로그 개설 및 기본 세팅</li>
+        <li>☐ 네이버 플레이스 등록 및 정보 최적화</li>
+        <li>☐ 기본 콘텐츠 10개 제작 (센터 소개, 서비스, FAQ 등)</li>
+      </ul>
+      
+      <h4>📋 STEP 3: 콘텐츠 확장 (4-6주차)</h4>
+      <ul>
+        <li>☐ 주 2회 이상 블로그 포스팅</li>
+        <li>☐ 불안 해소 콘텐츠 시리즈 제작</li>
+        <li>☐ 실제 사례/후기 콘텐츠 확보</li>
+      </ul>
+      
+      <h4>📋 STEP 4: 전환 최적화 (7-8주차)</h4>
+      <ul>
+        <li>☐ 상담 신청 동선 점검 및 개선</li>
+        <li>☐ 상담 스크립트 정비</li>
+        <li>☐ 후기 요청 및 관리 시스템 구축</li>
+      </ul>
+      
+      <h4>📋 STEP 5: 성과 분석 및 확장 (9주차~)</h4>
+      <ul>
+        <li>☐ 유입 경로별 성과 분석</li>
+        <li>☐ 전환율 개선점 도출</li>
+        <li>☐ SNS, 유튜브 등 채널 확장 검토</li>
+      </ul>
+
+      <h3>8. 오늘 바로 시작하세요</h3>
+      
+      <p>전단지 1,000장의 비용으로 온라인 마케팅 기반을 구축할 수 있습니다. 더 이상 보이지 않는 곳에 돈을 쓰지 마세요.</p>
+      
+      <blockquote>
+        "온라인 마케팅은 선택이 아닌 생존입니다. 시작이 늦을수록 경쟁에서 뒤처집니다."
+      </blockquote>
+      
+      <div style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); padding: 30px; border-radius: 12px; margin: 30px 0; text-align: center;">
+        <h4 style="color: #0369a1; margin-bottom: 15px;">🎁 마케팅 무료 진단 받아보기</h4>
+        <p style="margin-bottom: 20px;">현재 센터의 온라인 현황을 무료로 진단해드립니다.<br>경쟁사 분석과 함께 맞춤 전략을 제안받으세요.</p>
+        <p style="font-size: 14px; color: #64748b;">📞 상담은 무료입니다. 부담 없이 연락주세요.</p>
+      </div>
+      
+      <p><strong>케어넥 마케팅</strong>은 실버산업 전문 마케팅 대행업체입니다. 50여 개 센터의 마케팅을 통해 상담 문의 평균 3배 이상 증가, 그 중 70% 이상이 실제 이용으로 전환되는 성과를 만들어왔습니다.</p>
+      
+      <p>오늘 바로 케어넥 마케팅과 함께 시작하세요. 💙</p>
+    `
+  }))
+})
+
 // Column Page HTML Generator Function
 function getColumnPageHTML({slug, id, title, description, category, date, keywords, content}) {
   const structuredData = {
@@ -2965,6 +3343,7 @@ function getColumnPageHTML({slug, id, title, description, category, date, keywor
         
         function loadRelatedArticles(currentId) {
             const articles = [
+                { id: 12, title: "방문요양 홍보, 전단지 1,000장보다 효과적인 '이것'의 비밀", category: '온라인 마케팅', slug: 'flyer-vs-online-marketing' },
                 { id: 1, title: '방문요양 키워드로 네이버 상위노출 달성하는 5단계 전략', category: 'SEO 마케팅', slug: 'seo-marketing-strategy' },
                 { id: 2, title: '요양원 유튜브 쇼츠로 월 상담 문의 300% 증가시킨 콘텐츠 전략', category: '유튜브 마케팅', slug: 'youtube-shorts-strategy' },
                 { id: 3, title: '인스타그램과 스레드로 실버케어 브랜딩 완성하기', category: 'SNS 마케팅', slug: 'sns-branding-strategy' },
