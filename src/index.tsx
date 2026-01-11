@@ -3322,8 +3322,8 @@ function getColumnPageHTML({slug, id, title, description, category, date, keywor
         function shareKakao() {
             if (navigator.share) {
                 navigator.share({
-                    title: '${title}',
-                    text: '${description}',
+                    title: "${title.replace(/'/g, "\\'")}",
+                    text: "${description.replace(/'/g, "\\'")}",
                     url: window.location.href
                 });
             } else {
@@ -3344,13 +3344,13 @@ function getColumnPageHTML({slug, id, title, description, category, date, keywor
         
         function loadRelatedArticles(currentId) {
             const articles = [
-                { id: 12, title: "방문요양 홍보, 전단지 1,000장보다 효과적인 '이것'의 비밀", category: '온라인 마케팅', slug: 'flyer-vs-online-marketing' },
-                { id: 1, title: '방문요양 키워드로 네이버 상위노출 달성하는 5단계 전략', category: 'SEO 마케팅', slug: 'seo-marketing-strategy' },
-                { id: 2, title: '요양원 유튜브 쇼츠로 월 상담 문의 300% 증가시킨 콘텐츠 전략', category: '유튜브 마케팅', slug: 'youtube-shorts-strategy' },
-                { id: 3, title: '인스타그램과 스레드로 실버케어 브랜딩 완성하기', category: 'SNS 마케팅', slug: 'sns-branding-strategy' },
-                { id: 4, title: '2026년 실버산업 마케팅 트렌드', category: '업계 트렌드', slug: '2026-industry-trends' },
-                { id: 5, title: '요양보호사교육원 vs 방문요양 vs 요양원', category: '마케팅 전략', slug: 'three-sectors-comparison' },
-                { id: 6, title: '지방 소도시 요양원이 6개월 만에 대기자 명단을 만든 비결', category: '케이스 스터디', slug: 'small-city-success-case' }
+                { id: 12, title: "방문요양 홍보, 전단지 1,000장보다 효과적인 이것의 비밀", category: "온라인 마케팅", slug: "flyer-vs-online-marketing" },
+                { id: 1, title: "방문요양 키워드로 네이버 상위노출 달성하는 5단계 전략", category: "SEO 마케팅", slug: "seo-marketing-strategy" },
+                { id: 2, title: "요양원 유튜브 쇼츠로 월 상담 문의 300% 증가시킨 콘텐츠 전략", category: "유튜브 마케팅", slug: "youtube-shorts-strategy" },
+                { id: 3, title: "인스타그램과 스레드로 실버케어 브랜딩 완성하기", category: "SNS 마케팅", slug: "sns-branding-strategy" },
+                { id: 4, title: "2026년 실버산업 마케팅 트렌드", category: "업계 트렌드", slug: "2026-industry-trends" },
+                { id: 5, title: "요양보호사교육원 vs 방문요양 vs 요양원", category: "마케팅 전략", slug: "three-sectors-comparison" },
+                { id: 6, title: "지방 소도시 요양원이 6개월 만에 대기자 명단을 만든 비결", category: "케이스 스터디", slug: "small-city-success-case" }
             ];
             
             const relatedArticles = articles.filter(article => article.id !== currentId).slice(0, 3);
