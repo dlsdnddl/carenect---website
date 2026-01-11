@@ -3353,7 +3353,10 @@ function getColumnPageHTML({slug, id, title, description, category, date, keywor
                 { id: 6, title: "지방 소도시 요양원이 6개월 만에 대기자 명단을 만든 비결", category: "케이스 스터디", slug: "small-city-success-case" }
             ];
             
-            const relatedArticles = articles.filter(article => article.id !== currentId).slice(0, 3);
+            // 현재 칼럼 제외 후 랜덤 셔플
+            const filtered = articles.filter(article => article.id !== currentId);
+            const shuffled = filtered.sort(() => Math.random() - 0.5);
+            const relatedArticles = shuffled.slice(0, 3);
             const relatedGrid = document.querySelector('.related-grid');
             
             if (relatedGrid) {
