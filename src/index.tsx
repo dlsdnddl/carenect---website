@@ -3882,13 +3882,19 @@ app.get('/', (c) => {
                                     <label for="message">문의사항</label>
                                     <textarea id="message" name="message" rows="4" placeholder="현재 상황이나 궁금한 점을 자유롭게 작성해주세요."></textarea>
                                 </div>
+                                <div class="form-group privacy-agreement">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="privacyAgree" name="privacyAgree" required>
+                                        <span class="checkmark"></span>
+                                        <span class="label-text">[필수] 개인정보 수집 및 이용에 동의합니다. <a href="#" onclick="openPrivacyModal(event)">내용보기</a></span>
+                                    </label>
+                                </div>
                                 <button type="submit" class="form-submit-button">
                                     <i class="fas fa-paper-plane"></i>
                                     무료상담 신청하기
                                 </button>
                                 <p class="form-notice">
-                                    * 상담 신청 후 24시간 내에 연락드립니다.<br>
-                                    * 개인정보는 상담 목적으로만 사용되며, 철저히 보호됩니다.
+                                    * 상담 신청 후 24시간 내에 연락드립니다.
                                 </p>
                             </form>
                         </div>
@@ -3932,8 +3938,61 @@ app.get('/', (c) => {
             <i class="fas fa-chevron-up"></i>
         </button>
 
+        <!-- Privacy Policy Modal -->
+        <div class="modal-overlay" id="privacyModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>개인정보 수집 및 이용 동의</h3>
+                    <button class="modal-close" onclick="closePrivacyModal()">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <h4>1. 수집하는 개인정보 항목</h4>
+                    <p>필수항목: 성함, 연락처<br>선택항목: 센터명/기관명, 문의사항</p>
+                    
+                    <h4>2. 개인정보의 수집 및 이용 목적</h4>
+                    <p>- 상담 서비스 제공 및 상담 내용 확인<br>- 서비스 관련 안내 및 문의사항 답변<br>- 마케팅 서비스 제안 및 정보 제공</p>
+                    
+                    <h4>3. 개인정보의 보유 및 이용 기간</h4>
+                    <p>수집된 개인정보는 <strong>수집일로부터 1년간</strong> 보유되며, 이후 지체 없이 파기합니다. 단, 관계 법령에 따라 보존할 필요가 있는 경우 해당 기간 동안 보관합니다.</p>
+                    
+                    <h4>4. 동의 거부권 및 불이익</h4>
+                    <p>귀하는 개인정보 수집 및 이용에 대한 동의를 거부할 권리가 있습니다. 다만, 필수 항목에 대한 동의를 거부하실 경우 상담 서비스 이용이 제한될 수 있습니다.</p>
+                    
+                    <h4>5. 개인정보 처리 위탁</h4>
+                    <p>당사는 서비스 향상을 위해 개인정보를 외부에 위탁하여 처리할 수 있으며, 위탁 시 관계 법령에 따라 안전하게 관리될 수 있도록 필요한 조치를 취합니다.</p>
+                    
+                    <h4>6. 개인정보 보호책임자</h4>
+                    <p>성명: 조인웅<br>연락처: join@carenect.kr</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="modal-btn" onclick="closePrivacyModal()">확인</button>
+                </div>
+            </div>
+        </div>
+
         <!-- Scripts -->
         <script src="/static/app.js?v=20251028-2"></script>
+        
+        <script>
+        // Privacy Modal Functions
+        function openPrivacyModal(event) {
+            event.preventDefault();
+            document.getElementById('privacyModal').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closePrivacyModal() {
+            document.getElementById('privacyModal').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        
+        // Close modal on outside click
+        document.getElementById('privacyModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closePrivacyModal();
+            }
+        });
+        </script>
     </body>
     </html>
   `)
