@@ -3724,6 +3724,9 @@ app.get('/', (c) => {
                                     <span class="result-tag">결과</span>
                                     <p>브랜드 신뢰도 <span class="counter" data-count="350">0</span>% 향상</p>
                                 </div>
+                                <a href="https://warmcare-sample.pages.dev/" target="_blank" class="service-example-btn">
+                                    <i class="fas fa-external-link-alt"></i> 제작 예시보기
+                                </a>
                             </div>
                         </div>
                     </div>
