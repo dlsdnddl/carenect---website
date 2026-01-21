@@ -3340,8 +3340,7 @@ app.get('/column/yongin-blog-marketing-secret', (c) => {
       <div style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); padding: 30px; border-radius: 12px; margin: 30px 0; text-align: center;">
         <h4 style="color: #0369a1; margin-bottom: 15px;">🚀 오늘 바로 시작하세요</h4>
         <p style="margin-bottom: 20px;">무료 마케팅 진단으로 현재 위치를 확인하고,<br><strong>경쟁에서 앞서 나가세요.</strong></p>
-        <a href="https://nursmarket-a2dzpd9o.manus.space/" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #3182f6, #2563eb); color: white; padding: 14px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; margin-bottom: 15px; transition: all 0.3s ease;">무료 상담 신청하기 →</a>
-        <p style="font-size: 14px; color: #64748b;">📞 전화 상담도 가능합니다. 부담 갖지 마세요!</p>
+        <a href="/#contact" style="display: inline-block; background: linear-gradient(135deg, #3182f6, #2563eb); color: white; padding: 14px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;">무료 상담 신청하기 →</a>
       </div>
       
       <p><strong>케어넥 마케팅</strong>과 함께 용인방문요양센터의 새로운 성장을 시작하세요. 💙</p>
