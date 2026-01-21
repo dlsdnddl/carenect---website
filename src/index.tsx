@@ -3088,12 +3088,14 @@ app.get('/column/yongin-blog-marketing-secret', (c) => {
         <p><strong>"입소문? 지인 소개? 그것만 기다리다 센터 문 닫을 뻔했어요."</strong></p>
         <p><strong>"온라인 홍보요? 블로그는 젊은 사람들이나 보는 거 아닌가요?"</strong></p>
         <p>용인에서 방문요양센터를 운영하시는 원장님이라면 이런 생각, 한 번쯤 해보셨을 겁니다. 저 역시 14년 마케팅 경력과 요양보호사 교육원 운영 경험을 통해 수많은 센터들의 고민을 들어왔습니다.</p>
-        <p>오늘은 <strong>용인 지역 방문요양센터가 블로그 마케팅으로 6개월 만에 수급자 70명 이상을 확보하고, 2호점까지 확장한 실제 이야기</strong>를 공유해 드리겠습니다.</p>
+        <p>오늘은 <strong>케어넥 마케팅이 담당하고 있는 한 방문요양센터가 블로그 마케팅으로 6개월 만에 수급자 70명 이상을 확보하고, 2호점까지 확장한 실제 이야기</strong>를 공유해 드리겠습니다. (센터 정보 보호를 위해 지역은 비공개입니다.)</p>
       </div>
 
       <h3>1. "나중에 해야지"의 함정 - 경쟁은 이미 시작됐습니다</h3>
       
-      <p>용인시는 수지구, 기흥구, 처인구 등 넓은 지역에 걸쳐 고령 인구가 빠르게 증가하고 있습니다. 그만큼 방문요양센터도 많아지고 있죠.</p>
+      <p>용인시는 수지구, 기흥구, 처인구 등 넓은 지역에 걸쳐 고령 인구가 빠르게 증가하고 있습니다. 그만큼 방문요양센터도 많아지고 있죠. 통계청에 따르면 용인시 65세 이상 인구는 2020년 약 12만 명에서 2025년 약 18만 명으로 <strong>50% 이상 증가</strong>할 것으로 예측됩니다.</p>
+      
+      <p>문제는 센터 수도 그만큼 늘어나고 있다는 점입니다. <strong>같은 파이를 더 많은 센터가 나눠 먹는 상황</strong>이 되고 있습니다. 지금 당장 온라인 마케팅을 시작하지 않으면, 이미 상위에 자리 잡은 경쟁 센터들에게 수급자를 뺏기게 됩니다.</p>
       
       <h4>⚠️ 지금 시작하지 않으면 생기는 일</h4>
       <ul>
@@ -3103,21 +3105,27 @@ app.get('/column/yongin-blog-marketing-secret', (c) => {
         <li>옆 센터에 <strong>수급자를 뺏기는</strong> 상황이 현실이 됩니다</li>
       </ul>
       
+      <h4>💡 실무 TIP: 지금 당장 체크해보세요</h4>
+      <p>네이버에서 <strong>"용인 방문요양"</strong>을 검색해보세요. 상위 10개 결과 중 당신의 센터가 보이나요? 보이지 않는다면, 지금 이 순간에도 잠재 고객을 놓치고 있는 것입니다. 블로그 상위 노출은 시간이 필요한 작업입니다. <strong>하루라도 빨리 시작해야 6개월 후 결과가 나옵니다.</strong></p>
+      
       <blockquote>
         "마케팅 비용이 아깝다고요? 안 해서 날리는 기회비용이 더 큽니다."
       </blockquote>
 
       <h3>2. 온라인 검색, 이제는 어르신도 보호자도 다 합니다</h3>
       
-      <p>아직도 <strong>"어르신들은 인터넷 안 본다"</strong>고 생각하시나요?</p>
+      <p>아직도 <strong>"어르신들은 인터넷 안 본다"</strong>고 생각하시나요? 데이터는 정반대를 말하고 있습니다.</p>
       
-      <h4>📊 2025년 디지털 환경 변화</h4>
+      <p>과학기술정보통신부와 한국지능정보사회진흥원(NIA)이 발표한 <strong>「2024 인터넷이용실태조사」</strong>에 따르면, 60대의 인터넷 이용률은 이미 97%를 넘어섰습니다. 70대도 85% 이상이 인터넷을 이용하고 있죠. 이 추세는 2025년 이후에도 계속 상승하고 있습니다.</p>
+      
+      <h4>📊 2025년 이후 지속되는 디지털 환경 변화</h4>
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
         <thead>
           <tr style="background: #f8fafc;">
             <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">구분</th>
             <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">수치</th>
             <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">의미</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">출처</th>
           </tr>
         </thead>
         <tbody>
@@ -3125,21 +3133,29 @@ app.get('/column/yongin-blog-marketing-secret', (c) => {
             <td style="border: 1px solid #e2e8f0; padding: 12px;">60대 스마트폰 보급률</td>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>95% 이상</strong></td>
             <td style="border: 1px solid #e2e8f0; padding: 12px;">어르신도 직접 검색</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px; font-size: 13px;">과기정통부 2024 인터넷이용실태조사</td>
           </tr>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;">4060세대 온라인 검색률</td>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>98%</strong></td>
             <td style="border: 1px solid #e2e8f0; padding: 12px;">보호자가 먼저 찾아봄</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px; font-size: 13px;">한국지능정보사회진흥원(NIA)</td>
           </tr>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;">방문요양 관련 검색량</td>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>매년 15%↑</strong></td>
             <td style="border: 1px solid #e2e8f0; padding: 12px;">수요는 계속 증가</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px; font-size: 13px;">네이버 데이터랩 키워드 분석</td>
           </tr>
         </tbody>
       </table>
       
-      <p>부모님의 요양 서비스를 결정하는 건 대부분 <strong>40~60대 자녀 세대</strong>입니다. 이들은 100% 온라인에서 정보를 수집합니다. <strong>"용인 방문요양" "용인 방문요양센터 추천"</strong>을 검색했을 때 당신의 센터가 보이지 않는다면?</p>
+      <p>부모님의 요양 서비스를 결정하는 건 대부분 <strong>40~60대 자녀 세대</strong>입니다. 이들은 거의 100% 온라인에서 정보를 수집합니다. 병원 선택, 학원 선택처럼 <strong>요양센터 선택도 검색으로 시작</strong>됩니다.</p>
+      
+      <p><strong>"용인 방문요양" "용인 방문요양센터 추천"</strong>을 검색했을 때 당신의 센터가 보이지 않는다면? 그 고객은 보이는 센터로 연락합니다.</p>
+      
+      <h4>💡 실무 TIP: 검색 결과를 분석하세요</h4>
+      <p>"용인 방문요양" 검색 시 상위에 노출되는 센터들의 블로그를 방문해보세요. 그들이 어떤 콘텐츠를 올리고 있는지, 얼마나 자주 포스팅하는지 확인하세요. <strong>경쟁자를 알아야 이길 수 있습니다.</strong> 대부분의 상위 센터들은 주 2~3회 이상 꾸준히 포스팅하고 있을 겁니다.</p>
       
       <blockquote>
         "검색에서 안 보이면, 선택지에도 없는 겁니다."
@@ -3147,7 +3163,9 @@ app.get('/column/yongin-blog-marketing-secret', (c) => {
 
       <h3>3. 왜 블로그 마케팅이 가장 효과적인가?</h3>
       
-      <p>광고, SNS, 유튜브... 다양한 채널이 있지만, <strong>방문요양 마케팅에서 블로그가 핵심인 이유</strong>가 있습니다.</p>
+      <p>광고, SNS, 유튜브... 다양한 채널이 있지만, <strong>방문요양 마케팅에서 블로그가 핵심인 이유</strong>가 있습니다. 특히 중장년층 타깃의 서비스에서는 블로그의 효과가 압도적입니다.</p>
+      
+      <p>네이버는 여전히 한국에서 가장 많이 사용되는 검색 엔진이고, 특히 40대 이상에서는 <strong>구글보다 네이버 이용률이 3배 이상</strong> 높습니다. 네이버 검색 결과에서 블로그 영역은 항상 상단에 위치하기 때문에, <strong>블로그 상위 노출 = 잠재 고객 노출</strong>이라는 공식이 성립합니다.</p>
       
       <h4>✅ 블로그 마케팅의 5가지 강점</h4>
       
@@ -3161,39 +3179,44 @@ app.get('/column/yongin-blog-marketing-secret', (c) => {
         <tbody>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>① 장기 자산화</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">한번 작성한 글이 계속 노출되어 누적 효과</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">한번 작성한 글이 계속 노출되어 누적 효과 (6개월~1년 이상 유지)</td>
           </tr>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>② 신뢰도 구축</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">전문적인 콘텐츠로 센터 신뢰도 향상</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">전문적인 콘텐츠로 센터 신뢰도 향상 (광고와 달리 정보 제공형)</td>
           </tr>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>③ 검색 노출</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">네이버 검색에서 상위 노출 가능</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">네이버 검색에서 상위 노출 가능 (40대 이상 검색 1순위 플랫폼)</td>
           </tr>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>④ 비용 효율</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">광고비 없이도 지속적인 유입</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">광고비 없이도 지속적인 유입 (월 수십~수백만 원 광고비 절감)</td>
           </tr>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>⑤ 정보 전달</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">서비스 내용을 상세히 설명 가능</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">서비스 내용을 상세히 설명 가능 (SNS보다 깊은 정보 전달)</td>
           </tr>
         </tbody>
       </table>
       
       <p>광고는 돈을 쓰면 노출되고, 안 쓰면 사라집니다. 하지만 <strong>블로그는 한번 상위에 올라가면 오랫동안 유지</strong>됩니다. 이것이 바로 <strong>"자산형 마케팅"</strong>입니다.</p>
+      
+      <h4>💡 실무 TIP: 블로그 운영 핵심 원칙</h4>
+      <ul>
+        <li><strong>꾸준함이 핵심</strong>: 주 2~3회 포스팅을 6개월 이상 유지해야 효과가 나타납니다</li>
+        <li><strong>키워드 설정</strong>: "용인 방문요양", "수지구 방문요양" 등 지역 키워드를 제목과 본문에 자연스럽게 포함하세요</li>
+        <li><strong>실용적인 정보</strong>: 등급 신청 방법, 비용 안내, 서비스 내용 등 실제로 궁금해하는 정보를 제공하세요</li>
+        <li><strong>진정성 있는 콘텐츠</strong>: 센터 일상, 요양보호사 소개 등 신뢰를 줄 수 있는 콘텐츠를 함께 올리세요</li>
+      </ul>
 
-      <div style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); padding: 30px; border-radius: 12px; margin: 30px 0; text-align: center;">
-        <h4 style="color: #0369a1; margin-bottom: 15px;">🎁 무료 마케팅 진단 받아보기</h4>
-        <p style="margin-bottom: 20px;">현재 센터의 온라인 현황을 무료로 분석해드립니다.<br><strong>용인 지역 경쟁사 분석</strong>과 함께 맞춤 전략을 제안받으세요.</p>
-        <a href="https://nursmarket-a2dzpd9o.manus.space/" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #3182f6, #2563eb); color: white; padding: 14px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; margin-bottom: 15px; transition: all 0.3s ease;">무료 진단 신청하기 →</a>
-        <p style="font-size: 14px; color: #64748b;">📞 상담은 무료입니다. 부담 없이 연락주세요.</p>
+      <div style="background: #f8fafc; padding: 20px; border-radius: 8px; margin: 30px 0; border: 1px solid #e2e8f0;">
+        <p style="margin: 0; font-size: 14px; color: #475569;"><strong>📌 무료 마케팅 진단 받아보기</strong><br>현재 센터의 온라인 현황과 경쟁사 분석을 무료로 진단해드립니다. <a href="https://nursmarket-a2dzpd9o.manus.space/" target="_blank" style="color: #2563eb; font-weight: 600;">무료 진단 신청 →</a></p>
       </div>
 
       <h3>4. 실제 사례: 6개월 만에 수급자 70명, 2호점 확장</h3>
       
-      <p>케어넥 마케팅과 함께한 용인 A센터의 실제 성과입니다.</p>
+      <p>케어넥 마케팅이 담당하고 있는 한 방문요양센터의 실제 성과입니다. (센터 정보 보호를 위해 지역명은 비공개)</p>
       
       <h4>📈 성과 지표</h4>
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
@@ -3208,21 +3231,21 @@ app.get('/column/yongin-blog-marketing-secret', (c) => {
         <tbody>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;">수급자 수</td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">15명</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">4~5명</td>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>70명+</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px; color: #16a34a;"><strong>+367%</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px; color: #16a34a;"><strong>+1,300%</strong></td>
           </tr>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;">월 상담 문의</td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">2~3건</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">1~2건</td>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>20건+</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px; color: #16a34a;"><strong>+600%</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px; color: #16a34a;"><strong>+900%</strong></td>
           </tr>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;">블로그 방문자</td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">일 10명</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">일 2~3명</td>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>일 150명+</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px; color: #16a34a;"><strong>+1,400%</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px; color: #16a34a;"><strong>+5,000%</strong></td>
           </tr>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;">센터 수</td>
@@ -3235,7 +3258,7 @@ app.get('/column/yongin-blog-marketing-secret', (c) => {
       
       <h4>🔑 성공의 핵심 요인</h4>
       <ol>
-        <li><strong>지역 키워드 집중</strong>: "용인 방문요양", "수지구 방문요양", "기흥구 방문요양" 등 세부 지역 공략</li>
+        <li><strong>지역 키워드 집중</strong>: 해당 지역의 구 단위, 동 단위까지 세부 지역 키워드 공략</li>
         <li><strong>정기적인 콘텐츠 발행</strong>: 주 3회 이상 꾸준한 포스팅</li>
         <li><strong>신뢰 콘텐츠</strong>: 등급 신청 안내, 요양보호사 소개, 실제 케어 사례 공유</li>
         <li><strong>상담 동선 최적화</strong>: 블로그에서 상담까지 자연스러운 연결</li>
@@ -3283,7 +3306,7 @@ app.get('/column/yongin-blog-marketing-secret', (c) => {
           </tr>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>처인구</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">구도심 + 농촌</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">구도심 + 자연친화 주거지역</td>
             <td style="border: 1px solid #e2e8f0; padding: 12px;">정서적 케어, 가정적 분위기</td>
           </tr>
         </tbody>
