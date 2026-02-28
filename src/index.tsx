@@ -149,9 +149,9 @@ app.get('/column', (c) => {
                                 <span class="column-category">지역 마케팅</span>
                                 <span class="column-date">2026.01.21</span>
                             </div>
-                            <h3>용인방문요양 홍보, 지금 시작 안 하면 옆 센터에 수급자 뺏깁니다</h3>
+                            <h3>용인방문요양 홍보, 미루면 경쟁센터에 수급자 뺏기는 이유</h3>
                             <p class="column-excerpt">
-                                블로그 마케팅으로 6개월 만에 수급자 70명 이상 확보, 2호점 확장까지. 용인 지역 방문요양센터의 실제 성공 사례를 케어넥 마케팅이 공개합니다.
+                                블로그+네이버 플레이스 마케팅으로 반년 만에 수급자 70명 이상 유치, 2호점 오픈까지. 방문요양센터 온라인 홍보 성공 사례를 공개합니다.
                             </p>
                             <div class="column-stats">
                                 <span><i class="fas fa-eye"></i> 156</span>
@@ -3078,53 +3078,53 @@ app.get('/column/yongin-blog-marketing-secret', (c) => {
   return c.html(getColumnPageHTML({
     slug: 'yongin-blog-marketing-secret',
     id: 13,
-    title: "용인방문요양 홍보, 지금 시작 안 하면 옆 센터에 수급자 뺏깁니다",
-    description: '블로그 마케팅으로 6개월 만에 수급자 70명 이상 확보, 2호점 확장까지 성공한 용인 방문요양센터의 실제 사례. 케어넥 마케팅의 검증된 블로그 전략을 공개합니다.',
+    title: "용인방문요양 홍보, 미루면 경쟁센터에 수급자 뺏기는 이유",
+    description: '블로그+네이버 플레이스 마케팅으로 반년 만에 수급자 70명 이상 유치, 2호점 오픈까지 달성한 방문요양센터 실제 성공기. 케어넥 마케팅의 입증된 온라인 홍보 전략을 소개합니다.',
     category: '지역 마케팅',
     date: '2026.01.21',
-    keywords: ['용인 방문요양', '용인방문요양센터', '용인방문요양 홍보', '블로그마케팅', '방문요양 블로그', '네이버 블로그 상위노출', '요양센터 마케팅', '수급자 확보', '케어넥 마케팅', '실버산업 마케팅', '무료상담', '무료진단'],
+    keywords: ['용인 방문요양', '용인방문요양센터', '용인방문요양 홍보', '블로그마케팅', '방문요양 블로그', '네이버 블로그 상위노출', '요양센터 마케팅', '수급자 확보', '케어넥 마케팅', '실버산업 마케팅', '무료상담', '무료진단', '네이버 플레이스', '방문요양 온라인홍보'],
     content: `
       <div class="column-intro">
-        <p><strong>"입소문? 지인 소개? 그것만 기다리다 센터 문 닫을 뻔했어요."</strong></p>
-        <p><strong>"온라인 홍보요? 블로그는 젊은 사람들이나 보는 거 아닌가요?"</strong></p>
-        <p>용인에서 방문요양센터를 운영하시는 원장님이라면 이런 생각, 한 번쯤 해보셨을 겁니다. 저 역시 14년 마케팅 경력과 요양보호사 교육원 운영 경험을 통해 수많은 센터들의 고민을 들어왔습니다.</p>
-        <p>오늘은 <strong>케어넥 마케팅이 담당하고 있는 한 방문요양센터가 블로그 마케팅으로 6개월 만에 수급자 70명 이상을 확보하고, 2호점까지 확장한 실제 이야기</strong>를 공유해 드리겠습니다. (센터 정보 보호를 위해 지역은 비공개입니다.)</p>
+        <p><strong>"지인 소개? 입소문? 그것만 믿다가 정말 큰일 날 뻔했습니다."</strong></p>
+        <p><strong>"인터넷 홍보요? 우리 어르신들이 블로그를 보겠어요?"</strong></p>
+        <p>용인 지역에서 방문요양센터를 운영하고 계신 원장님이시라면, 한 번쯤 이런 생각을 하셨을 겁니다. 마케팅 분야에서 14년간 경험을 쌓고, 요양보호사 교육기관까지 직접 운영해 본 저 역시 수많은 센터들의 이런 고민을 접해왔습니다.</p>
+        <p>이번 글에서는 <strong>케어넥 마케팅이 함께한 한 방문요양센터가 블로그와 네이버 플레이스 마케팅을 통해 단 6개월 만에 수급자 70명 이상을 확보하고, 2호점 확장까지 이뤄낸 실제 스토리</strong>를 들려드리겠습니다. (센터 보호 차원에서 구체적인 지역명은 비공개입니다.)</p>
       </div>
 
-      <h3>1. "나중에 해야지"의 함정 - 경쟁은 이미 시작됐습니다</h3>
+      <h3>1. "조금 있다가 해야지"라는 생각이 가장 위험합니다</h3>
       
-      <p>용인시는 수지구, 기흥구, 처인구 등 넓은 지역에 걸쳐 고령 인구가 빠르게 증가하고 있습니다. 그만큼 방문요양센터도 많아지고 있죠. 통계청에 따르면 용인시 65세 이상 인구는 2020년 약 12만 명에서 2025년 약 18만 명으로 <strong>50% 이상 증가</strong>할 것으로 예측됩니다.</p>
+      <p>용인시 전역—수지구, 기흥구, 처인구—에 걸쳐 시니어 인구가 급격히 늘고 있습니다. 이에 따라 방문요양센터 역시 빠르게 증가하는 추세죠. 통계청 자료에 따르면, 용인시 65세 이상 인구는 2020년 약 12만 명에서 2025년 약 18만 명으로 <strong>50% 넘게 증가</strong>할 것으로 전망됩니다.</p>
       
-      <p>문제는 센터 수도 그만큼 늘어나고 있다는 점입니다. <strong>같은 파이를 더 많은 센터가 나눠 먹는 상황</strong>이 되고 있습니다. 지금 당장 온라인 마케팅을 시작하지 않으면, 이미 상위에 자리 잡은 경쟁 센터들에게 수급자를 뺏기게 됩니다.</p>
+      <p>핵심 문제는 센터 숫자도 그만큼 불어나고 있다는 점입니다. <strong>똑같은 시장을 놓고 더 많은 센터가 경쟁하는 구도</strong>가 형성되고 있습니다. 온라인 마케팅을 지금 당장 착수하지 않으면, 이미 검색 상위권을 차지한 경쟁 센터에게 수급자를 빼앗기게 됩니다.</p>
       
-      <h4>⚠️ 지금 시작하지 않으면 생기는 일</h4>
+      <h4>⚠️ 마케팅을 미루면 벌어지는 일</h4>
       <ul>
-        <li>경쟁 센터가 <strong>"용인 방문요양"</strong> 검색 상위를 선점합니다</li>
-        <li>블로그 지수를 쌓는 데 <strong>최소 3~6개월</strong>이 걸립니다</li>
-        <li>늦게 시작할수록 <strong>비용과 시간이 2~3배</strong> 더 듭니다</li>
-        <li>옆 센터에 <strong>수급자를 뺏기는</strong> 상황이 현실이 됩니다</li>
+        <li>경쟁사가 <strong>"용인 방문요양"</strong> 키워드 검색 1페이지를 선점합니다</li>
+        <li>블로그 신뢰 지수를 키우는 데 <strong>최소 3~6개월</strong>이 소요됩니다</li>
+        <li>시작이 늦어질수록 <strong>비용·시간이 2~3배</strong> 더 투입됩니다</li>
+        <li>이웃 센터에 <strong>잠재 수급자를 뺏기는</strong> 현실에 직면합니다</li>
       </ul>
       
-      <h4>💡 실무 TIP: 지금 당장 체크해보세요</h4>
-      <p>네이버에서 <strong>"용인 방문요양"</strong>을 검색해보세요. 상위 10개 결과 중 당신의 센터가 보이나요? 보이지 않는다면, 지금 이 순간에도 잠재 고객을 놓치고 있는 것입니다. 블로그 상위 노출은 시간이 필요한 작업입니다. <strong>하루라도 빨리 시작해야 6개월 후 결과가 나옵니다.</strong></p>
+      <h4>💡 실전 팁: 지금 바로 확인해보세요</h4>
+      <p>네이버에서 <strong>"용인 방문요양"</strong>을 직접 검색해보십시오. 상위 10개 검색 결과 안에 원장님 센터가 노출되고 있나요? 노출되지 않는다면, 바로 이 순간에도 예비 고객을 잃고 있는 셈입니다. 블로그가 검색 상단에 오르기까지는 시간이 필요합니다. <strong>하루라도 빨리 시작해야 6개월 뒤 성과를 볼 수 있습니다.</strong></p>
       
       <blockquote>
-        "마케팅 비용이 아깝다고요? 안 해서 날리는 기회비용이 더 큽니다."
+        "마케팅 비용이 아까우시다고요? 안 해서 놓치는 기회비용이 훨씬 큽니다."
       </blockquote>
 
-      <h3>2. 온라인 검색, 이제는 어르신도 보호자도 다 합니다</h3>
+      <h3>2. 어르신도, 보호자도 이제는 '검색'부터 합니다</h3>
       
-      <p>아직도 <strong>"어르신들은 인터넷 안 본다"</strong>고 생각하시나요? 데이터는 정반대를 말하고 있습니다.</p>
+      <p>여전히 <strong>"시니어분들은 인터넷을 안 본다"</strong>고 생각하시나요? 데이터는 완전히 다른 이야기를 하고 있습니다.</p>
       
-      <p>과학기술정보통신부와 한국지능정보사회진흥원(NIA)이 발표한 <strong>「2024 인터넷이용실태조사」</strong>에 따르면, 60대의 인터넷 이용률은 이미 97%를 넘어섰습니다. 70대도 85% 이상이 인터넷을 이용하고 있죠. 이 추세는 2025년 이후에도 계속 상승하고 있습니다.</p>
+      <p>과학기술정보통신부와 한국지능정보사회진흥원(NIA)이 발표한 <strong>「2024 인터넷이용실태조사」</strong>에 따르면, 60대 인터넷 이용률은 이미 97%를 넘었습니다. 70대도 85% 이상이 인터넷을 활용하고 있죠. 이러한 흐름은 2025년 이후에도 계속해서 상승 중입니다.</p>
       
-      <h4>📊 2025년 이후 지속되는 디지털 환경 변화</h4>
+      <h4>📊 2025년 이후 디지털 환경 트렌드</h4>
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
         <thead>
           <tr style="background: #f8fafc;">
-            <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">구분</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">항목</th>
             <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">수치</th>
-            <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">의미</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">시사점</th>
             <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">출처</th>
           </tr>
         </thead>
@@ -3132,100 +3132,143 @@ app.get('/column/yongin-blog-marketing-secret', (c) => {
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;">60대 스마트폰 보급률</td>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>95% 이상</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">어르신도 직접 검색</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">시니어도 직접 검색</td>
             <td style="border: 1px solid #e2e8f0; padding: 12px; font-size: 13px;">과기정통부 2024 인터넷이용실태조사</td>
           </tr>
           <tr>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">4060세대 온라인 검색률</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">40~60대 온라인 검색률</td>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>98%</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">보호자가 먼저 찾아봄</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">보호자가 먼저 정보 탐색</td>
             <td style="border: 1px solid #e2e8f0; padding: 12px; font-size: 13px;">한국지능정보사회진흥원(NIA)</td>
           </tr>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;">방문요양 관련 검색량</td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>매년 15%↑</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">수요는 계속 증가</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>연간 15%↑</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">수요는 꾸준히 확대</td>
             <td style="border: 1px solid #e2e8f0; padding: 12px; font-size: 13px;">네이버 데이터랩 키워드 분석</td>
           </tr>
         </tbody>
       </table>
       
-      <p>부모님의 요양 서비스를 결정하는 건 대부분 <strong>40~60대 자녀 세대</strong>입니다. 이들은 거의 100% 온라인에서 정보를 수집합니다. 병원 선택, 학원 선택처럼 <strong>요양센터 선택도 검색으로 시작</strong>됩니다.</p>
+      <p>실제 요양 서비스 이용자는 대개 70~90대 어르신이지만, <strong>센터를 찾고 결정하는 주체는 40~60대 자녀 세대</strong>입니다. 이들은 거의 100% 온라인에서 정보를 수집하죠. 병원을 고르고, 학원을 고르듯 <strong>요양센터 선택도 검색에서 시작</strong>됩니다.</p>
       
-      <p><strong>"용인 방문요양" "용인 방문요양센터 추천"</strong>을 검색했을 때 당신의 센터가 보이지 않는다면? 그 고객은 보이는 센터로 연락합니다.</p>
+      <p><strong>"용인 방문요양" "용인 방문요양센터 추천"</strong>을 검색했을 때 원장님 센터가 눈에 띄지 않는다면? 그 예비 고객은 검색 결과에 보이는 다른 센터로 연락합니다.</p>
       
-      <h4>💡 실무 TIP: 검색 결과를 분석하세요</h4>
-      <p>"용인 방문요양" 검색 시 상위에 노출되는 센터들의 블로그를 방문해보세요. 그들이 어떤 콘텐츠를 올리고 있는지, 얼마나 자주 포스팅하는지 확인하세요. <strong>경쟁자를 알아야 이길 수 있습니다.</strong> 대부분의 상위 센터들은 주 2~3회 이상 꾸준히 포스팅하고 있을 겁니다.</p>
+      <h4>💡 실전 팁: 경쟁 블로그를 분석하세요</h4>
+      <p>"용인 방문요양" 검색 시 상단에 뜨는 센터 블로그를 직접 방문해보세요. 어떤 주제의 콘텐츠를 올리는지, 포스팅 주기가 어떤지 살펴보세요. <strong>경쟁자를 파악해야 이길 수 있습니다.</strong> 검색 상위에 있는 센터들은 대부분 주 2~3회 이상 꾸준히 글을 올리고 있을 겁니다.</p>
       
       <blockquote>
-        "검색에서 안 보이면, 선택지에도 없는 겁니다."
+        "검색 결과에 노출되지 않으면, 선택지에도 들어가지 못합니다."
       </blockquote>
 
-      <h3>3. 왜 블로그 마케팅이 가장 효과적인가?</h3>
+      <h3>3. 블로그 마케팅이 방문요양에 가장 잘 맞는 이유</h3>
       
-      <p>광고, SNS, 유튜브... 다양한 채널이 있지만, <strong>방문요양 마케팅에서 블로그가 핵심인 이유</strong>가 있습니다. 특히 중장년층 타깃의 서비스에서는 블로그의 효과가 압도적입니다.</p>
+      <p>광고, SNS, 유튜브… 채널은 다양합니다. 그러나 <strong>방문요양 분야에서 블로그가 핵심인 까닭</strong>이 분명히 있습니다. 특히 중장년층을 타깃으로 하는 서비스에서는 블로그 효과가 압도적입니다.</p>
       
-      <p>네이버는 여전히 한국에서 가장 많이 사용되는 검색 엔진이고, 특히 40대 이상에서는 <strong>구글보다 네이버 이용률이 3배 이상</strong> 높습니다. 네이버 검색 결과에서 블로그 영역은 항상 상단에 위치하기 때문에, <strong>블로그 상위 노출 = 잠재 고객 노출</strong>이라는 공식이 성립합니다.</p>
+      <p>네이버는 아직도 국내에서 가장 많이 쓰이는 검색 엔진이고, 40대 이상 연령층에서는 <strong>구글보다 네이버 이용률이 3배 이상</strong> 높습니다. 네이버 검색 결과에서 블로그 영역은 항상 상단에 배치되기 때문에, <strong>블로그 상위 노출 = 잠재 고객 노출</strong>이라는 공식이 성립하죠.</p>
       
-      <h4>✅ 블로그 마케팅의 5가지 강점</h4>
+      <h4>✅ 블로그 마케팅의 5대 이점</h4>
       
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
         <thead>
           <tr style="background: #f8fafc;">
-            <th style="border: 1px solid #e2e8f0; padding: 12px;">강점</th>
-            <th style="border: 1px solid #e2e8f0; padding: 12px;">설명</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">장점</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">내용</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>① 장기 자산화</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">한번 작성한 글이 계속 노출되어 누적 효과 (6개월~1년 이상 유지)</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>① 장기적 자산</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">한번 발행한 글이 지속 노출돼 누적 효과 발생 (6개월~1년 이상 유지)</td>
           </tr>
           <tr>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>② 신뢰도 구축</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">전문적인 콘텐츠로 센터 신뢰도 향상 (광고와 달리 정보 제공형)</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>② 신뢰 형성</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">전문 콘텐츠로 센터 신뢰도 상승 (광고와 달리 정보 제공 방식)</td>
           </tr>
           <tr>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>③ 검색 노출</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">네이버 검색에서 상위 노출 가능 (40대 이상 검색 1순위 플랫폼)</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>③ 검색 상위 노출</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">네이버 검색에서 상단 진입 가능 (40대 이상 1순위 검색 플랫폼)</td>
           </tr>
           <tr>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>④ 비용 효율</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">광고비 없이도 지속적인 유입 (월 수십~수백만 원 광고비 절감)</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>④ 비용 효율성</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">광고비 없이도 꾸준한 유입 (월 수십~수백만 원 광고비 절감)</td>
           </tr>
           <tr>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>⑤ 정보 전달</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">서비스 내용을 상세히 설명 가능 (SNS보다 깊은 정보 전달)</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>⑤ 상세 정보 전달</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">서비스 내용을 깊이 있게 설명 (SNS보다 풍부한 정보 제공)</td>
           </tr>
         </tbody>
       </table>
       
-      <p>광고는 돈을 쓰면 노출되고, 안 쓰면 사라집니다. 하지만 <strong>블로그는 한번 상위에 올라가면 오랫동안 유지</strong>됩니다. 이것이 바로 <strong>"자산형 마케팅"</strong>입니다.</p>
+      <p>광고는 비용을 투입하면 노출되고, 멈추면 사라집니다. 반면 <strong>블로그는 한번 상단에 올라가면 장기간 유지</strong>됩니다. 이것이 바로 <strong>"자산형 마케팅"</strong>의 핵심입니다.</p>
       
-      <h4>💡 실무 TIP: 블로그 운영 핵심 원칙</h4>
+      <h4>💡 실전 팁: 블로그 운영 핵심 4원칙</h4>
       <ul>
-        <li><strong>꾸준함이 핵심</strong>: 주 2~3회 포스팅을 6개월 이상 유지해야 효과가 나타납니다</li>
-        <li><strong>키워드 설정</strong>: "용인 방문요양", "수지구 방문요양" 등 지역 키워드를 제목과 본문에 자연스럽게 포함하세요</li>
-        <li><strong>실용적인 정보</strong>: 등급 신청 방법, 비용 안내, 서비스 내용 등 실제로 궁금해하는 정보를 제공하세요</li>
-        <li><strong>진정성 있는 콘텐츠</strong>: 센터 일상, 요양보호사 소개 등 신뢰를 줄 수 있는 콘텐츠를 함께 올리세요</li>
+        <li><strong>꾸준함이 생명</strong>: 주 2~3회 포스팅을 6개월 이상 이어가야 효과가 나타납니다</li>
+        <li><strong>지역 키워드 활용</strong>: "용인 방문요양", "수지구 방문요양" 같은 지역 키워드를 제목·본문에 자연스럽게 녹이세요</li>
+        <li><strong>실용적 정보 제공</strong>: 등급 신청 절차, 비용 안내, 서비스 상세 등 실제로 궁금해하는 내용을 담으세요</li>
+        <li><strong>진정성 있는 콘텐츠</strong>: 센터 일상, 요양보호사 소개 등 신뢰를 줄 수 있는 이야기도 함께 올리세요</li>
       </ul>
 
       <div style="background: #f8fafc; padding: 20px; border-radius: 8px; margin: 30px 0; border: 1px solid #e2e8f0;">
-        <p style="margin: 0; font-size: 14px; color: #475569;"><strong>📌 무료 마케팅 진단 받아보기</strong><br>현재 센터의 온라인 현황과 경쟁사 분석을 무료로 진단해드립니다. <a href="https://nursmarket-a2dzpd9o.manus.space/" target="_blank" style="color: #2563eb; font-weight: 600;">무료 진단 신청 →</a></p>
+        <p style="margin: 0; font-size: 14px; color: #475569;"><strong>📌 무료 마케팅 현황 진단</strong><br>현재 센터의 온라인 노출 상태와 경쟁사 분석을 무료로 진단해드립니다. <a href="/#contact" style="color: #2563eb; font-weight: 600;">무료 진단 신청 →</a></p>
       </div>
 
-      <h3>4. 실제 사례: 6개월 만에 수급자 70명, 2호점 확장</h3>
+      <h3>4. 보호자가 걱정하는 4가지, 콘텐츠로 해소하세요</h3>
       
-      <p>케어넥 마케팅이 담당하고 있는 한 방문요양센터의 실제 성과입니다. (센터 정보 보호를 위해 지역명은 비공개)</p>
+      <p>방문요양을 알아보는 보호자분들은 공통적으로 비슷한 불안을 안고 있습니다. 이 <strong>불안을 해소해주는 콘텐츠</strong>가 바로 신뢰를 얻는 열쇠입니다.</p>
       
-      <h4>📈 성과 지표</h4>
+      <h4>😰 보호자의 4대 불안 요소와 해소 전략</h4>
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
         <thead>
           <tr style="background: #f8fafc;">
-            <th style="border: 1px solid #e2e8f0; padding: 12px;">지표</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">불안 요소</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">보호자의 걱정</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">콘텐츠 해소 방향</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>① 등급 신청</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">"절차가 복잡해 보여요"</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">단계별 신청 가이드, 무료 대행 안내 콘텐츠</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>② 요양보호사 자질</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">"어떤 분이 오실지 불안해요"</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">요양보호사 프로필·교육 과정 소개</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>③ 센터 운영</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">"믿을 만한 곳인지 모르겠어요"</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">센터 운영 철학, 실제 케어 사례 공유</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>④ 정서적 케어</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">"부모님 마음까지 챙겨줄까요?"</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">정서 케어 사례, 감사 후기 콘텐츠</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p>단순히 서비스를 홍보하는 글보다, <strong>보호자의 걱정을 정확히 짚어주고 해결책을 제시하는 콘텐츠</strong>가 훨씬 강력한 신뢰를 만듭니다.</p>
+      
+      <blockquote>
+        "좋은 서비스를 제공하는 것도 중요하지만, 그 진심이 전달되어야 선택받습니다."
+      </blockquote>
+
+      <h3>5. 실제 성과: 반년 만에 수급자 70명+, 2호점 오픈</h3>
+      
+      <p>케어넥 마케팅이 함께한 한 방문요양센터의 실제 성과입니다. (센터 보호를 위해 구체적 지역명은 비공개)</p>
+      
+      <h4>📈 핵심 성과 지표</h4>
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #f8fafc;">
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">항목</th>
             <th style="border: 1px solid #e2e8f0; padding: 12px;">시작 전</th>
             <th style="border: 1px solid #e2e8f0; padding: 12px;">6개월 후</th>
-            <th style="border: 1px solid #e2e8f0; padding: 12px;">변화</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">성장률</th>
           </tr>
         </thead>
         <tbody>
@@ -3242,108 +3285,392 @@ app.get('/column/yongin-blog-marketing-secret', (c) => {
             <td style="border: 1px solid #e2e8f0; padding: 12px; color: #16a34a;"><strong>+900%</strong></td>
           </tr>
           <tr>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">블로그 방문자</td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">일 2~3명</td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>일 150명+</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">블로그 일 방문자</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">2~3명</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>150명+</strong></td>
             <td style="border: 1px solid #e2e8f0; padding: 12px; color: #16a34a;"><strong>+5,000%</strong></td>
           </tr>
           <tr>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">센터 수</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">사업 확장</td>
             <td style="border: 1px solid #e2e8f0; padding: 12px;">1호점</td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>2호점 확장</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px; color: #16a34a;"><strong>사업 확장</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>2호점 오픈</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px; color: #16a34a;"><strong>사업 성장</strong></td>
           </tr>
         </tbody>
       </table>
       
-      <h4>🔑 성공의 핵심 요인</h4>
+      <h4>🔑 성공을 이끈 4가지 핵심 요인</h4>
       <ol>
-        <li><strong>지역 키워드 집중</strong>: 해당 지역의 구 단위, 동 단위까지 세부 지역 키워드 공략</li>
-        <li><strong>정기적인 콘텐츠 발행</strong>: 주 3회 이상 꾸준한 포스팅</li>
-        <li><strong>신뢰 콘텐츠</strong>: 등급 신청 안내, 요양보호사 소개, 실제 케어 사례 공유</li>
-        <li><strong>상담 동선 최적화</strong>: 블로그에서 상담까지 자연스러운 연결</li>
+        <li><strong>지역 키워드 집중 공략</strong>: 구 단위, 동 단위까지 세부 지역 키워드 타겟팅</li>
+        <li><strong>규칙적인 콘텐츠 발행</strong>: 주 3회 이상 지속적인 포스팅</li>
+        <li><strong>신뢰 콘텐츠 제작</strong>: 등급 신청 안내, 요양보호사 소개, 실제 케어 후기</li>
+        <li><strong>상담 연결 최적화</strong>: 블로그에서 상담까지 자연스러운 동선 설계</li>
       </ol>
 
-      <h3>5. 케어넥 마케팅이 다른 이유</h3>
+      <div style="background: linear-gradient(135deg, #ecfdf5, #d1fae5); padding: 25px; border-radius: 12px; margin: 30px 0; border: 1px solid #6ee7b7;">
+        <h4 style="color: #065f46; margin: 0 0 15px 0; font-size: 16px;">🔄 서비스 경험 → 후기 → 추천의 선순환</h4>
+        <p style="margin: 0; color: #047857; line-height: 1.7;">좋은 서비스를 경험한 수급자 가족이 긍정적인 후기를 남기고, 그 후기가 새로운 예비 고객에게 신뢰를 주어 추천으로 이어지는 구조입니다. 온라인 마케팅은 이 선순환을 <strong>가속화</strong>시키는 역할을 합니다.</p>
+      </div>
+
+      <h3>6. 케어넥 마케팅이 선택받는 이유</h3>
       
-      <p>왜 많은 방문요양센터가 케어넥 마케팅을 선택할까요?</p>
+      <p>왜 많은 방문요양센터 원장님들이 케어넥 마케팅을 파트너로 선택할까요?</p>
       
-      <h4>💪 케어넥 마케팅의 강점</h4>
+      <h4>💪 케어넥 마케팅만의 차별점</h4>
       <ul>
-        <li><strong>14년 마케팅 전문 경력</strong>: 디지털 마케팅 노하우 축적</li>
-        <li><strong>요양보호사 교육원 운영 경험</strong>: 실버산업의 현장을 직접 경험</li>
-        <li><strong>50여 개 센터 성공 사례</strong>: 검증된 전략과 실행력</li>
-        <li><strong>결과 기반 컨설팅</strong>: 상담 문의 3배 증가, 70% 이상 실제 이용 전환</li>
+        <li><strong>14년 디지털 마케팅 전문 경력</strong>: 축적된 노하우와 실행력</li>
+        <li><strong>요양보호사 교육기관 직접 운영 경험</strong>: 실버산업 현장을 깊이 이해</li>
+        <li><strong>50여 개 센터 성공 사례</strong>: 검증된 전략 기반의 실행</li>
+        <li><strong>성과 중심 컨설팅</strong>: 상담 문의 3배 증가, 70% 이상 실제 이용 전환</li>
       </ul>
       
       <blockquote>
-        "실버산업을 이해하지 못하면, 제대로 된 마케팅을 할 수 없습니다."
+        "실버산업의 맥락을 이해하지 못하면, 제대로 된 마케팅은 불가능합니다."
       </blockquote>
 
-      <h3>6. 용인 지역 특화 마케팅 전략</h3>
+      <h3>7. 상담 경험을 설계해야 전환율이 올라갑니다</h3>
       
-      <p>용인은 넓은 면적과 다양한 인구 구성을 가진 도시입니다. <strong>일괄적인 마케팅으로는 효과를 보기 어렵습니다.</strong></p>
+      <p>블로그로 유입된 방문자를 실제 상담으로 연결하는 것이 핵심입니다. <strong>상담 경험을 체계적으로 설계</strong>해야 전환율을 높일 수 있습니다.</p>
       
-      <h4>📍 용인 지역별 접근 전략</h4>
+      <h4>📞 효과적인 상담 설계 6단계</h4>
       <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
         <thead>
           <tr style="background: #f8fafc;">
-            <th style="border: 1px solid #e2e8f0; padding: 12px;">지역</th>
-            <th style="border: 1px solid #e2e8f0; padding: 12px;">특성</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">단계</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">핵심 활동</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">목표</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>1단계</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">불안 공감하기</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">보호자의 걱정을 먼저 인정하고 공감</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>2단계</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">절차 간소화 안내</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">"저희가 다 도와드립니다" 안심시키기</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>3단계</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">실제 사례 제시</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">비슷한 상황의 성공 사례로 신뢰 형성</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>4단계</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">맞춤형 안내</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">어르신 상황에 맞는 구체적 제안</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>5단계</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">관리 시스템 소개</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">체계적인 케어 관리 방식 설명</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>6단계</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">사후 관리 약속</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">상담 후에도 지속적인 케어 안내</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>8. 용인 지역 맞춤형 마케팅 전략</h3>
+      
+      <p>용인은 넓은 면적에 다양한 인구 구성을 가진 도시입니다. <strong>획일적인 마케팅으로는 효과를 보기 어렵습니다.</strong></p>
+      
+      <h4>📍 용인 권역별 마케팅 접근법</h4>
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #f8fafc;">
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">권역</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">지역 특성</th>
             <th style="border: 1px solid #e2e8f0; padding: 12px;">마케팅 포인트</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>수지구</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">고소득 신도시</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">고소득 신도시 지역</td>
             <td style="border: 1px solid #e2e8f0; padding: 12px;">프리미엄 케어, 전문성 강조</td>
           </tr>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>기흥구</strong></td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">아파트 단지 밀집</td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">접근성, 지역 밀착 서비스</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">아파트 단지 밀집 지역</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">접근성, 지역 밀착 서비스 어필</td>
           </tr>
           <tr>
             <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>처인구</strong></td>
             <td style="border: 1px solid #e2e8f0; padding: 12px;">구도심 + 자연친화 주거지역</td>
-            <td style="border: 1px solid #e2e8f0; padding: 12px;">정서적 케어, 가정적 분위기</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">정서적 케어, 가정적 분위기 강조</td>
           </tr>
         </tbody>
       </table>
 
-      <h3>7. 지금 시작하면 받을 수 있는 혜택</h3>
+      <h3>9. 무료 마케팅 진단으로 시작하세요</h3>
       
       <p>케어넥 마케팅의 <strong>무료 마케팅 진단</strong>을 신청하시면:</p>
       
       <ul>
         <li>✅ 현재 센터의 온라인 노출 현황 분석</li>
         <li>✅ 용인 지역 경쟁사 마케팅 현황 파악</li>
-        <li>✅ 맞춤형 블로그 마케팅 전략 제안</li>
-        <li>✅ 예상 성과 및 일정 안내</li>
+        <li>✅ 맞춤형 블로그+플레이스 마케팅 전략 제안</li>
+        <li>✅ 예상 성과 및 실행 일정 안내</li>
       </ul>
       
-      <p><strong>상담은 완전 무료</strong>이며, 부담 없이 현재 상황을 점검해보실 수 있습니다.</p>
+      <p><strong>상담은 완전히 무료</strong>이며, 부담 없이 현재 상황을 점검해보실 수 있습니다.</p>
 
       <div style="background: linear-gradient(135deg, #fef3c7, #fde68a); padding: 30px; border-radius: 12px; margin: 30px 0; border-left: 4px solid #f59e0b;">
-        <h4 style="color: #92400e; margin-bottom: 15px;">⏰ 지금이 적기입니다</h4>
-        <p style="margin-bottom: 15px; color: #78350f;">블로그 지수를 쌓는 데는 시간이 필요합니다. <strong>지금 시작해야 3~6개월 후 상위 노출</strong>이 가능합니다.</p>
-        <p style="color: #78350f;">늦게 시작할수록 경쟁은 치열해지고, 비용은 더 들어갑니다.</p>
+        <h4 style="color: #92400e; margin-bottom: 15px;">⏰ 바로 지금이 시작할 때입니다</h4>
+        <p style="margin-bottom: 15px; color: #78350f;">블로그 신뢰 지수를 쌓는 데는 시간이 필요합니다. <strong>오늘 시작해야 3~6개월 후 검색 상위 노출</strong>이 가능합니다.</p>
+        <p style="color: #78350f;">시작이 늦어질수록 경쟁은 치열해지고, 투입 비용은 커집니다.</p>
       </div>
 
-      <h3>8. 첫 걸음을 내딛으세요</h3>
+      <h3>10. 첫 발을 내디뎌 보세요</h3>
       
-      <p>입소문만 기다리던 시대는 끝났습니다. <strong>온라인에서 먼저 발견되어야</strong> 상담 기회가 생깁니다.</p>
+      <p>입소문만 기다리던 시대는 지났습니다. <strong>온라인에서 먼저 발견되어야</strong> 상담 기회가 생깁니다.</p>
       
-      <p>케어넥 마케팅은 <strong>용인 지역 방문요양센터의 성공적인 마케팅 파트너</strong>가 되겠습니다.</p>
+      <p>케어넥 마케팅은 <strong>용인 지역 방문요양센터의 든든한 마케팅 파트너</strong>가 되겠습니다.</p>
       
       <div style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); padding: 30px; border-radius: 12px; margin: 30px 0; text-align: center;">
         <h4 style="color: #0369a1; margin-bottom: 15px;">🚀 오늘 바로 시작하세요</h4>
-        <p style="margin-bottom: 20px;">무료 마케팅 진단으로 현재 위치를 확인하고,<br><strong>경쟁에서 앞서 나가세요.</strong></p>
+        <p style="margin-bottom: 20px;">무료 마케팅 진단으로 현재 위치를 확인하고,<br><strong>경쟁에서 한 발 앞서 나가세요.</strong></p>
         <a href="/#contact" style="display: inline-block; background: linear-gradient(135deg, #3182f6, #2563eb); color: white; padding: 14px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;">무료 상담 신청하기 →</a>
       </div>
       
       <p><strong>케어넥 마케팅</strong>과 함께 용인방문요양센터의 새로운 성장을 시작하세요. 💙</p>
+    `
+  }))
+})
+
+// 새 칼럼: 방문요양 홍보, 보호자가 직접 찾아오게 만드는 방법
+app.get('/column/home-care-online-marketing-guide', (c) => {
+  return c.html(getColumnPageHTML({
+    slug: 'home-care-online-marketing-guide',
+    id: 14,
+    title: "방문요양 홍보, 아직도 소개만 기다리세요? 보호자가 직접 찾아오게 만드는 방법",
+    description: '방문요양센터 온라인 마케팅의 필수 요소인 블로그와 네이버 플레이스 전략을 상세히 안내합니다. 40~60대 보호자가 검색으로 센터를 찾는 시대, 검색 상위 노출로 수급자를 늘리는 실전 방법을 공개합니다.',
+    category: '온라인 마케팅',
+    date: '2026.02.28',
+    keywords: ['방문요양 홍보', '방문요양 블로그', '방문요양 플레이스', '방문요양센터 마케팅', '방문요양 온라인 홍보', '네이버 플레이스 상위노출', '방문요양 블로그 마케팅', '수급자 모집', '케어넥 마케팅', '방문요양센터 홍보', '실버산업 마케팅'],
+    content: `
+      <div class="column-intro">
+        <p><strong>"굳이 온라인까지 홍보해야 할까요?"</strong></p>
+        <p><strong>"서비스만 좋으면 입소문으로 알려지지 않을까요?"</strong></p>
+        <p><strong>"블로그나 플레이스가 정말 효과가 있나요?"</strong></p>
+        <p>방문요양센터를 운영하시는 원장님이라면, 이런 고민 한 번쯤 해보셨을 겁니다. 충분히 공감합니다. 방문요양은 결국 '사람'이 제공하는 서비스니까요. 좋은 요양보호사와 진심 어린 케어가 자연스럽게 알려질 거라 믿고 싶은 마음, 저 역시 마찬가지였습니다.</p>
+        <p>그런데 원장님, 한 가지 여쭤볼게요. <strong>요즘 보호자분들이 어떤 방식으로 센터를 찾는지</strong> 알고 계신가요?</p>
+      </div>
+
+      <h3>보호자의 센터 선택 방식, 완전히 바뀌었습니다</h3>
+      
+      <p>방문요양 서비스를 이용하는 어르신은 대부분 70~90대입니다. 하지만 <strong>실제로 센터를 알아보고 결정하는 건 40~60대 자녀분들</strong>이죠.</p>
+      
+      <p>이 세대가 정보를 찾는 방식은 명확합니다.</p>
+      
+      <ul>
+        <li>네이버에서 <strong>"우리 동네 방문요양"</strong>을 검색합니다</li>
+        <li>블로그 글을 꼼꼼히 읽어봅니다</li>
+        <li>네이버 플레이스에서 센터 정보와 리뷰를 확인합니다</li>
+      </ul>
+      
+      <p>병원도 검색해서 가고, 맛집도 검색해서 가는 세대입니다. <strong>부모님 요양을 맡길 곳을 찾는데 더 신중하게 검색하지 않을까요?</strong></p>
+      
+      <blockquote>
+        "검색 결과에 보이지 않으면, 보호자의 선택지에 들어갈 수 없습니다."
+      </blockquote>
+
+      <h3>1. 방문요양 홍보, 왜 온라인이 필수가 되었나요?</h3>
+      
+      <p>가장 먼저 말씀드리고 싶은 건 이겁니다. <strong>보호자가 센터를 찾는 방식 자체가 완전히 달라졌습니다.</strong></p>
+      
+      <h4>📱 과거 vs 현재: 센터 선택 방식의 변화</h4>
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #f8fafc;">
+            <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">과거</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px; text-align: left;">현재</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">주민센터 안내</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>네이버 검색</strong></td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">지인 소개</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>블로그 + 플레이스 리뷰 확인</strong></td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">우연한 발견</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>지역 키워드 검색</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p>"아버지 요양 어디서 받지?"라는 고민이 생기면, 40~60대 자녀분들은 가장 먼저 <strong>스마트폰을 꺼내 검색</strong>합니다. 이게 현실입니다.</p>
+      
+      <p><strong>검색 결과에 없으면, 아예 선택지에서 제외됩니다.</strong> 그래서 방문요양 홍보는 이제 선택이 아닙니다. 검색하는 보호자에게 '발견'되어야 하고, 발견되지 않으면 아무리 좋은 서비스도 의미가 없습니다.</p>
+
+      <h3>2. 보호자는 '신뢰할 수 있는 곳'을 찾습니다</h3>
+      
+      <p>보호자 입장에서 생각해 볼까요? <strong>부모님을 모실 곳</strong>을 찾는 겁니다. 함부로 맡길 수 없죠.</p>
+      
+      <p>"여기가 정말 믿을 만한 센터일까?" — 이게 보호자의 가장 큰 질문입니다.</p>
+      
+      <p>그런데 처음 보는 센터를 어떻게 신뢰할 수 있을까요? 직접 방문하기 전에, <strong>온라인에서 먼저 정보를 찾아봅니다.</strong></p>
+      
+      <h4>✅ 보호자가 확인하는 것들</h4>
+      <ul>
+        <li>블로그에 센터 이야기가 있는지</li>
+        <li>어떤 철학으로 운영하는지</li>
+        <li>실제 케어 사례가 있는지</li>
+        <li>플레이스에 정확한 정보가 등록되어 있는지</li>
+        <li>리뷰는 어떤지</li>
+      </ul>
+      
+      <p>이때 센터 정보가 없다면? <strong>"이 센터는 뭔가 부족한 곳인가?"</strong>라는 인상을 줄 수 있습니다.</p>
+      
+      <p>반대로, 블로그에 센터 이야기가 잘 정리되어 있다면? <strong>"체계적으로 운영하는 곳이구나"</strong>라는 신뢰가 생깁니다.</p>
+      
+      <blockquote>
+        "블로그는 단순한 홍보가 아닙니다. 보호자에게 '이 센터는 믿어도 된다'는 근거를 보여주는 공간입니다."
+      </blockquote>
+      
+      <p>센터의 운영 철학, 요양보호사 관리 방식, 실제 케어 사례 등을 보여주세요. 보호자는 그 글을 읽으며 신뢰를 쌓아갑니다.</p>
+
+      <div style="background: #f8fafc; padding: 20px; border-radius: 8px; margin: 30px 0; border: 1px solid #e2e8f0;">
+        <p style="margin: 0; font-size: 14px; color: #475569;"><strong>💬 우리 센터가 검색에서 어떻게 보이는지 궁금하시다면?</strong><br>부담 없이 무료 상담 신청해 주세요. 현재 상황을 솔직하게 진단해 드립니다. <a href="/#contact" style="color: #2563eb; font-weight: 600;">무료 상담 신청 →</a></p>
+      </div>
+
+      <h3>3. 방문요양 플레이스 홍보, 블로그만큼 중요한 이유</h3>
+      
+      <p>"블로그는 알겠는데, 플레이스가 뭔가요?"</p>
+      
+      <p><strong>네이버 플레이스</strong>는 지역 기반 업체 정보가 노출되는 공간입니다. "OO동 방문요양"을 검색하면, 지도와 함께 주변 센터 목록이 뜨죠. 바로 그 영역이 플레이스입니다.</p>
+      
+      <h4>📍 플레이스가 중요한 이유</h4>
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #f8fafc;">
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">특징</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">설명</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>지역 검색 최적화</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">"OO구 방문요양" 검색 시 가장 먼저 노출</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>정보 한눈에</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">전화번호, 위치, 영업시간, 리뷰 바로 확인</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>첫인상 형성</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">블로그보다 먼저 눈에 띄어 신뢰도 판단</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p>보호자들은 "방문요양센터 추천"보다 <strong>"OO구 방문요양" "OO동 방문요양"</strong>으로 검색하는 경우가 훨씬 많습니다. 이때 플레이스 상위에 노출되면, 블로그보다 먼저 눈에 들어옵니다.</p>
+      
+      <p>플레이스가 잘 관리되어 있으면 <strong>"제대로 운영되는 센터"</strong>라는 인상을 줍니다. 반대로 정보가 부실하거나 등록되지 않았다면? 신뢰를 잃기 쉽습니다.</p>
+      
+      <blockquote>
+        "블로그가 '신뢰 콘텐츠'라면, 플레이스는 '첫인상'입니다. 둘 다 갖춰야 보호자의 선택을 받을 수 있습니다."
+      </blockquote>
+
+      <div style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); padding: 25px; border-radius: 12px; margin: 30px 0; border: 1px solid #bae6fd;">
+        <h4 style="color: #0369a1; margin: 0 0 15px 0; font-size: 16px;">🏆 케어넥 마케팅이 신뢰받는 이유</h4>
+        <ul style="margin: 0; padding-left: 20px; color: #0c4a6e;">
+          <li>마케팅 14년 경력의 검증된 노하우</li>
+          <li>요양보호사 교육원 운영 출신, 업계를 아는 마케터</li>
+          <li>실제 성과: 6개월 만에 수급자 70명+, 2호점 확장 준비</li>
+        </ul>
+      </div>
+
+      <h3>4. "소개로 충분해요"라는 생각이 위험한 이유</h3>
+      
+      <p>많은 원장님들이 이렇게 말씀하십니다.</p>
+      
+      <p><strong>"저희는 소개로 수급자가 꾸준히 들어와요. 굳이 홍보까지 해야 하나요?"</strong></p>
+      
+      <p>물론 소개는 강력합니다. 신뢰가 기반이니까요. 하지만 소개에만 의존하면 <strong>치명적인 약점</strong>이 있습니다.</p>
+      
+      <h4>⚠️ 소개 의존의 위험성</h4>
+      <ul>
+        <li><strong>통제 불가능</strong>: 이번 달 3명이 와도, 다음 달 보장이 없음</li>
+        <li><strong>경쟁 심화</strong>: 경쟁 센터가 온라인 홍보 시, 소개 기회 자체가 감소</li>
+        <li><strong>성장 한계</strong>: 일정 규모 이상 성장이 어려움</li>
+      </ul>
+      
+      <p>지금 방문요양센터가 얼마나 늘어나고 있는지 아시죠? 경쟁 센터가 온라인 홍보를 열심히 한다면, 보호자가 검색했을 때 그 센터가 먼저 눈에 띕니다. <strong>소개받을 기회 자체가 줄어들 수 있습니다.</strong></p>
+      
+      <p>블로그 마케팅은 이런 불확실성을 줄여줍니다. 검색하는 보호자에게 꾸준히 노출되면, <strong>안정적인 유입 경로</strong>가 생깁니다. 소개가 끊겨도 버틸 수 있는 구조가 만들어지죠.</p>
+      
+      <blockquote>
+        "소개 '+' 온라인이 아니라, 소개 '×' 온라인입니다. 두 채널이 함께 작동할 때, 성장 속도가 완전히 달라집니다."
+      </blockquote>
+
+      <h3>5. 방문요양 홍보, "나중에"가 가장 비싼 선택입니다</h3>
+      
+      <p>원장님, 솔직히 말씀드릴게요.</p>
+      
+      <p>온라인 홍보는 시작한다고 바로 효과가 나타나지 않습니다. 블로그 글이 검색 상위에 오르려면 시간이 필요하고, 플레이스 순위도 하루아침에 올라가지 않습니다.</p>
+      
+      <h4>⏰ 온라인 마케팅 효과 타임라인</h4>
+      <table style="width: 100%; border-collapse: collapse; margin: 20px 0;">
+        <thead>
+          <tr style="background: #f8fafc;">
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">시작 시점</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">효과 발생</th>
+            <th style="border: 1px solid #e2e8f0; padding: 12px;">의미</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">지금 시작</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>3개월 후</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">검색 노출 시작</td>
+          </tr>
+          <tr>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">3개월 후 시작</td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;"><strong>6개월 후</strong></td>
+            <td style="border: 1px solid #e2e8f0; padding: 12px;">그 사이 경쟁사가 자리 선점</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <p><strong>"나중에"가 가장 비싼 선택인 이유</strong>입니다. 먼저 시작한 센터가 검색 상위를 차지하면, 후발 주자는 뚫기가 훨씬 어렵습니다.</p>
+      
+      <p>지금 이 글을 읽고 계신 원장님이라면, 이미 한 발 앞서 고민하고 계신 겁니다. <strong>그 고민을 행동으로 옮길 때, 6개월 후가 달라집니다.</strong></p>
+
+      <div style="background: linear-gradient(135deg, #fef3c7, #fde68a); padding: 25px; border-radius: 12px; margin: 30px 0; border-left: 4px solid #f59e0b;">
+        <h4 style="color: #92400e; margin: 0 0 10px 0;">💡 핵심 정리</h4>
+        <ol style="margin: 0; padding-left: 20px; color: #78350f;">
+          <li>40~60대 보호자는 <strong>검색으로 센터를 찾습니다</strong>. 검색에 없으면 선택지에 없습니다.</li>
+          <li>블로그는 <strong>'신뢰'를 보여주는 공간</strong>입니다. 믿을 만한 센터라는 근거를 제공하세요.</li>
+          <li>플레이스는 <strong>'첫인상'</strong>입니다. 지역 검색에서 상위 노출되어야 선택받을 수 있습니다.</li>
+        </ol>
+      </div>
+
+      <h3>케어넥 마케팅과 함께하세요</h3>
+      
+      <p>방문요양 홍보는 더 이상 '할까 말까'의 문제가 아닙니다. <strong>'언제 시작하느냐'의 문제</strong>입니다.</p>
+      
+      <p>케어넥 마케팅에게 방문요양센터 마케팅은 단순한 광고 대행이 아닙니다. 저희는 <strong>요양보호사 교육원을 직접 운영하며 이 업계를 경험</strong>했습니다. 원장님이 어떤 고민을 하시는지, 어떤 어려움이 있는지 압니다.</p>
+      
+      <p>좋은 서비스를 제공하는데 알려지지 않아 안타까운 그 마음, 충분히 이해합니다. 그래서 저희는 <strong>'어떻게 하면 진짜 수급자가 늘어날까'</strong>를 함께 고민합니다.</p>
+      
+      <div style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); padding: 30px; border-radius: 12px; margin: 30px 0; text-align: center;">
+        <h4 style="color: #0369a1; margin-bottom: 15px;">🚀 무료 상담 신청하기</h4>
+        <p style="margin-bottom: 20px;">현재 검색 노출 상황, 경쟁 센터 분석,<br>우리 센터에 맞는 블로그+플레이스 전략까지<br><strong>솔직하게 말씀드리겠습니다.</strong></p>
+        <a href="/#contact" style="display: inline-block; background: linear-gradient(135deg, #3182f6, #2563eb); color: white; padding: 14px 32px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: all 0.3s ease;">무료 상담 신청하기 →</a>
+        <p style="font-size: 14px; color: #64748b; margin-top: 15px;">상담받으신다고 꼭 진행하셔야 하는 건 아닙니다.<br>궁금한 점만 물어보셔도 됩니다.</p>
+      </div>
+      
+      <p>원장님의 센터가 보호자에게 <strong>'발견'되고 '선택'받는 그날까지</strong>, 케어넥 마케팅이 함께하겠습니다. 💙</p>
     `
   }))
 })
@@ -3648,7 +3975,7 @@ function getColumnPageHTML({slug, id, title, description, category, date, keywor
         
         function loadRelatedArticles(currentId) {
             const articles = [
-                { id: 13, title: "용인방문요양 홍보, 지금 시작 안 하면 옆 센터에 수급자 뺏깁니다", category: "지역 마케팅", slug: "yongin-blog-marketing-secret" },
+                { id: 13, title: "용인방문요양 홍보, 미루면 경쟁센터에 수급자 뺏기는 이유", category: "지역 마케팅", slug: "yongin-blog-marketing-secret" },
                 { id: 12, title: "방문요양 홍보, 전단지 1,000장보다 효과적인 이것의 비밀", category: "온라인 마케팅", slug: "flyer-vs-online-marketing" },
                 { id: 1, title: "방문요양 키워드로 네이버 상위노출 달성하는 5단계 전략", category: "SEO 마케팅", slug: "seo-marketing-strategy" },
                 { id: 2, title: "요양원 유튜브 쇼츠로 월 상담 문의 300% 증가시킨 콘텐츠 전략", category: "유튜브 마케팅", slug: "youtube-shorts-strategy" },
