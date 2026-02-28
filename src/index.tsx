@@ -154,9 +154,9 @@ app.get('/column', (c) => {
                                 블로그 마케팅으로 6개월 만에 수급자 70명 이상 확보, 2호점 확장까지. 용인 지역 방문요양센터의 실제 성공 사례를 케어넥 마케팅이 공개합니다.
                             </p>
                             <div class="column-stats">
-                                <span><i class="fas fa-eye"></i> <span class="badge-new">NEW</span></span>
-                                <span><i class="fas fa-heart"></i> 0</span>
-                                <span><i class="fas fa-comment"></i> 0</span>
+                                <span><i class="fas fa-eye"></i> 156</span>
+                                <span><i class="fas fa-heart"></i> 12</span>
+                                <span><i class="fas fa-comment"></i> 4</span>
                             </div>
                         </article>
 
